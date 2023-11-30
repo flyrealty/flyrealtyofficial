@@ -587,6 +587,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 3;
 }
 .footer .links img{
@@ -705,4 +706,91 @@
   .blog{
     padding:3rem 0rem;
   }
+}
+
+@media screen and (max-width: 400px) {
+  .header{
+    height: 100vh;
+  }
+  .header .taglines{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+    height: auto;
+  }
+  .taglines div h1{
+    font-size: 2rem;
+  }
+  .taglines h4{
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .hero{
+    padding-top: 0rem;
+  }
+  .jumbo-img{
+    width: 109%;
+    height: 63%;
+  }
+  .jumbo-img img{
+    height: 100%;
+  }
+  .main{
+    padding: 3rem;
+  }
+  .search{
+    height: 4rem;
+    width: 19rem;
+  }
+  .item{
+    min-width: 100px;
+  }
+  .graphs{
+    margin-top:27rem;
+  }
+  .shape-eclipse{
+    height: 90%;
+  }
+  .shape-eclipse img {
+    height: 55vh;
+}
+.refer{
+  margin-top:0rem;
+}
+.refer-text-content{
+  padding: 3rem;
+  width: 100%;
+}
+.refer-text-content h1{
+  font-size: 3rem;
+}
+.refer-heading{
+  width: 100%;
+}
+.testimonials-heading{
+  width: 100%;
+}
+.testimonials-heading h1{
+  font-size: 3rem;
+}
+.team{
+  padding: 0rem 3rem 3rem 3rem;
+}
+.team-image{
+  width: 100%;
+  height:auto;
+}
+.team-content{
+  padding: 0;
+}
+.footer{
+  padding: 3rem;
+}
+.footer .links{
+  gap: 1.5rem;
+  justify-content: center;
+}
+.footer h6{
+  text-align: center;
+}
 }
