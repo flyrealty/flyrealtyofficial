@@ -3,7 +3,11 @@ import graphImg from '../assets/graph1.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '../App.css'
-import shape from '../assets/Ellipse.png'
+import shape from '../assets/Ellipse3.png'
+import Graph1 from '../assets/Gra1.png'
+import Graph2 from '../assets/Gra2.png'
+import Graph3 from '../assets/Gra3.png'
+import Graph4 from '../assets/Gra4.png'
 
 export default function Slideshow() {
   return (
@@ -14,20 +18,15 @@ export default function Slideshow() {
       <Splide aria-label="My Favorite Images">
         <SplideSlide>
           <div className='graphSlide'>
-            <img src={graphImg} alt="Image 1"/>
-            <div className="graphSummary">
-              <h6>Lorem Ipsum is simply dummy text of</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
+            <img src={Graph1} alt="Image 1"/>
+            <img src={Graph3} alt="Image 1"/>
+            
           </div>
         </SplideSlide>
         <SplideSlide>
         <div className='graphSlide'>
-        <div className="graphSummary">
-              <h6>Lorem Ipsum is simply dummy text of</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-            <img src={graphImg} alt="Image 1"/>
+          <img src={Graph2} alt="" />
+          <img src={Graph4} alt="" />
         </div>
         </SplideSlide>
       </Splide>

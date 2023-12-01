@@ -9,7 +9,7 @@ export default function Team() {
         <img src={teamImg} alt="" />
       </div>
       <div className="team-content">
-        <h1>Build a People-First</h1>
+        <h1>People-First</h1>
         <h1>Company Culture.</h1>
         <div className="team-content-subheading">
           <p>Our Greatest strength lies in our team.</p>

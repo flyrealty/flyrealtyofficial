@@ -5,21 +5,14 @@ export default function Main() {
   return (
     <div className="main">
         <div className="main-heading">
-          <h1>Our</h1>
-          <h1>Services.</h1>
-          <div className="search">
-            <div className='search-bar'>
-              <input type='text' placeholder='Search...'/>
-              <button>Go</button>
-            </div>
-          </div>
+          <h1>Services</h1>
         </div>
         <div className="gallery">
           <div className="gallery-wrap">
             <div className="item item-1">
               <div><h5>Property Consultation</h5></div>
               <div className="explore">
-                <h5>I need help with searching for available properties.</h5>
+                <h5>Assisting home-buyers in purchasing residential properties.</h5>
                   <ul>
                     <li>Zero Consultancy Charges</li>
                     <li>Exclusive Inventory Availability</li>
@@ -32,7 +25,7 @@ export default function Main() {
               <div>
                 <h5>Business Consultation</h5></div>
                 <div className="explore">
-                <h5>I want to enhance the sales velocity.</h5>
+                <h5>Empowering builders to enhance sales velocity.</h5>
                   <ul>
                     <li>360-degree Marketing Strategy & Execution</li>
                     <li>Building End-to-end Sales Process</li>
@@ -46,7 +39,7 @@ export default function Main() {
                 <h5>Marketing Consultation</h5>
               </div>
               <div className="explore">
-                <h5>I need help with a strategic marketing approach.</h5>
+                <h5>Optimizing ROI with a strategic marketing approach.</h5>
                   <ul>
                     <li>Proficient in Real Estate Marketing</li>
                     <li>Digital, Design & Communications</li>
@@ -58,7 +51,7 @@ export default function Main() {
             <div className="item item-4">
               <div><h5>RE Portfolio Consultation</h5></div>
               <div className="explore">
-                <h5>I need help with real estate investment opportunities.</h5>
+                <h5>Assistance with real estate investment opportunities.</h5>
                   <ul>
                     <li>Safe & Secured Collateral Investment</li>
                     <li>18 to 40% Annual Returns</li>
