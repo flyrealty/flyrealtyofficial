@@ -181,7 +181,7 @@
     padding:5rem;
 }
 .main .main-heading{
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -194,9 +194,9 @@
     color: var(--bgPrimary);
     font-weight: 500;
 }
-.main-heading h1:nth-child(2){
+/* .main-heading h1:nth-child(2){
     color: #CDCDCD;
-}
+} */
 .explore-projects{
     width: 30%;
     height: 95%;
@@ -271,7 +271,7 @@
     font-size: 1.3rem;  
 }
 .main .gallery{
-    width: 70%;
+    width: 75%;
     height: 100%;
     padding: 0rem 2rem;
 }
@@ -326,22 +326,24 @@
     transform: rotate(-90deg);
   }
   .item-1 div{
-    left: -4.89em;
+    left: -9.75rem;
   }
   .item-2 div{
-    left: -4.8rem;
+    left: -9.75rem;
   }
   .item-4 div{
-    left: -5.6rem;
+    left: -9.75rem;
   }
   .item-3 div{
-    left: -5.2rem;
+    left: -9.75rem;
   }
   .item div h5{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--bgPrimary);
     font-weight: 600;
+    padding: 0rem 1rem;
+    width: 20rem;
   }
   .item:hover div{
     display:none;
@@ -357,6 +359,12 @@
     height: 100%;
     border-radius: 1rem;
     border: 3px solid var(--bgTertiary);
+    overflow: hidden;
+  }
+  .explore h2{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
   }
   .item:hover .explore{
     display: flex;
@@ -697,14 +705,17 @@
 }
 .quote{
   width: 100%;
-  height: 14rem;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 0rem 9rem;
   overflow: hidden;
   margin-bottom: 3rem;
+}
+.quote img{
+  width: 60%;
 }
 .quote h1{
   font-size: 10rem;
@@ -964,12 +975,15 @@
   .quote h1{
     font-size: 8.5rem;
   }
+  .quote img{
+    width: 70%;
+  }
   .social-media{
     margin-top: 1rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .header{
     height: 100vh;
   }
@@ -1108,4 +1122,8 @@
 .born-section .text-content{
   width: 100%;
 }
+.quote img{
+  width: 90%;
+}
+
 }

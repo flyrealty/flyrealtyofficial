@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="taglines">
-        <h6>Real Estate Consulting Firm</h6>
+        <h6>#RealEstateConsultingFirm</h6>
         <div className="heading">
           <h1>Beyond Channel Partners,</h1>
           <h1>We're Consultants, for real.</h1>

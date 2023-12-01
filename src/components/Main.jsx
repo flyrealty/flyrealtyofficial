@@ -5,6 +5,8 @@ export default function Main() {
   return (
     <div className="main">
         <div className="main-heading">
+          <h1>Real</h1>
+          <h1>Estate</h1>
           <h1>Services</h1>
         </div>
         <div className="gallery">
@@ -19,6 +21,7 @@ export default function Main() {
                     <li>Best Guaranteed Price</li>
                   </ul>
                 <button>Explore Projects</button>
+                <h2>Property Consultation</h2>
               </div>
             </div>
             <div className="item item-2">
@@ -32,6 +35,7 @@ export default function Main() {
                     <li>After-Sales CRM Support</li>
                   </ul>
                 <button>Know More</button>
+                <h2>Business Consultation</h2>
               </div>
             </div>
             <div className="item item-3">
@@ -46,6 +50,7 @@ export default function Main() {
                     <li>Quick TAT for Deliverables</li>
                   </ul>
                 <button>Know More</button>
+                <h2>Marketing Consultation</h2>
               </div>
             </div>
             <div className="item item-4">
@@ -58,6 +63,7 @@ export default function Main() {
                     <li>Minimum Investment of INR 20 Lakhs</li>
                   </ul>
                 <button>Know More</button>
+                <h2>RE Portfolio Consultation</h2>
               </div>
             </div>
           </div>
