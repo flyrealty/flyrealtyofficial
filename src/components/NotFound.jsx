@@ -1,5 +1,5 @@
 import React from 'react'
-import vectorImg from "../assets/vector.png"
+import vectorImg from "./assets/patternVector.png"
 
 export default function NotFound() {
   return (

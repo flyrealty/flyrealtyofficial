@@ -50,6 +50,10 @@
       scroll-snap-align: center;
     }
   }
+  .wrapper{
+    min-height: 100vh;
+    width: 100%;
+  }
 .container{
     width: 100vw;
     min-height: 100vh;
@@ -552,7 +556,6 @@
 .team-image{
   width: 50%;
   height: 25rem;
-  
 }
 .team-image img{
   width: 100%;
@@ -576,8 +579,10 @@
   color: var(--bgPrimary);
   font-weight: 500;
 }
-.team-content button{
-  margin-top: 2rem;
+.team-content-subheading{
+  margin-bottom: 3rem;
+}
+.team-content a{
   background-color: var(--bgSecondary);
   color: var(--bgPrimary);
   font-size: 1rem;
@@ -1143,5 +1148,13 @@
 }
 .hero-item h3{
   font-size: 0.9rem;
+}
+.item {
+  
+  flex: 1;
+  &:hover{
+    flex: 2;
+    min-width: 160px;
+  }
 }
 }

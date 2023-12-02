@@ -7,11 +7,11 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="links">
-        <img src={logo} alt="Fly Realty Logo" />
+        <Link to="/"><img src={logo} alt="Fly Realty Logo" /></Link>
         <div className="ext-links">
           <h6>© 2023 Fly Realty. All Rights Reserved</h6>
           <span></span>
-          <Link><h6>Privacy Policy</h6></Link>
+          <Link to="/privacy"><h6>Privacy Policy</h6></Link>
         </div>
         <div className="social-media">
         <a href="https://www.linkedin.com/company/80794197/"><i class="fa-brands fa-linkedin"></i></a>

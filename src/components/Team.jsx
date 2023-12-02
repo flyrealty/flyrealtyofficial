@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import teamImg from '../assets/teamphoto.png'
+import { Link } from 'react-router-dom';
 
 export default function Team() {
   return (
@@ -15,7 +16,7 @@ export default function Team() {
           <p>Our Greatest strength lies in our team.</p>
           <p>100+ Professionals.</p>
         </div>
-        <button>Join the Hustle</button>
+        <Link to="/about">Join the Hustle</Link>
       </div>
     </div>
   )

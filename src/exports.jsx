@@ -16,4 +16,6 @@ import Graphs from './components/Graphs';
 import Slideshow from './components/Slideshow'
 import Refer from './components/Refer';
 import Testimonials from './components/Testimonials';
-export {Testimonials, Refer, Slideshow,Graphs, Nav, Header, Hero, Main, Builders, Team, Footer, Blog, Services, Projects, Insights, About, Connect, Home};
+import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolilcy';
+export {Contact, PrivacyPolicy, Testimonials, Refer, Slideshow,Graphs, Nav, Header, Hero, Main, Builders, Team, Footer, Blog, Services, Projects, Insights, About, Connect, Home};

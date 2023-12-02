@@ -36,8 +36,6 @@ export default function Hero() {
         <img src={progress5} alt="" />
         <h3>Branch Offices</h3>
       </div>
-      
-      
     </div>
   )
 }
