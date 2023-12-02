@@ -1,9 +1,9 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import tes1 from '../assets/tes1.png'
-import tes2 from '../assets/tes2.png'
-import tes3 from '../assets/tes3.png'
+import tes1 from '../assets/Tes1.png'
+import tes2 from '../assets/Tes2.png'
+import tes3 from '../assets/Tes3.png'
 import quote from '../assets/quote.png'
 
 export default function Testimonials() {
