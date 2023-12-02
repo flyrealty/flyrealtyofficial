@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.86 179.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d8dddc;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #cadb2b;
+      }
+
+      .cls-3 {
+        fill: #141414;
+        font-family: Outfit-Bold, Outfit;
+        font-size: 36px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-1" d="m89.93,0C40.27,0,0,40.25,0,89.91s40.27,89.93,89.93,89.93,89.93-40.25,89.93-89.93S139.59,0,89.93,0Zm0,151.72c-34.14,0-61.79-27.67-61.79-61.81s27.65-61.79,61.79-61.79,61.79,27.67,61.79,61.79-27.67,61.81-61.79,61.81Z"/>
+      <text class="cls-3" transform="translate(49.55 100.45)"><tspan x="0" y="0">300+</tspan></text>
+      <path class="cls-2" d="m179.86,89.91c0,49.68-40.27,89.93-89.93,89.93-9.7,0-19.03-1.53-27.78-4.37l8.69-26.76c6.01,1.96,12.43,3.01,19.09,3.01,34.12,0,61.79-27.67,61.79-61.81s-27.67-61.79-61.79-61.79V0c49.66,0,89.93,40.25,89.93,89.91Z"/>
+      <text class="cls-3" transform="translate(49.55 100.45)"><tspan x="0" y="0">300+</tspan></text>
+    </g>
+  </g>
+</svg>

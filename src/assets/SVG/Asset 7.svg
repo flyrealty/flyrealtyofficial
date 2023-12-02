@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.38 179.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d8dddc;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #cadb2b;
+      }
+
+      .cls-3 {
+        fill: #141414;
+        font-family: Outfit-Bold, Outfit;
+        font-size: 35px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="m89.93,0C40.27,0,0,40.25,0,89.91s40.27,89.93,89.93,89.93,89.93-40.25,89.93-89.93S139.59,0,89.93,0Zm0,151.72c-34.14,0-61.79-27.67-61.79-61.81s27.65-61.79,61.79-61.79,61.79,27.67,61.79,61.79-27.67,61.81-61.79,61.81Z"/>
+    <text class="cls-3" transform="translate(51.67 100.23)"><tspan x="0" y="0">100+</tspan></text>
+    <path class="cls-2" d="m133.29,168.96c-17.38,9.41-36.48,12.51-54.67,10.08l3.7-27.9c12.5,1.67,25.62-.46,37.56-6.93,30-16.25,41.15-53.75,24.9-83.76l24.73-13.39c23.65,43.67,7.44,98.25-36.22,121.9Z"/>
+  </g>
+</svg>

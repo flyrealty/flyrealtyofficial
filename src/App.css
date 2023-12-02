@@ -156,7 +156,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   padding: 6rem 0rem;
 }
@@ -171,6 +171,10 @@
 }
 .hero-item h3{
   font-weight: 600;
+  text-align: center;
+}
+.hero-item img{
+  width: 12rem;
 }
 .main{
     width: 100%;
@@ -883,6 +887,9 @@
   .hero{
     padding-top: 4rem;
   }
+  .hero-item img{
+    width: 10rem;
+  }
   .main .main-heading{
     width: 100%;
     height: auto;
@@ -1125,5 +1132,16 @@
 .quote img{
   width: 90%;
 }
-
+.hero{
+  gp: 1rem;
+}
+.hero-item{
+  width: 40%;
+}
+.hero-item img{
+  width: 5rem;
+}
+.hero-item h3{
+  font-size: 0.9rem;
+}
 }
