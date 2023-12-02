@@ -1138,23 +1138,34 @@
   width: 90%;
 }
 .hero{
-  gp: 1rem;
+  width: 100%;
+  gap: 2rem;
 }
 .hero-item{
-  width: 40%;
+  width: 100%;
 }
 .hero-item img{
-  width: 5rem;
+  width: 10rem;
 }
 .hero-item h3{
   font-size: 0.9rem;
 }
-.item {
-  
-  flex: 1;
-  &:hover{
-    flex: 2;
-    min-width: 160px;
-  }
+.explore button{
+  width: 100%;
+}
+.gallery{
+  height: 100%;
+}
+.gallery-wrap .item{
+  min-width: 250px;
+}
+.main{
+  min-height:  100vh;
+}
+.graphs{
+  margin-top: 90rem
+}
+.item .explore {
+  padding-left: 1.5rem
 }
 }

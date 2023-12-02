@@ -6,12 +6,11 @@ import {
   buildStyles
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import ChangingProgressProvider from "./ChangingProgressProvider";
-import progress1 from '../assets/SVG/Asset 1.svg';
-import progress2 from '../assets/SVG/Asset 2.svg';
-import progress3 from '../assets/SVG/Asset 6.svg';
-import progress4 from '../assets/SVG/Asset 7.svg';
-import progress5 from '../assets/SVG/Asset 8.svg';
+import progress1 from '../assets/Asset 1.png';
+import progress2 from '../assets/Asset 2.png';
+import progress3 from '../assets/Asset 6.png';
+import progress4 from '../assets/Asset 7.png';
+import progress5 from '../assets/Asset 8.png';
 
 export default function Hero() {
   return (
