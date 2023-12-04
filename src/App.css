@@ -989,7 +989,7 @@
   
   .item {
     flex: 1;
-    height: 90%;
+    height: 100%;
     background-position:center;
     background-size:auto;
     background-repeat: none;
@@ -1260,7 +1260,6 @@
   object-fit: contain;
 }
 .team-content{
-  width: 50%;
   padding: 0rem 2rem;
 }
 .team-content h1{
@@ -1611,7 +1610,7 @@
   .main .main-heading{
     width: 100%;
     height: auto;
-    margin-bottom: 12rem;
+    margin-bottom: 1.5rem;
   }
   .main-heading h1{
     font-size: 3rem;
@@ -1668,9 +1667,6 @@
     gap: 3rem;
   }
   .team-image{
-    width: 100%;
-  }
-  .team-content{
     width: 100%;
   }
   .team-content h1{
@@ -1790,7 +1786,7 @@
     margin-top:27rem;
   }
   .shape-eclipse{
-    height: 50%;
+    height: 90%;
   }
   .shape-eclipse img {
     height: 55vh;
@@ -2007,8 +2003,5 @@
 }
 .connect-addresses{
   margin-top: 27rem;
-}
-.main .main-heading{
-  margin-bottom: 18rem;
 }
 }
