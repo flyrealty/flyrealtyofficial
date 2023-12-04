@@ -1,0 +1,87 @@
+:root{
+    --bgPrimary: #121212;
+    --bgSecondary: #CCFF00;
+    --bgTertiary: rgb(178, 178, 178);
+    --fontPrimary: rgb(195, 195, 195);
+    --fontSecondary: ;
+    --fontTertiary: ;
+  }
+.collapsible-sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: var(--bgPrimary);
+    transition: transform 0.3s;
+    z-index: 200;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.closed {
+    transform: translateX(-250px);
+}
+
+.toggle-button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0rem;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-menu li {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li:hover {
+    background-color: var(--secondary);
+}
+.sidebarHeading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background:var(--tertiary);
+}
+.sidebarHeading h1{
+    font-size: 0.9rem;
+    width: 100%;
+    font-weight: 500;
+}
+.sidebarHeading button{
+    width: 2rem;
+    background: var(--bgSecondary);
+    color: var(--bgPrimary);
+    border-radius: 0.1rem;
+    font-size: 0.7rem;
+    border-radius: 10rem;
+    font-weight: 800;
+}
+
+.sidebar-menu a{
+    color: var(--bgPrimary);
+}
+.sidebarHeading img{
+    width: 10rem;
+
+}

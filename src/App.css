@@ -50,6 +50,21 @@
       scroll-snap-align: center;
     }
   }
+  .hamburger{
+    display: none;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.backdrop{
+  width: 100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 150;
+  background:rgba(128, 128, 128, 0.311);
+}
   .wrapper{
     width: 100%;
     margin-top: 5rem;
@@ -70,11 +85,15 @@
     height: 20rem;
     background: var(--bgPrimary);
     padding: 0rem 8rem;
+    position: relative;
   }
   .policy-header .header-img{
     width: 30%;
     height: 100%;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .header-img{
     width: 100%;
@@ -121,7 +140,7 @@
     padding: 0rem 8rem;
   }
 
-.section .points{
+.policy .section .points{
     padding-left: 2rem;
   }
   .policy .main .section .points ul{
@@ -136,11 +155,13 @@
   .sect{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 1rem;
   }
   .foot{
     width: 100%;
-    max-height: 15rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,8 +229,13 @@
   }
   .connect-header .heading{
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .connect-header .heading h1{
+    text-align: left;
     font-weight: 500;
     font-size: 3rem;
   }
@@ -220,6 +246,7 @@
     font-size: 1rem;
     font-weight: 400;
     margin: 1rem 0rem;
+    text-align: left;
   }
   .connect-header a{
     display: flex;
@@ -239,7 +266,7 @@
   .connect-form{
     width: 100%;
     height:auto;
-    min-height: 75vh;
+    min-height: 70vh;
     background: rgb(242, 242, 242);
     display: flex;
     flex-direction: row;
@@ -252,7 +279,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100%;
+    flex-wrap: wrap;
+    height: auto;
     width:90%;
     background: white;
     position: absolute;
@@ -264,6 +292,8 @@
   }
   .connect-content .form, .connect-persons{
     width: 50%;
+    min-width: 300px;
+    flex-grow:1
   }
   .connect-content .form form{
     margin-top: 2rem;
@@ -332,6 +362,14 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+  }
+  .connect-addresses .address-item{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 280px;
   }
   .connect-addresses .address-item > h6{
     font-size: 1rem;
@@ -342,6 +380,7 @@
     margin-bottom: 1.5rem;
   }
   .connect-addresses .address-item .address h6{
+    text-align: left;
     font-size: 0.9rem;
     font-weight: 500;
   }
@@ -365,6 +404,7 @@
     justify-content: flex-start;
     gap: 2rem;
     padding: 5rem;
+    height: auto;
   }
   .about .about-heading h1{
     font-size: 3.5rem;
@@ -378,6 +418,7 @@
   .about .about-heading h6{
     font-size: 1.25rem;
     font-weight: 400;
+    text-align: left;
   }
   .about-heading .main-heading span{
     border-bottom: 4px solid var(--bgSecondary);
@@ -388,6 +429,8 @@
   .story{
     background: white;
     padding: 5rem;
+    width: 100%;
+    height:auto;
   }
   .story h1{
     font-size: 3rem;
@@ -450,13 +493,21 @@
   .parent-heading{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+  }
+  .parent h1,h4{
+    text-align: center;
   }
   .parent-heading h1{
     font-size: 3rem;
+    text-align: center;
+    width: 100%;
   }
   .parent-heading .parent-detail h4{
-    font-weight: 400
+    font-weight: 400;
+    text-align: center;
   }
   .siblings{
     width: 100%;
@@ -464,6 +515,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 2rem;
   }
   .siblings .sib-item{
@@ -477,6 +529,7 @@
     min-height: 22rem;
     height: auto;
     border-radius: 1rem;
+    min-width: 300px;
   }
   .sib-item .sib h3{
     font-size: 1.5rem;
@@ -496,16 +549,33 @@
     padding: 5rem 0rem 5rem 5rem;
     display:flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background: white;
   }
   .mind .mind-heading{
     width:40%;
+    flex-grow: 1;
   }
   .mind-heading h1{
     font-size: 4rem;
   }
   .mind .head-team{
     width: 60%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+.main-mt-slider{
+  width: 60%;
+}
+  .main-person-item{
+    width: 300px;
+    height: 400px;
+    border-radius: 1rem;
+    background: var(--bgSecondary)
   }
   .values{
     width: 100%;
@@ -513,8 +583,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 5rem;
-    gap: 3rem;
     background: white;
   }
   .value-title h1{
@@ -522,18 +592,35 @@
     font-size: 5rem;
   }
 .value-text-content{
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  min-width: 320px;
 }
 .value-text-item h1{
+  
   font-size: 2.5rem;
   margin-bottom: 0.25rem;
 }
 .value-text-item p{
+  width:90%;
   line-height: 1.5rem;
 }
+.value-title-img{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  min-width: 320px;
+}
+.value-title-img img{
+  width: 100%;
+}
 .core{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -600,6 +687,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .people-vector{
   position: absolute;
@@ -608,6 +696,7 @@
   bottom:0;
 }
 .people-content{
+  min-width: 340px;
   width: 90%;
   position: relative;
   z-index: 1;
@@ -615,10 +704,12 @@
   padding: 5rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   box-shadow: 5px 5px 10px 0px rgba(169, 169, 169, 0.25);
   border-radius: 2rem;
 }
 .people-text{
+  flex-grow: 1;
   width: 50%;
   display:flex;
   flex-direction: column;
@@ -634,6 +725,7 @@
   line-height: 1.6rem;
 }
 .people-img{
+  min-width: 340px;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -1342,6 +1434,9 @@
   align-items: flex-start;
   justify-content: center
 }
+.nf-title h1, h2, h4{
+  text-align: left;
+}
 .nf-title .heading > h2{
   font-size: 2rem;
   font-weight: 400;
@@ -1584,8 +1679,43 @@
   .social-media{
     margin-top: 1rem;
   }
+  .story-bg-element {
+    width: 80%;
+}
+.parent-sib{
+  padding:4rem;
+}
+.people{
+  padding: 3rem;
+}
+.core{
+  align-items: center;
+}
+.core-heading{
+  width: 100%;
+}
+.values{
+  padding: 2rem;
+}
+.connect-persons{
+  margin-top: 3rem;
+  padding:0;
+}
+.connect-addresses{
+  margin-top: 25rem;
+  gap: 2rem;
+}
 }
 
+@media screen and (max-width: 800px){
+  .hamburger{
+    display: block;
+    color: var(--fifth);
+} 
+  .navigation .navbar{
+   visibility:none;
+  }
+}
 @media screen and (max-width: 440px) {
   .header{
     height: 100vh;
@@ -1758,5 +1888,85 @@
 }
 .item .explore {
   padding-left: 1.5rem
+}
+.header-content {
+  position: absolute;
+  width: 100%;
+  color: white;
+  padding: 4rem 3rem;
+  left: 0;
+}
+.policy .main .section{
+  padding: 0rem 3rem;
+}
+.grey-sect{
+  padding: 4rem 3rem !important;
+}
+.about .about-heading{
+  padding: 3rem;
+}
+.about .about-heading h1:first-child{
+  font-size: 2.5rem;
+}
+.about .about-heading h1:last-child{
+  font-size: 2.5rem;
+}
+.about .about-heading h6{
+  font-size: 0.9rem;
+}
+.story{
+  padding: 2rem;
+}
+.story .story-heading h1{
+  font-size: 2.5rem;
+}
+.story-bg-element{
+  width: 210%;
+}
+.story-text-block{
+  padding: 3rem;
+}
+.people{
+  padding: 0;
+  padding-bottom: 3rem;;
+}
+.people-content{
+  padding:3rem;
+}
+.people-img{
+  min-width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+.people-text h1{
+  font-size: 2.5rem;
+}
+.core{
+  padding: 3rem;
+}
+.core .core-heading h1{
+  font-size: 2.5rem;
+}
+.core-items{
+  justify-content: center;
+}
+.parent-heading h1{
+  font-size: 2.5rem;
+}
+.mind-heading h1{
+  font-size: 2.5rem;
+}
+.value-title h1{
+  font-size: 3.5rem;
+}
+.value-title-img{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.value-text-item h1{
+  font-size: 1.5rem;
+}
+.connect-header{
+  padding: 2rem;
 }
 }
