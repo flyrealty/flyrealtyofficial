@@ -216,6 +216,7 @@
     height: auto;
     min-height:100vh;
     position: relative;
+    background: rgb(242, 242, 242);
   }
   .connect-header{
     width: 100%;
@@ -1999,5 +2000,8 @@
 }
 .mind{
   padding: 3rem;
+}
+.connect-addresses{
+  margin-top: 27rem;
 }
 }
