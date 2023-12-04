@@ -46,13 +46,15 @@
 }
 
 .sidebar-menu li {
-    padding: 1rem 1.5rem;
+    width: 100%;
+    padding: 1rem 3rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .sidebar-menu li:hover {
-    background-color: var(--secondary);
+    background-color: var(--bgSecondary);
+    border-bottom: 2px solid var(--bgPrimary)
 }
 .sidebarHeading{
     width: 100%;
@@ -79,6 +81,7 @@
 }
 
 .sidebar-menu a{
+    width: 100%;
     color: var(--bgPrimary);
 }
 .sidebarHeading img{
