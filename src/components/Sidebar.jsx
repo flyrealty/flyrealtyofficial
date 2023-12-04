@@ -19,23 +19,13 @@ function Sidebar() {
                     X
                 </button>
             </div>
-            <ul className="sidebar-menu">
-                <li>
-                <Link to="/services">Services</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                    <Link to="/insights">Insights</Link>
-                </li>
-                <li>
-                    <Link to="/about">About Us</Link>
-                </li>
-                <li>
-                    <Link to="/connect">Connect</Link>
-                </li> 
-            </ul>
+            <div className="sidebar-menu">
+                <Link to="/services" onClick={toggleSidebar}>Services</Link>
+                <Link to="/projects" onClick={toggleSidebar}>Projects</Link>
+                <Link to="/insights" onClick={toggleSidebar}>Insights</Link>
+                <Link to="/about" onClick={toggleSidebar}>About Us</Link>
+                <Link to="/connect" onClick={toggleSidebar}>Connect</Link>
+            </div>
         </div>
         {
             isSidebarOpen && 
