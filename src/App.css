@@ -1230,7 +1230,11 @@
   flex-wrap: wrap;
 }
 .testimonials-heading{
-  width: 30%;
+  width: 41.5%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .testimonials-heading h1{
   font-size: 4rem;
@@ -1260,6 +1264,7 @@
   object-fit: contain;
 }
 .team-content{
+  width: 50%;
   padding: 0rem 2rem;
 }
 .team-content h1{
@@ -1668,6 +1673,10 @@
   }
   .team-image{
     width: 100%;
+  }
+  .team-content{
+    width: 100%;
+    padding: 0rem 2rem;
   }
   .team-content h1{
     font-size: 3rem;
