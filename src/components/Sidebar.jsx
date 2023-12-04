@@ -14,7 +14,7 @@ function Sidebar() {
         <>
         <div className={`collapsible-sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
             <div className="sidebarHeading">
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="Fly Realty Logo" /></Link>
                 <button className="toggle-button" onClick={toggleSidebar}>
                     X
                 </button>
