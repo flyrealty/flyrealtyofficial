@@ -102,29 +102,19 @@ export default function About() {
           </div>
           <div className="mind">
             <div className="mind-heading">
-              <h1>The Mind</h1>
-              <h1>& Souls</h1>
+              <h1>The Mind & Souls</h1>
+        
             </div>
             <div className="head-team">
-            <div className="tes-slider">
-          <Splide>
-            <SplideSlide>
-              <div className="tes-item-wrapper">
+              <div className="mg-item">
+
+              </div>
+              <div className="mg-item">
                 
               </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="tes-item-wrapper">
-               
+              <div className="mg-item">
+                
               </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="tes-item-wrapper">
-              
-              </div>
-            </SplideSlide>
-          </Splide>
-        </div>
             </div>
           </div>
           <div className="values">
