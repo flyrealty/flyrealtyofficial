@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Nav, Footer} from '../exports';
-import circleVector from '../assets/Group 31.png';
+import circleVector from '../assets/GroupCircle.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import tes1 from '../assets/Tes1.png'
@@ -14,8 +14,8 @@ import talk from '../assets/talk.png'
 import teamwork from '../assets/teamwork.png'
 import meeting from '../assets/meeting.png'
 import team from '../assets/team.png'
-import employees from '../assets/employee (1).png'
-import puzzle from '../assets/Layer 9 Copy.png'
+import employees from '../assets/employee.png'
+import puzzle from '../assets/puzzle.png'
 import peopleVector from '../assets/peopleVector.png'
 
 export default function About() {
