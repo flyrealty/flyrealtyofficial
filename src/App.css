@@ -712,9 +712,10 @@
     color: var(--bgPrimary);
 }
 .taglines h4{
-    width:50%;
+    width:100%;
     font-size: 2rem;
     font-weight: 400;
+    text-align: left;
 }
 .styleBlock{
     width: 3rem;
@@ -722,7 +723,10 @@
     background: var(--bgPrimary);
     color: var(--bgPrimary);
 }
-.subheading{
+.tagline > .heading{
+  width: 100%;
+}
+.taglines > .heading > .subheading{
     width: 100%;
 }
 .jumbo-img{
