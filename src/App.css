@@ -1611,7 +1611,7 @@
   .main .main-heading{
     width: 100%;
     height: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 12rem;
   }
   .main-heading h1{
     font-size: 3rem;
@@ -1790,7 +1790,7 @@
     margin-top:27rem;
   }
   .shape-eclipse{
-    height: 90%;
+    height: 50%;
   }
   .shape-eclipse img {
     height: 55vh;
@@ -2007,5 +2007,8 @@
 }
 .connect-addresses{
   margin-top: 27rem;
+}
+.main .main-heading{
+  margin-bottom: 18rem;
 }
 }
