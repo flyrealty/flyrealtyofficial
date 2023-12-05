@@ -421,9 +421,7 @@
     font-weight: 400;
     text-align: left;
   }
-  .about-heading .main-heading span{
-    border-bottom: 4px solid var(--bgSecondary);
-  }
+
   .about-heading .main-heading span:nth-child(2){
     font-weight: 400;
   }
