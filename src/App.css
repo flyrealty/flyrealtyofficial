@@ -2100,6 +2100,9 @@
   font-size: 1.1rem;
 }
 .tabular{
-  padding:1.5rem;
+  padding:1rem;
+}
+.table .table-row:first-child .table-item:nth-child(3){
+  padding: 2.75rem;
 }
 }
