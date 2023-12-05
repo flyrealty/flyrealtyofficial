@@ -4,10 +4,6 @@ import { Nav, Footer} from '../exports';
 import circleVector from '../assets/GroupCircle.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import tes1 from '../assets/Tes1.png'
-import tes2 from '../assets/Tes2.png'
-import tes3 from '../assets/Tes3.png'
-import quote from '../assets/quote.png'
 import element from '../assets/element.png'
 import support from '../assets/support.png'
 import talk from '../assets/talk.png'
@@ -27,7 +23,7 @@ export default function About() {
           <div className="about-heading">
             <div className="main-heading">
               <h1>We consult two sides of the same coin,</h1>
-              <h1><span>The Builders</span> and <span>The Home-Buyers.</span></h1>
+              <h1><span>The Builders</span> <span>and</span> <span>The Home-Buyers.</span></h1>
             </div>
             <h6>Essentially, we serve as consultants for all aspects of real estate needs.</h6>
           </div>
@@ -72,11 +68,6 @@ export default function About() {
                 </div>
               </div>
               <div className="sib-item">
-                <div className="sib">
-                  <h3>FLY REALTY</h3>
-                  <h6>Real Estate Consultancy</h6>
-                </div>
-                <span></span>
                 <div className="sib">
                   <h3>ELEMENTURE</h3>
                   <h6>Water Saving Technology</h6>

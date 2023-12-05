@@ -20,7 +20,7 @@ function Sidebar() {
                 </button>
             </div>
             <div className="sidebar-menu">
-                <Link to="/services" onClick={toggleSidebar}>Services</Link>
+                <Link to="/" onClick={toggleSidebar}>Home</Link>
                 <Link to="/projects" onClick={toggleSidebar}>Projects</Link>
                 <Link to="/insights" onClick={toggleSidebar}>Insights</Link>
                 <Link to="/about" onClick={toggleSidebar}>About Us</Link>
