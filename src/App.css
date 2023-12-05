@@ -1167,14 +1167,14 @@
   align-items: center;
 }
 .refer-text-content{
-  width: 40%;
+  width: 50%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  padding: 5rem;
+  padding: 0rem;
   padding-right: 0rem;
 }
 .refer-text-content h1{
