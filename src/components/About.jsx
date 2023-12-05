@@ -37,7 +37,7 @@ export default function About() {
                 </div>
                 <div className="story-text">
                   <div className="story-text-block">
-                    <p>Thinking Big, Started Small, Acting Right.</p>
+                    <p>Thinking Big, Started Small, <span>Acting Right.</span></p>
                     <p>Founded in 2022 and based out of Bengaluru, FLY Realty is beyond a channel partner/brokerage firm, we’re a Consulting Firm.</p>
                     <p>We specialize in delivering actionable Marketing and Sales Consulting Services exclusively for builders, guiding them through every step from strategic planning to seamless execution (B2B). And, assisting home-buyers in making informed decisions and wise investments in purchasing residential properties (B2C).</p>
                     <p>We’re Consultants, for real.</p>
