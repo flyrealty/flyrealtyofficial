@@ -3,6 +3,7 @@ import {Testimonials , Graphs,Nav, Header, Hero, Main, Builders, Team, Footer, B
 import '../App.css'
 import Vector2 from '../assets/Vector2.png'
 import quoteImg from '../assets/quoteComplete.png'
+import TabularData from './TabularData'
 export default function Home() {
   return (
     <div className="container">
@@ -27,6 +28,7 @@ export default function Home() {
       <Hero />
       <Main />
       <Graphs />
+      <TabularData />
       <Refer />
       <Testimonials />
       <Team />
