@@ -28,7 +28,6 @@ export default function Home() {
       <Hero />
       <Main />
       <Graphs />
-      <TabularData />
       <Refer />
       <Testimonials />
       <Team />
