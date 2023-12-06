@@ -371,6 +371,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     min-width: 280px;
+    margin-top: 10rem;
   }
   .connect-addresses .address-item > h6{
     font-size: 1rem;
