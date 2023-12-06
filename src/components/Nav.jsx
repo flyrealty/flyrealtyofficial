@@ -13,7 +13,8 @@ export default function Nav() {
       <div className="navigation">
       <Link to="/"><img src={logo} alt="Fly Realty Logo" /></Link>
         <div className="navbar">
-            <Link to="/">Home</Link>
+          <Link to={"/"}>Home</Link>
+            <Link to="/business">Services</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/insights">Insights</Link>
             <Link to="/about">About Us</Link>

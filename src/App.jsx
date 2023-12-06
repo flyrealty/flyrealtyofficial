@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {Projects, Services, About, Connect, PrivacyPolicy, Insights, Home} from './exports';
 import NotFound from './components/NotFound';
+import Business from './components/Business';
 export default function App() {
   return (
     <BrowserRouter>
@@ -10,6 +11,7 @@ export default function App() {
         <Route path='/projects' element={<NotFound />} />
         <Route path="/services" element={<NotFound />} />
         <Route path="/insights" element={<NotFound />} />
+        <Route path="/business" element={<Business />} />
         <Route path="/about" element={<About />} />
         <Route path="/connect" element={<Connect />} />
         <Route path='/privacy' element={<PrivacyPolicy />} />
