@@ -2235,6 +2235,9 @@
 .business-heading h1{
   width: 100%;
 }
+.business-head h2{
+  font-size: 1.25rem;
+}
 .studio, .art{
   padding:3rem;
 }
