@@ -17,9 +17,9 @@ export default function Business() {
                 <div className='business'>
                     <div className="business-heading">
                         <div className="business-head">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <h1>It's All About Time, Cashflow & Average Price.</h1>
-                        <h2>Higher Volume of Sales & Revenue in a short period of time, at no additional cost.*</h2>
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h1>It's All About Time, Cashflow & Average Price.</h1>
+                            <h2>Higher Volume of Sales & Revenue in a short period of time, at no additional cost.*</h2>
                         </div>
                     </div>
                     <div className="optimized-section">
@@ -172,6 +172,8 @@ export default function Business() {
                                     <img src={RK} alt="" />
                                     <img src={Rohan} alt="" />
                                 </div>
+                                </SplideSlide>
+                                <SplideSlide>
                                 <div className="builder-slide">
                                     <img src={Sattva} alt="" />
                                     <img src={Shriram} alt="" />
