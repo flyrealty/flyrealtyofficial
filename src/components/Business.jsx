@@ -221,7 +221,7 @@ export default function Business() {
                                 </div>
                             </div>
                         </div>
-                        <Link to="/">Connect to Accelerate Sales Velocity</Link>
+                        <Link to="/connect">Connect to Accelerate Sales Velocity</Link>
                     </div>
                 </div>
             </div>
