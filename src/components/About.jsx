@@ -7,6 +7,7 @@ import element from '../assets/element.png'
 import peopleVector from '../assets/peopleVector.png'
 import PeopleFirst from '../assets/PeopleFirst.png'
 import CoreValues from '../assets/CoreValues.png'
+import puzzle from '../assets/puzzle.png'
 
 export default function About() {
   return (
@@ -121,7 +122,7 @@ export default function About() {
                   <p>We promote employee growth & happiness.</p>
               </div>
               <div className="core-img">
-                <img src={CoreValues} alt="" />
+                <img src={""} alt="" />
               </div>
             </div>
           </div>
@@ -137,7 +138,7 @@ export default function About() {
                 </p>
               </div>
               <div className="people-img">
-                <img src={PeopleFirst} alt="" />
+                <img src={puzzle} alt="" />
               </div>
             </div>
           </div>
