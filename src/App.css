@@ -709,11 +709,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0re,;
+  padding: 2rem 0rem;
   flex-grow: 1;
 }
 .core-img img{
-  width: 60%;
+  width: 50%;
 }
 .core-items p{
   text-align: left;
