@@ -26,7 +26,7 @@ export default function Connect() {
                   <input type="text" placeholder='Your Name' />
                   <input type="number" placeholder='Phone Number' />
                   <input type="email" placeholder='Email Address' />
-                  <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+                  <textarea name="" id="" cols="30" rows="5" placeholder='Message'></textarea>
                   <button>Send Now</button>
                 </form>
               </div>

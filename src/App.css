@@ -357,7 +357,7 @@
   .connect-addresses{
     width: 100%;
     height: auto;
-    padding: 5rem;
+    padding: 0rem 5rem 5rem 5rem;
     background: rgb(243, 243, 243);
     display: flex;
     flex-direction: row;
@@ -371,7 +371,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     min-width: 280px;
-    margin-top: 10rem;
   }
   .connect-addresses .address-item > h6{
     font-size: 1rem;
