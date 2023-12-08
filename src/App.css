@@ -405,7 +405,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 2rem;
-    padding: 5rem;
+    padding: 10rem 5rem;
     height: auto;
   }
   .about .about-heading h1{
@@ -415,7 +415,7 @@
     font-weight: 400;
   }
   .about .about-heading h1:last-child{
-    font-weight: 700;
+    font-weight: 800;
   }
   .about .about-heading h6{
     font-size: 1.25rem;
@@ -436,8 +436,8 @@
     height:auto;
   }
   .story h1{
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 4.5rem;
+    font-weight: 800;
     color: var(--bgPrimary)
   }
   .story h1:nth-child(2){
@@ -474,6 +474,10 @@
     border-radius: 1rem;
     box-shadow: 5px 5px 10px 0px rgba(136, 136, 136, 0.25);
   }
+  .story-text-block p{
+    text-align: left;
+    line-height: 1.7rem;
+  }
   .story-text-block p:first-child{
     margin-bottom: 2rem;
   }
@@ -508,9 +512,11 @@
     text-align: center;
   }
   .parent-heading h1{
-    font-size: 3rem;
+    font-size: 4.5rem;
+    font-weight: 800;
     text-align: center;
     width: 100%;
+    color: var(--bgPrimary)
   }
   .parent-heading .parent-detail h4{
     font-weight: 400;
@@ -616,19 +622,19 @@
   min-width: 320px;
 }
 .value-text-item h1{
-  
   font-size: 2.5rem;
   margin-bottom: 0.25rem;
 }
 .value-text-item p{
   width:90%;
   line-height: 1.5rem;
+  text-align: left;
 }
 .value-title-img{
   width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   min-width: 320px;
@@ -649,17 +655,34 @@
   gap: 4rem;
   padding: 5rem;
 }
+.core-wrapper{
+  width: 100%;
+  background: white;
+  padding-left: 5rem;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+.core-heading{
+  padding-top: 5rem;
+}
 .core-heading h1{
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--bgPrimary);
 }
 .core-items{
+  width:50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
+  padding-bottom: 5rem;
 }
 .core-item{
   overflow: hidden;
@@ -726,6 +749,8 @@
   padding: 5rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   box-shadow: 5px 5px 10px 0px rgba(169, 169, 169, 0.25);
   border-radius: 2rem;
@@ -740,11 +765,13 @@
   gap: 2rem;
 }
 .people-text h1{
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-align: left;
 }
 .people-text p{
-  line-height: 1.6rem;
+  text-align: left;
+  line-height: 1.7rem;
 }
 .people-img{
   min-width: 340px;
@@ -890,7 +917,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding:5rem;
+    padding:3rem 5rem 5rem 5rem;
 }
 .main .main-heading{
     width: 25%;
@@ -902,10 +929,11 @@
     position: relative;
 }
 .main-heading h1{
-    font-size: 5rem;
-    color: var(--bgPrimary);
-    font-weight: 500;
+  font-weight: 800;
+  font-size: 4.5rem;
+  color: var(--bgPrimary);
 }
+
 /* .main-heading h1:nth-child(2){
     color: #CDCDCD;
 } */
@@ -1181,22 +1209,21 @@
   padding-right: 0rem;
 }
 .refer-text-content h1{
-  font-size: 4rem;
+  font-weight: 800;
+  font-size: 4.5rem;
   color: var(--bgPrimary);
-  font-weight: 600;
 }
 .refer-heading{
   width: 80%;
-  margin-top:2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 .refer-heading p{
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   color: var(--bgPrimary);
+  text-align: left;
 }
 .refer-heading p span{
   background: var(--bgSecondary);
@@ -1224,7 +1251,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1.5rem;
 }
 .com-refer-heading > p > span{
   font-weight: 700;
@@ -1243,13 +1269,13 @@
   width: 41.5%;
   display:flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .testimonials-heading h1{
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: var(--bgPrimary);
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 1rem;
 }
 .testimonials-slides{
@@ -1278,8 +1304,9 @@
   padding: 0rem 2rem;
 }
 .team-content h1{
-  font-size: 4rem;
-  font-weight: 600;
+  text-align: left;
+  font-size: 4.5rem;
+  font-weight: 800;
   color: var(--bgPrimary);
 }
 .team-content h1:nth-child(2){
@@ -1290,6 +1317,7 @@
   font-size: 1.25rem;
   color: var(--bgPrimary);
   font-weight: 500;
+  text-align: left;
 }
 .team-content-subheading{
   margin-bottom: 3rem;
@@ -1416,6 +1444,7 @@
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.7rem;
+  text-align: left;
 }
 .tes-text-content h2{
   margin-top: 1rem;
@@ -1432,17 +1461,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0rem 9rem;
+  padding:5rem 0rem;
   overflow: hidden;
-  margin-bottom: 3rem;
 }
 .quote img{
   width: 60%;
 }
 .quote h1{
-  font-size: 10rem;
-  color: var(--fontPrimary);
-  font-weight: 500;
+  font-size: 4.0rem;
+  color: var(--bgPrimary);
+  font-weight: 800;
+  text-align: center;
 }
 
 .quote h2{
@@ -1546,13 +1575,16 @@
   padding: 6rem;
 }
 .born-section .text-content h1{
-  font-size: 4rem;
-  font-weight: 500;
+  text-align: left;
+  font-weight: 800;
+  font-size: 4.5rem;
+  color: var(--bgPrimary)
 }
 .born-section .text-content h1 span{
   color: var(--bgTertiary)
 }
 .born-content p{
+  text-align: left;
   font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 500;
@@ -2075,7 +2107,6 @@
   }
   .taglines div h1{
     font-size: 2.5rem;
-    font-weight: 600
   }
   .taglines h4{
     font-size: 1.5rem;
@@ -2092,7 +2123,7 @@
     margin-bottom: 1.5rem;
   }
   .main-heading h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .explore-projects{
     width: 100%;
@@ -2124,6 +2155,9 @@
     padding: 3rem;
     padding-right: 1rem;
   }
+  .refer-text-content h1{
+    font-size: 2.5rem;
+  }
   .refer-img-content{
     width: 80%;
   }
@@ -2139,6 +2173,7 @@
   }
   .testimonials-heading h1{
     text-align: center;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
   }
   .tes-slider{
@@ -2155,7 +2190,7 @@
     padding: 0rem 2rem;
   }
   .team-content h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .blog{
     padding:3rem 0rem;
@@ -2169,7 +2204,7 @@
     object-fit: contain;
   }
   .born-section .text-content h1{
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
   .born-section .born-content p{
     font-size: 0.9rem;
@@ -2177,12 +2212,10 @@
   .born-section .text-content{
     padding: 3rem;
   }
-  .quote{
-    height: 12.5rem;
-    padding:0rem 0rem 0rem 3rem;
-  }
+
   .quote h1{
-    font-size: 8.5rem;
+    text-align: center;
+    font-size: 2.5rem;
   }
   .quote img{
     width: 70%;
@@ -2249,6 +2282,34 @@
   gap:1rem;
   justify-content: center;
 }
+.about .about-heading h1{
+  font-size: 2.5rem;
+}
+.story h1{
+  font-size: 2.5rem;
+}
+.parent-heading h1{
+  font-size: 2.5rem;
+}
+.values{
+  padding:5rem 0rem;
+}
+.value-text-item h1{
+  font-size: 2rem;
+}
+.core-heading h1{
+  font-size: 2.5rem;
+}
+.core-items{
+  width: 100%;
+  padding-right: 3rem;
+}
+.core-items p{
+  text-align: left;
+}
+.people-text h1{
+  font-size: 2.5rem
+}
 }
 
 @media screen and (max-width: 800px){
@@ -2269,6 +2330,9 @@
     padding-right: 3rem;
     position: relative;
     height: auto;
+  }
+  .main-heading h1 {
+    font-size: 2rem;
   }
   .taglines div h1{
     font-size: 2rem;
@@ -2317,7 +2381,7 @@
   width: 100%;
 }
 .refer-text-content h1{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .refer-heading{
   width: 100%;
@@ -2326,7 +2390,7 @@
   width: 100%;
 }
 .testimonials-heading h1{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .team{
   padding: 0rem 3rem 3rem 3rem;
@@ -2337,6 +2401,9 @@
 }
 .team-content{
   padding: 0;
+}
+.team-content h1{
+  font-size: 2rem;
 }
 .footer{
   padding: 3rem;
@@ -2388,19 +2455,17 @@
   width: 40%;
   font-size: 1rem;
 }
-.quote{
-  height: 9.75rem;
-  padding:0rem 0rem 0rem 3rem;
-}
 .quote h1{
-  margin-top: 1.5rem;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .born-section .born-img{
   display: none;
 }
 .born-section .text-content{
   width: 100%;
+}
+.born-section .text-content h1 {
+  font-size: 2rem;
 }
 .quote img{
   width: 90%;
@@ -2546,5 +2611,35 @@
 .clients{
   padding:3rem 1rem;
 }
-
+.quote h1{
+  font-size: 1.5rem;
+}
+.about .about-heading h1{
+  font-size: 2rem;
+}
+.story h1{
+  font-size: 2rem;
+}
+.parent-heading h1{
+  font-size: 2rem;
+}
+.values{
+  padding:5rem 0rem;
+}
+.value-text-item h1{
+  font-size: 2rem;
+}
+.core-heading h1{
+  font-size: 2rem;
+}
+.core-items{
+  width: 100%;
+  padding-right: 3rem;
+}
+.core-items p{
+  text-align: left;
+}
+.people-text h1{
+  font-size: 2rem;
+}
 }

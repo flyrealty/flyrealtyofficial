@@ -23,15 +23,15 @@ export default function About() {
           <div className="about-heading">
             <div className="main-heading">
               <h1>We consult two sides of the same coin,</h1>
-              <h1><span>The Builders</span> <span>and</span> <span>The Home-Buyers.</span></h1>
+              <h1><span>THE BUILDERS</span> <span>and</span> <span>THE HOME-BUYERS.</span></h1>
             </div>
             <h6>Essentially, we serve as consultants for all aspects of real estate needs.</h6>
           </div>
           <div className="story">
             <div className="story-heading">
-              <h1>Our Story</h1>
-              <h1>in the making</h1>
+              <h1>Our Story In The Making</h1>
               <div className="story-content">
+
                 <div className="story-bg-element">
                   <img src={circleVector} alt="" />
                 </div>
@@ -49,9 +49,9 @@ export default function About() {
           </div>
           <div className="parent-sib">
             <div className="parent-heading">
-              <h1>THE PARENT AND SIBLINGS</h1>
+              <h1>The Parent And Siblings</h1>
               <div className="parent-detail">
-                <h2>MODERN SPACES</h2>
+                <h2>MODERN SPAACES</h2>
                 <h4>(Real Estate Developer)</h4>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="mind">
+          {/* <div className="mind">
             <div className="mind-heading">
               <h1>The Mind & Souls</h1>
         
@@ -107,13 +107,13 @@ export default function About() {
                 
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="values">
             <div className="value-title-img">
-                <div className="value-title">
+                {/* <div className="value-title">
                   <h1>OUR</h1>
                   <h1>VALUES</h1>
-                </div>
+                </div> */}
                 <div className="value-img">
                   <img src={element} alt="" />
                 </div>
@@ -130,76 +130,21 @@ export default function About() {
             </div>
           </div>
           <div className="core">
-            <div className="core-heading">
-              <h1>Our</h1>
-              <h1>Core Value</h1>
-            </div>
-            <div className="core-items">
-              <div className="core-item">
-                <div className="core-img-no">
-                  <div className="core-img">
-                    <img src={support} alt="" />
-                  </div>
-                  <div className="core-no">
-                    <h1>01</h1>
-                  </div>
+          
+            <div className="core-wrapper">
+              <div className="core-items">
+                <div className="core-heading">
+                    <h1>Our Core Values</h1>
                 </div>
-                <p>We consult, not sell.</p>
+                  <p>We consult, not sell.</p>
+                  <p>We are people-centric. (People we serve and people we employ, both.)</p>
+                  <p>We follow Guidelines, Processes, and Systems (GPS).</p>
+                  <p>We are organized, transparent, and reliable.</p>
+                  <p>We are culture-driven.</p>
+                  <p>We promote employee growth & happiness.</p>
               </div>
-              <div className="core-item">
-                <div className="core-img-no">
-                  <div className="core-img">
-                    <img src={talk} alt="" />
-                  </div>
-                  <div className="core-no">
-                    <h1>02</h1>
-                  </div>
-                </div>
-                <p>We are people-centric. (People we serve and people we employ, both.)</p>
-              </div>
-              <div className="core-item">
-                <div className="core-img-no">
-                  <div className="core-img">
-                    <img src={teamwork} alt="" />
-                  </div>
-                  <div className="core-no">
-                    <h1>03</h1>
-                  </div>
-                </div>
-                <p>We follow Guidelines, Processes, and Systems (GPS).</p>
-              </div>
-              <div className="core-item">
-                <div className="core-img-no">
-                  <div className="core-img">
-                    <img src={meeting} alt="" />
-                  </div>
-                  <div className="core-no">
-                    <h1>04</h1>
-                  </div>
-                </div>
-                <p>We are organized, transparent, and reliable.</p>
-              </div>
-              <div className="core-item">
-                <div className="core-img-no">
-                  <div className="core-img">
-                    <img src={team} alt="" />
-                  </div>
-                  <div className="core-no">
-                    <h1>05</h1>
-                  </div>
-                </div>
-                <p>We are culture-driven.</p>
-              </div>
-              <div className="core-item">
-                <div className="core-img-no">
-                  <div className="core-img">
-                    <img src={employees} alt="" />
-                  </div>
-                  <div className="core-no">
-                    <h1>06</h1>
-                  </div>
-                </div>
-                <p>We promote employee growth & happiness.</p>
+              <div className="core-img">
+                <img src="" alt="" />
               </div>
             </div>
           </div>

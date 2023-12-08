@@ -24,11 +24,11 @@ export default function Hero() {
         <h3>Worth of Real Estate Sold</h3>
       </div>
       <div className="hero-item">
-        <img src={progress3} alt="" />
+      <img src={progress4} alt="" />
         <h3>Delighted Customers</h3>
       </div>
       <div className="hero-item">
-        <img src={progress4} alt="" />
+        <img src={progress3} alt="" />
         <h3>Professionals</h3>
       </div>
       <div className="hero-item">

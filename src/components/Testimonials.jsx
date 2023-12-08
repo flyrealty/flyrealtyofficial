@@ -20,7 +20,7 @@ export default function Testimonials() {
                 <div className="tes-text-content">
                   <img src={quote} alt="" />
                   <p>I recently bought a home through Nilima (RM), and although this can be a stressful process, i was 100% confident with her approach. She was candid, provided prompt feedback, clearly explained all the project details, and managed the negotiation brillantly.</p>
-                  <h2> -Prem Suman</h2>
+                  <h2>- Prem Suman</h2>
                 </div>
               </div>
             </SplideSlide>
@@ -30,7 +30,7 @@ export default function Testimonials() {
                 <div className="tes-text-content">
                   <img src={quote} alt="" />
                   <p>"I liked Nilima's (RM) approach and she did a great job in showcasing the property & fulfulling our requirement in property hunt within a short period of time. Her service was fantastic and eliminated all the hassle of property buying"</p>
-                  <h2> - Shalky Sharma</h2>
+                  <h2>- Apeksha Sharma</h2>
                 </div>
               </div>
             </SplideSlide>
@@ -40,7 +40,7 @@ export default function Testimonials() {
                   <div className="tes-text-content">
                   <img src={quote} alt="" />
                   <p>"Really nice home buying experience through Fly Realty. Everything was made easy for me from property search to finalization. Wishing all the best to Fly Realty's future endeavors."</p>
-                  <h2> - Shiva</h2>
+                  <h2>- Shiva</h2>
                 </div>
               </div>
             </SplideSlide>

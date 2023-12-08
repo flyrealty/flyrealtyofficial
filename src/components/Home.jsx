@@ -32,7 +32,8 @@ export default function Home() {
       <Testimonials />
       <Team />
       <div className="quote">
-        <img src={quoteImg} alt="" />
+        <h1>"Expert Consultations,</h1>
+        <h1>Personalized to Your Vision."</h1>
       </div>
       <Footer />
     </div>
