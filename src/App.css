@@ -709,7 +709,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem;
+  padding: 2rem 0re,;
   flex-grow: 1;
 }
 .core-img img{
@@ -762,7 +762,7 @@
 }
 .people-text{
   flex-grow: 1;
-  width: 50%;
+  width: 60%;
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -781,7 +781,7 @@
 }
 .people-img{
   min-width: 340px;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
