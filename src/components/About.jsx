@@ -2,17 +2,11 @@ import React from 'react';
 import '../App.css';
 import { Nav, Footer} from '../exports';
 import circleVector from '../assets/GroupCircle.png';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import element from '../assets/element.png'
-import support from '../assets/support.png'
-import talk from '../assets/talk.png'
-import teamwork from '../assets/teamwork.png'
-import meeting from '../assets/meeting.png'
-import team from '../assets/team.png'
-import employees from '../assets/employee.png'
-import puzzle from '../assets/puzzle.png'
 import peopleVector from '../assets/peopleVector.png'
+import PeopleFirst from '../assets/PeopleFirst.png'
+import CoreValues from '../assets/CoreValues.png'
 
 export default function About() {
   return (
@@ -91,23 +85,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          {/* <div className="mind">
-            <div className="mind-heading">
-              <h1>The Mind & Souls</h1>
-        
-            </div>
-            <div className="head-team">
-              <div className="mg-item">
-
-              </div>
-              <div className="mg-item">
-                
-              </div>
-              <div className="mg-item">
-                
-              </div>
-            </div>
-          </div> */}
           <div className="values">
             <div className="value-title-img">
                 {/* <div className="value-title">
@@ -144,7 +121,7 @@ export default function About() {
                   <p>We promote employee growth & happiness.</p>
               </div>
               <div className="core-img">
-                <img src="" alt="" />
+                <img src={CoreValues} alt="" />
               </div>
             </div>
           </div>
@@ -160,7 +137,7 @@ export default function About() {
                 </p>
               </div>
               <div className="people-img">
-                <img src={puzzle} alt="" />
+                <img src={PeopleFirst} alt="" />
               </div>
             </div>
           </div>
