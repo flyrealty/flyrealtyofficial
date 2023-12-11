@@ -2458,6 +2458,9 @@
 .art-text{
   padding: 3rem;
 }
+.art-text p {
+  width: 100%;
+}
 .case-highlights{
   justify-content: center;
   width: 100%;
