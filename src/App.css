@@ -2477,6 +2477,9 @@
   }
 }
 @media screen and (max-width: 440px) {
+  .navigation img {
+    height: 2rem;
+  }
   .header{
     height: 100vh;
   }
