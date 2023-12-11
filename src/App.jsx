@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {Projects, Services, About, Connect, PrivacyPolicy, Insights, Home} from './exports';
 import NotFound from './components/NotFound';
 import Business from './components/Business';
+import Auth from './components/cms/Auth';
+import Dashboard from './components/cms/Dashboard';
 export default function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,8 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/connect" element={<Connect />} />
         <Route path='/privacy' element={<PrivacyPolicy />} />
+        {/* <Route path='/auth' element={<Auth />} />
+        <Route path='/dashboard' element={<Dashboard />} /> */}
       </Routes>
     </BrowserRouter>
   ) 

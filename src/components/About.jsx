@@ -8,6 +8,7 @@ import peopleVector from '../assets/peopleVector.png'
 import PeopleFirst from '../assets/PeopleFirst.png'
 import CoreValues from '../assets/CoreValues.png'
 import puzzle from '../assets/puzzle.png'
+import people from '../assets/people.png'
 
 export default function About() {
   return (
@@ -126,7 +127,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="people">
+          {/* <div className="people">
             <div className="people-vector">
               <img src={peopleVector} alt="" />
             </div>
@@ -141,7 +142,7 @@ export default function About() {
                 <img src={puzzle} alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
