@@ -10,7 +10,7 @@ import '../assets/style.module.css';
 import chess from '../assets/chess.png';
 import hand from '../assets/hand.png';
 import pendoolum from '../assets/pendoolum.mp4'
-import buildings from '../assets/buildings.png'
+import buildings from '../assets/Buildings.png'
 import {Assetz, Bhartiya, Brigade, Casagrand, Century, DNR, Godrej, Goyal, Hiranandani, Inspira, Krishvi, Lodha, Mahindra,
     Modern, Prestige, Provident, Puravankara, Ramky, RK, Rohan, Sattva, Shriram, Sobha, Sammita,Total} from '../assets/logos/imgExports'
 import Carousel from './Carousel'
