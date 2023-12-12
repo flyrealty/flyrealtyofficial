@@ -127,7 +127,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          {/* <div className="people">
+          <div className="people">
             <div className="people-vector">
               <img src={peopleVector} alt="" />
             </div>
@@ -139,10 +139,10 @@ export default function About() {
                 </p>
               </div>
               <div className="people-img">
-                <img src={puzzle} alt="" />
+                <img src={people} alt="" />
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       <Footer />

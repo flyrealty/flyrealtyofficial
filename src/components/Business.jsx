@@ -138,7 +138,6 @@ export default function Business() {
                                                 <div className="case-points">
                                                     <h4>Plotted Development in Sarjapura</h4>
                                                     <h4>Need of the Hour - Launch of the Project</h4>
-                                                    <h4>Timeline - March 2023 to July 2023</h4>
                                                 </div>
                                             </div>
                                             <div className="case-highlights">
@@ -185,7 +184,6 @@ export default function Business() {
                                                 <div className="case-points">
                                                     <h4>Plotted Development in Sarjapura</h4>
                                                     <h4>Need of the Hour - Launch of the Project</h4>
-                                                    <h4>Timeline - March 2023 to July 2023</h4>
                                                 </div>
                                             </div>
                                             <div className="case-highlights">
