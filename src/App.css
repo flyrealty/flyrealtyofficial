@@ -1665,6 +1665,7 @@
   font-size: 2rem;
   font-weight: 400;
   color: var(--bgPrimary);
+  text-align: left;
 }
 .nf-title .heading > h1{
   font-size: 5rem;
