@@ -2963,4 +2963,7 @@
 .about-heading .main-heading {
     padding: 3rem;
 }
+.art-img img {
+  width: 100%;
+}
 }
