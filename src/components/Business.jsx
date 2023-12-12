@@ -10,7 +10,7 @@ import '../assets/style.module.css';
 import chess from '../assets/chess.png';
 import hand from '../assets/hand.png';
 import pendoolum from '../assets/pendoolum.mp4'
-import buildings from '../assets/Buildings.png'
+import buildings from '../assets/buildings.png'
 import {Assetz, Bhartiya, Brigade, Casagrand, Century, DNR, Godrej, Goyal, Hiranandani, Inspira, Krishvi, Lodha, Mahindra,
     Modern, Prestige, Provident, Puravankara, Ramky, RK, Rohan, Sattva, Shriram, Sobha, Sammita,Total} from '../assets/logos/imgExports'
 import Carousel from './Carousel'
@@ -126,8 +126,8 @@ export default function Business() {
                     <div className="case-studies">
                         <div className="case-wrapper">
                             {/* <h1>Case Studies</h1> */}
-                            {/* <Splide aria-label="My Favorite Images">
-                                <SplideSlide> */}
+                            <Splide aria-label="My Favorite Images">
+                                <SplideSlide>
                                     <div className="case">
                                         <div className="case-head-title">
                                             <h1>Case Studies</h1>
@@ -173,8 +173,55 @@ export default function Business() {
                                             </div>
                                         </div>
                                     </div>
-                                {/* </SplideSlide>
-                            </Splide> */}
+                                </SplideSlide>
+                                <SplideSlide>
+                                    <div className="case">
+                                        <div className="case-head-title">
+                                            <h1>Case Studies</h1>
+                                        </div>
+                                        <div className="case-content">
+                                            <div className="case-text">
+                                                <h1>01</h1>
+                                                <div className="case-points">
+                                                    <h4>Plotted Development in Sarjapura</h4>
+                                                    <h4>Need of the Hour - Launch of the Project</h4>
+                                                    <h4>Timeline - March 2023 to July 2023</h4>
+                                                </div>
+                                            </div>
+                                            <div className="case-highlights">
+                                                <div className="highlight">
+                                                    <div className="highlight-item">
+                                                        <span></span>
+                                                        <h6><span>100,000</span> Sft Worth 200 Cr Inventory Sold</h6>
+                                                    </div>
+                                                    <div className="highlight-item">
+                                                        <span></span>
+                                                        <h6><span>200%</span> Marketing ROI</h6>
+                                                    </div>
+                                                    <div className="highlight-item">
+                                                        <span></span>
+                                                        <h6><span>5,000/Sft</span> Avg. Basic Price Achieved</h6>
+                                                    </div>
+                                                </div>
+                                                <div className="highlight">
+                                                    <div className="highlight-item">
+                                                        <span></span>
+                                                        <h6><span>20+</span> Channel Partners Activated</h6>
+                                                    </div>
+                                                    <div className="highlight-item">
+                                                        <span></span>
+                                                        <h6><span>49%</span> Lead Qualification Ratio</h6>
+                                                    </div>
+                                                    <div className="highlight-item">
+                                                        <span></span>
+                                                        <h6><span>15%</span> Site Visit to Closure Ratio</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SplideSlide>
+                            </Splide>
                         </div>
                     </div>
                     <div className="clients">
