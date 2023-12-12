@@ -1,5 +1,4 @@
 import React from 'react'
-import graphImg from '../assets/graph1.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '../App.css'

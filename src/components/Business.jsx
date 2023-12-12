@@ -12,7 +12,6 @@ import pendoolum from '../assets/pendoolum.mp4'
 import buildings from '../assets/Buildings.png'
 import {Assetz, Bhartiya, Brigade, Casagrand, Century, DNR, Godrej, Goyal, Hiranandani, Inspira, Krishvi, Lodha, Mahindra,
     Modern, Prestige, Provident, Puravankara, Ramky, RK, Rohan, Sattva, Shriram, Sobha, Sammita,Total} from '../assets/logos/imgExports'
-import Carousel from './Carousel'
 export default function Business() {
   return (
     <div className="container">
@@ -81,27 +80,6 @@ export default function Business() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="optimized-section">
-                        <h1>Optimized Processes & Metrics</h1>
-                        <h2>Building the Processes & Systems</h2>
-                        <div className="opt-items">
-                            <div className="opt-item">
-                                <h6>Better Conversion Ratios</h6>
-                            </div>
-                            <div className="opt-item">
-                                <h6>Lead Management Process</h6>
-                            </div>
-                            <div className="opt-item">
-                                <h6>Channel Partner Sales Process</h6>
-                            </div>
-                            <div className="opt-item">
-                                <h6>Sales Closing Process</h6>
-                            </div>
-                            <div className="opt-item">
-                                <h6>After-Sales Process</h6>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className="studio">
                         <div className="video-bg">
                             <video src={pendoolum} autoPlay loop muted/>

@@ -1,9 +1,6 @@
 import React from 'react'
 import {Testimonials , Graphs,Nav, Header, Hero, Main, Builders, Team, Footer, Blog, Refer} from "../exports"
 import '../App.css'
-import Vector2 from '../assets/Vector2.png'
-import quoteImg from '../assets/quoteComplete.png'
-import TabularData from './TabularData'
 import borntofly from '../assets/borntofly.png'
 export default function Home() {
   return (
