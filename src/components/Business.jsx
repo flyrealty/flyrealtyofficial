@@ -181,7 +181,7 @@ export default function Business() {
                                         </div>
                                         <div className="case-content">
                                             <div className="case-text">
-                                                <h1>01</h1>
+                                                <h1>02</h1>
                                                 <div className="case-points">
                                                     <h4>Plotted Development in Sarjapura</h4>
                                                     <h4>Need of the Hour - Launch of the Project</h4>
