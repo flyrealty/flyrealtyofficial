@@ -3,7 +3,6 @@ import Nav from './Nav'
 import Footer from './Footer'
 import '../App.css'
 import { Link } from 'react-router-dom'
-import assetArt from '../assets/AssetArt.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '../assets/style.module.css';

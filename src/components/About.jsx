@@ -5,10 +5,9 @@ import circleVector from '../assets/GroupCircle.png';
 import '@splidejs/react-splide/css';
 import element from '../assets/element.png'
 import peopleVector from '../assets/peopleVector.png'
-import PeopleFirst from '../assets/PeopleFirst.png'
-import CoreValues from '../assets/CoreValues.png'
-import puzzle from '../assets/puzzle.png'
 import people from '../assets/people.png'
+import flipcoin from '../assets/flipcoin.png'
+
 
 export default function About() {
   return (
@@ -19,10 +18,16 @@ export default function About() {
           <div className="about-heading">
             <div className="main-heading">
               <h1>We consult two sides of the same coin,</h1>
-              <h1><span>THE BUILDERS</span> <span>and</span> <span>THE HOME-BUYERS.</span></h1>
+              <h1><span>THE BUILDERS</span> <span>and</span></h1>
+              <h1> <span>THE HOME-BUYERS.</span></h1>
+              <h6>Essentially, we serve as consultants for all</h6>
+              <h6>aspects of real estate needs.</h6>
             </div>
-            <h6>Essentially, we serve as consultants for all aspects of real estate needs.</h6>
+            <div className="about-heading-img">
+              <img src={flipcoin} alt="" />
+            </div>
           </div>
+          
           <div className="story">
             <div className="story-heading">
               <h1>Our Story In The Making</h1>
@@ -115,16 +120,50 @@ export default function About() {
                 <div className="core-heading">
                     <h1>Our Core Values</h1>
                 </div>
-                  <p>We consult, not sell.</p>
-                  <p>We are people-centric. (People we serve and people we employ, both.)</p>
-                  <p>We follow Guidelines, Processes, and Systems (GPS).</p>
-                  <p>We are organized, transparent, and reliable.</p>
-                  <p>We are culture-driven.</p>
-                  <p>We promote employee growth & happiness.</p>
               </div>
-              <div className="core-img">
-                <img src={""} alt="" />
+              <div className="accordion-wrapper">
+                  <div className="accordion-points">
+                     <div className="accordion-heading">
+                      <h2><span>+</span> We consult, not sell.</h2>
+                     </div>
+                     <div className="accordion-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                  </div>
+                  <div className="accordion-points">
+                     <div className="accordion-heading">
+                      <h2><span>+</span> We are people-centric.</h2>
+                     </div>
+                     <div className="accordion-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                  </div>
+                  <div className="accordion-points">
+                     <div className="accordion-heading">
+                      <h2><span>+</span> We follow Guidelines, Processes, and Systems.</h2>
+                     </div>
+                     <div className="accordion-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                  </div>
+                  <div className="accordion-points">
+                     <div className="accordion-heading">
+                      <h2><span>+</span> We are organized, transparent, and reliable.</h2>
+                     </div>
+                     <div className="accordion-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                  </div>
+                  <div className="accordion-points">
+                     <div className="accordion-heading">
+                      <h2><span>+</span> We promote employee growth & happiness.</h2>
+                     </div>
+                     <div className="accordion-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                     </div>
+                  </div>
               </div>
+              
             </div>
           </div>
           <div className="people">
@@ -138,9 +177,9 @@ export default function About() {
                 This in turn helps us engage you with professionalism, patience, and an ethical approach.
                 </p>
               </div>
-              <div className="people-img">
+              {/* <div className="people-img">
                 <img src={people} alt="" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

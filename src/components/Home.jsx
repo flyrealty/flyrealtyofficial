@@ -4,6 +4,7 @@ import '../App.css'
 import Vector2 from '../assets/Vector2.png'
 import quoteImg from '../assets/quoteComplete.png'
 import TabularData from './TabularData'
+import borntofly from '../assets/borntofly.png'
 export default function Home() {
   return (
     <div className="container">
@@ -12,7 +13,7 @@ export default function Home() {
       <div className="bornToFly">
         <div className="born-section">
           <div className='born-img'>
-            <img src={Vector2} alt="" />
+            <img src={borntofly} alt="" />
           </div>
           <div className="text-content">
             <h1>Born To FLY</h1>
