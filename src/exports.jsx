@@ -1,11 +1,9 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Main from './components/Main';
-import Builders from './components/Builders';
 import Team from './components/Team';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
-import Services from './components/Services';
 import Projects from './components/Projects';
 import Insights from './components/Insights';
 import About from './components/About';
@@ -16,6 +14,5 @@ import Graphs from './components/Graphs';
 import Slideshow from './components/Slideshow'
 import Refer from './components/Refer';
 import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolilcy';
-export {Contact, PrivacyPolicy, Testimonials, Refer, Slideshow,Graphs, Nav, Header, Hero, Main, Builders, Team, Footer, Blog, Services, Projects, Insights, About, Connect, Home};
+export { PrivacyPolicy, Testimonials, Refer, Slideshow,Graphs, Nav, Header, Hero, Main, Team, Footer, Blog, Projects, Insights, About, Connect, Home};

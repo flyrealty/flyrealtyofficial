@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import {Projects, Services, About, Connect, PrivacyPolicy, Insights, Home} from './exports';
+import {Projects, About, Connect, PrivacyPolicy, Insights, Home} from './exports';
 import NotFound from './components/NotFound';
 import Business from './components/Business';
 import Auth from './components/cms/Auth';
@@ -11,7 +11,6 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/projects' element={<NotFound />} />
-        <Route path="/services" element={<NotFound />} />
         <Route path="/insights" element={<NotFound />} />
         <Route path="/business" element={<Business />} />
         <Route path="/about" element={<About />} />

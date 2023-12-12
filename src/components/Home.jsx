@@ -1,5 +1,5 @@
 import React from 'react'
-import {Testimonials , Graphs,Nav, Header, Hero, Main, Builders, Team, Footer, Blog, Refer} from "../exports"
+import {Testimonials , Graphs,Nav, Header, Hero, Main, Team, Footer, Refer} from "../exports"
 import '../App.css'
 import borntofly from '../assets/borntofly.png'
 export default function Home() {
