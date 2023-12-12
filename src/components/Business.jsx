@@ -278,13 +278,6 @@ export default function Business() {
                                 <div className="rec-img">
                                     <img src={Krishvi} alt="" />
                                 </div>
-                                <div className="rec-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
                                 <div className="rec-text">
                                     <p>"FLY Realty has been our go-to consultant for a long time. Their team has helped us launch multiple projects in different micro-markets with end-to-end marketing and sales strategy and execution."</p>
                                     <h1>Arhanth Dinesh – Director</h1>
@@ -294,13 +287,6 @@ export default function Business() {
                                 <div className="rec-img">
                                     <img src={RK} alt="" />
                                 </div>
-                                <div className="rec-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
                                 <div className="rec-text">
                                     <p>"FLY Realty helped us launch our very first large-scale plotted development project and has been successful in selling the inventory at the targeted base price in a short period of time."</p>
                                     <h1>Bharath Reddy – Director</h1>
@@ -309,13 +295,6 @@ export default function Business() {
                             <div className="rec-item">
                                 <div className="rec-img">
                                     <img src={Sammita} alt="" />
-                                </div>
-                                <div className="rec-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
                                 </div>
                                 <div className="rec-text">
                                     <p>"FLY Realty has successfully executed a mandated project with us, with a very strategic approach towards sales that was highly productive and required low intervention from my side."</p>

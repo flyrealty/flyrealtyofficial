@@ -1977,7 +1977,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 .case-highlights{
   display:flex;
