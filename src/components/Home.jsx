@@ -2,6 +2,7 @@ import React from 'react'
 import {Testimonials , Graphs,Nav, Header, Hero, Main, Team, Footer, Refer} from "../exports"
 import '../App.css'
 import borntofly from '../assets/borntofly.png'
+import bornVideo from '../assets/bornVideo.mp4'
 export default function Home() {
   return (
     <div className="container">
@@ -9,8 +10,11 @@ export default function Home() {
       <Header/>
       <div className="bornToFly">
         <div className="born-section">
-          <div className='born-img'>
+          {/* <div className='born-img'>
             <img src={borntofly} alt="" />
+          </div> */}
+          <div className="video-bg-born">
+              <video src={bornVideo} autoPlay loop muted/>
           </div>
           <div className="text-content">
             <h1>Born To FLY</h1>
