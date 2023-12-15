@@ -888,12 +888,7 @@
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
-.people-vector{
-  position: absolute;
-  z-index: -1;
-  right:0;
-  bottom:0;
-}
+
 .people-content{
   min-width: 340px;
   width: 100%;
@@ -933,7 +928,7 @@
 }
 .people-img{
   min-width: 340px;
-  width: 60vw;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -946,6 +941,12 @@
 .people-img img{
   width: 100%;
   object-fit: contain;
+}
+.people-vector{
+  position:absolute;
+  z-index: 0;
+  bottom:0;
+  right:0;
 }
 .container{
     width: 100vw;
@@ -2025,7 +2026,7 @@
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   gap: 1rem;
   width: 100%;
 }
@@ -2412,26 +2413,25 @@
 }
 .fly-choice{
   width: 100%;
-  height: 80vh;
+  height: auto;
   display:flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding:5rem;
   flex-wrap: wrap;
-
 }
 
 .choice-heading{
-  width: 30%;
-  height: auto;
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  min-width: 380px;
-  flex-grow: 1;
-  margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 380px;
+    flex-grow: 1;
+    margin-bottom: 2rem;
 }
 .choice-heading h1{
   font-size: 4.5rem;
@@ -2439,14 +2439,14 @@
   color: var(--bgPrimary);
 }
 .choice-content{
-  width: 70%;
-  height:auto;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 380px;
-  flex-grow: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 380px;
+    flex-grow: 1;
 }
 .choice-points{
   width: 50%;
@@ -2460,7 +2460,7 @@
   width: 100%;
   display:flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   border-radius: 1rem;
@@ -2961,9 +2961,7 @@
   width: 100vw;
   padding: 3rem;
 }
-.people-img{
-  width: 100vw;
-}
+
 .opt-heading-text{
   width: 100%;
   padding: 2rem;
@@ -3281,11 +3279,6 @@
   padding-bottom: 3rem;;
 }
 
-.people-img{
-  min-width: 250px;
-  justify-content: center;
-  align-items: center;
-}
 .core{
   padding: 1rem;
 }
@@ -3360,11 +3353,7 @@
 .core-items p{
   text-align: left;
 }
-.people-vector {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-}
+
 .people-text h1{
   font-size: 2rem;
 }
@@ -3410,7 +3399,7 @@
   font-size: 1rem
 }
 .fly-choice{
-  padding: 3rem;
+  padding: 2rem;
   height: 100vh;
   margin-bottom: 5rem;
 }
@@ -3418,7 +3407,7 @@
   flex-wrap: wrap;
 }
 .choice-content {
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   margin-top: 3rem;
   height: 100%;

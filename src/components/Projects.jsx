@@ -32,9 +32,7 @@ export default function Projects() {
           </div>
           <div className="fly-choice">
             <div className="choice-heading">
-              <h1>Why</h1>
-              <h1>Choose</h1>
-              <h1>Us</h1>
+              <h1>Why Choose Us</h1>
             </div>
             <div className="choice-content">
               <div className="choice-points">

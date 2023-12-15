@@ -177,9 +177,9 @@ export default function About() {
                 This in turn helps us engage you with professionalism, patience, and an ethical approach.
                 </p>
               </div>
-              {/* <div className="people-img">
+              <div className="people-img">
                 <img src={people} alt="" />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
