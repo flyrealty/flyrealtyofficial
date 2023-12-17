@@ -52,7 +52,7 @@ export default function Connect() {
               <h6>Headquarters</h6>
               <div className="address">
                 <h6>3rd Floor, Sakti Statesman Building</h6>
-                <h6>Outer Ring Rd, Green Glen Layour,</h6>
+                <h6>Outer Ring Rd, Green Glen Layout,</h6>
                 <h6>Bellandur, Bengaluru, 560103</h6>
                 <h6>+91 98444 73355</h6>
               </div>
