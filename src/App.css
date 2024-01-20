@@ -790,9 +790,6 @@ h4 {
   gap: 1rem;
   padding: 4rem 5rem;
 }
-
-.hustle-btn {
-}
 .accordion-wrapper {
   width: 50%;
   height: 100%;
@@ -1492,7 +1489,7 @@ h4 {
   font-size: 1.25rem;
   color: var(--bgPrimary);
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 .team-content-subheading {
   margin-bottom: 3rem;
@@ -2771,12 +2768,8 @@ p {
   }
   .main .main-heading {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
     height: auto;
-    gap: 0.7rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   .main-heading h1 {
     font-size: 2.5rem;
@@ -2847,7 +2840,6 @@ p {
   }
   .team-content h1 {
     font-size: 2.5rem;
-    text-align: center;
   }
   .blog {
     padding: 3rem 0rem;
@@ -3049,50 +3041,19 @@ p {
 @media screen and (max-width: 800px) {
   .hamburger {
     display: block;
-    margin-right: 1.4rem;
     color: var(--fifth);
   }
   .navigation .navbar {
     visibility: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 440px) {
   .mobile-performers {
     display: block;
-  }
-
-  .born-section {
-    margin-top: -7rem;
   }
   .tablet-performers {
     display: none;
   }
-
-  .quote {
-    margin-top: -4rem;
-  }
-
-  .hustle-btn {
-    display: flex;
-    width: 55%;
-    margin-left: 5rem;
-  }
-
-  .graphSlide {
-    flex-wrap: wrap;
-  }
-
-  .graph-wrapper {
-    margin-top: 65rem;
-  }
-
-  .main .gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .mobile-projects {
     display: block;
   }
@@ -3103,7 +3064,7 @@ p {
     height: 100vh;
   }
   .header .taglines {
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-right: 3rem;
     position: relative;
     height: auto;
@@ -3122,7 +3083,7 @@ p {
     padding-top: 0rem;
   }
   .jumbo-img {
-    width: 97%;
+    width: 109%;
     height: 63%;
   }
   .jumbo-img img {
@@ -3141,7 +3102,9 @@ p {
   .item div:first-child {
     top: 12.5rem;
   }
-
+  .graphs {
+    margin-top: 27rem;
+  }
   .shape-eclipse {
     height: 90%;
   }
@@ -3149,16 +3112,14 @@ p {
     height: 55vh;
   }
   .refer {
-    margin-top: -1rem;
+    margin-top: 0rem;
   }
   .refer-text-content {
-    padding: 4rem;
+    padding: 3rem;
     width: 100%;
   }
   .refer-text-content h1 {
-    font-size: 1.8rem;
-  }
-  .com-refer-heading {
+    font-size: 2rem;
   }
   .refer-heading {
     width: 100%;
@@ -3282,10 +3243,11 @@ p {
   }
 
   .main {
-    margin-top: -6rem;
     min-height: 100vh;
   }
-
+  .graphs {
+    margin-top: 90rem;
+  }
   .item .explore {
     padding-left: 1.5rem;
   }
