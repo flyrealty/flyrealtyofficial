@@ -6,20 +6,29 @@ import { Link } from "react-router-dom";
 export default function Team() {
   return (
     <div className="team">
+      <div className="team-content">
+        <h1>Powerhouse Team of 100+ Professionals</h1>
+
+        <div className="team-content-subheading">
+          <p>
+            Our greatest strength lies not in any individual but in the combined
+            spirit, talent, and dedication of each member. And we are confident
+            that our team will continue to be committed to excellence and be the
+            driving force behind our success.
+          </p>
+        </div>
+      </div>
       <div className="team-image">
         <img src={teamImg} alt="" />
       </div>
-      <div className="team-content">
-        <h1>People-First</h1>
-        <h1>Company Culture.</h1>
-        <div className="team-content-subheading">
-          <p>Our Greatest strength lies in our team.</p>
-          <p>100+ Professionals.</p>
-        </div>
-        <Link to="/about" className="hustle-btn">
-          Join the Hustle
-        </Link>
-      </div>
+      <button
+        className="hustle-btn"
+        onClick={() => {
+          window.location.href = "/about";
+        }}
+      >
+        Join the Hustle
+      </button>
     </div>
   );
 }

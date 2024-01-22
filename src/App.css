@@ -66,6 +66,11 @@
   z-index: 150;
   background: rgba(128, 128, 128, 0.311);
 }
+
+.hero-display {
+  display: flex;
+  margin-top: 3rem;
+}
 .wrapper {
   width: 100%;
   margin-top: 5rem;
@@ -790,6 +795,16 @@ h4 {
   gap: 1rem;
   padding: 4rem 5rem;
 }
+
+.hustle-btn {
+  background-color: var(--bgSecondary);
+  color: var(--bgPrimary);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  margin-left: 15rem;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
 .accordion-wrapper {
   width: 50%;
   height: 100%;
@@ -1045,7 +1060,7 @@ h4 {
 }
 .jumbo-img {
   float: right;
-  width: 47%;
+  width: 33%;
   height: 100%;
   position: relative;
   display: flex;
@@ -1062,12 +1077,12 @@ h4 {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 6rem 0rem;
+  padding: 1rem 0rem;
 }
 .hero-item {
   width: 15rem;
@@ -1078,6 +1093,17 @@ h4 {
   justify-content: center;
   gap: 1rem;
 }
+
+.hero-item-long {
+  width: 15rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .hero-item h3 {
   font-weight: 600;
   text-align: center;
@@ -1085,6 +1111,15 @@ h4 {
 .hero-item img {
   width: 12rem;
 }
+
+.hero-item-long h3 {
+  font-weight: 600;
+  text-align: center;
+}
+.hero-item-long img {
+  width: 12rem;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -1092,6 +1127,12 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 3rem 5rem 5rem 5rem;
+  margin-top: 3rem;
+}
+
+.graph-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 .main .main-heading {
   width: 25%;
@@ -1109,7 +1150,7 @@ h4 {
 }
 
 /* .main-heading h1:nth-child(2){
-    color: #CDCDCD;
+color: #CDCDCD;
 } */
 .explore-projects {
   width: 30%;
@@ -1304,6 +1345,7 @@ h4 {
   font-weight: 600;
 }
 .graphs {
+  margin-top: -2rem;
   height: auto;
   width: 100vw;
   display: flex;
@@ -1321,6 +1363,7 @@ h4 {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem 0rem;
+  margin-top: 4rem;
 }
 .graphSlide img {
   width: 40%;
@@ -1377,7 +1420,7 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
+
   padding: 0rem;
   padding-right: 0rem;
 }
@@ -1421,6 +1464,7 @@ h4 {
 }
 .com-refer-heading {
   display: flex;
+  margin-top: 2rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1489,7 +1533,7 @@ h4 {
   font-size: 1.25rem;
   color: var(--bgPrimary);
   font-weight: 500;
-  text-align: left;
+  text-align: center;
 }
 .team-content-subheading {
   margin-bottom: 3rem;
@@ -2768,8 +2812,12 @@ p {
   }
   .main .main-heading {
     width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: auto;
-    margin-bottom: 1.5rem;
+    gap: 0.7rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
   .main-heading h1 {
     font-size: 2.5rem;
@@ -2840,6 +2888,7 @@ p {
   }
   .team-content h1 {
     font-size: 2.5rem;
+    text-align: center;
   }
   .blog {
     padding: 3rem 0rem;
@@ -2856,7 +2905,7 @@ p {
     font-size: 2.5rem;
   }
   .born-section .born-content p {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
   }
   .born-section .text-content {
     padding: 3rem;
@@ -3041,19 +3090,109 @@ p {
 @media screen and (max-width: 800px) {
   .hamburger {
     display: block;
+    margin-right: 1.4rem;
     color: var(--fifth);
   }
   .navigation .navbar {
     visibility: none;
   }
-}
-@media screen and (max-width: 440px) {
+
   .mobile-performers {
     display: block;
+  }
+
+  .hero-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+  .graph-heading {
+    margin-top: 67rem;
+    font-size: 1rem;
+  }
+
+  .tes-text-content h2 {
+    text-align: center;
+  }
+
+  .video-bg-born video {
+    display: none;
+  }
+
+  .team-content-subheading p {
+    margin-top: 2rem;
+  }
+
+  .social-media {
+    margin-top: 0rem;
+  }
+
+  .testimonials {
+    padding: 0rem 0rem 2rem;
+  }
+
+  .born-content {
+    gap: 0rem;
+    font-weight: 400;
+  }
+
+  .styleBlock {
+    display: none;
+  }
+
+  .born-section {
+    margin-top: -7rem;
   }
   .tablet-performers {
     display: none;
   }
+
+  .quote {
+    margin-top: -4rem;
+    padding: 3rem 0rem;
+  }
+
+  .hustle-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 0 !important;
+  }
+
+  .graphSlide {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .refer-img-content img {
+    display: none;
+  }
+
+  .graph-wrapper {
+    margin-top: 0rem;
+  }
+
+  .main .gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .taglines h6 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+
+  .subheading {
+    text-align: center;
+  }
+
   .mobile-projects {
     display: block;
   }
@@ -3068,6 +3207,7 @@ p {
     padding-right: 3rem;
     position: relative;
     height: auto;
+    text-align: center;
   }
   .main-heading h1 {
     font-size: 2rem;
@@ -3078,13 +3218,21 @@ p {
   .taglines h4 {
     width: 100%;
     font-size: 1.25rem;
+    text-align: center;
+    margin-left: 2rem;
   }
   .hero {
     padding-top: 0rem;
   }
+
+  .bornToFly {
+    margin-top: -4rem;
+    padding: 0rem;
+  }
+
   .jumbo-img {
-    width: 109%;
-    height: 63%;
+    width: 97%;
+    height: 48%;
   }
   .jumbo-img img {
     height: 100%;
@@ -3102,9 +3250,7 @@ p {
   .item div:first-child {
     top: 12.5rem;
   }
-  .graphs {
-    margin-top: 27rem;
-  }
+
   .shape-eclipse {
     height: 90%;
   }
@@ -3112,20 +3258,31 @@ p {
     height: 55vh;
   }
   .refer {
-    margin-top: 0rem;
+    margin-top: -2rem;
   }
   .refer-text-content {
-    padding: 3rem;
+    padding: 4rem;
     width: 100%;
+    gap: 0rem;
+    align-items: center;
   }
   .refer-text-content h1 {
     font-size: 2rem;
+    text-align: center;
+    margin-left: 0.6rem;
+  }
+
+  .refer-heading p {
+    text-align: center;
+    font-size: 1.25rem;
   }
   .refer-heading {
     width: 100%;
+    margin-top: 1.5rem;
   }
   .testimonials-heading {
     width: 100%;
+    margin-top: -2rem;
   }
   .testimonials-heading h1 {
     font-size: 2rem;
@@ -3136,6 +3293,7 @@ p {
   .team-image {
     width: 100%;
     height: auto;
+    margin-top: -3rem;
   }
   .team-content {
     padding: 0;
@@ -3144,10 +3302,10 @@ p {
     font-size: 2rem;
   }
   .footer {
-    padding: 3rem;
+    padding: 1rem;
   }
   .footer .links {
-    gap: 1.5rem;
+    gap: 0.9rem;
     justify-content: center;
   }
   .footer h6 {
@@ -3156,9 +3314,21 @@ p {
   .tes-text-content {
     width: 100%;
     padding: 2rem 1rem 2rem 2rem;
+    align-items: center;
+  }
+
+  .tes-slider {
+    margin-left: 1rem;
+  }
+
+  .tes-item-wrapper {
+    border-left: 0px solid var(--bgSecondary);
   }
   .tes-text-content p {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -1rem;
   }
   .tes-item-wrapper > img {
     width: 100%;
@@ -3199,6 +3369,7 @@ p {
 
   .born-section .text-content {
     width: 100%;
+    height: 61%;
   }
   .born-section .text-content h1 {
     font-size: 2rem;
@@ -3214,14 +3385,26 @@ p {
   .hero {
     width: 100%;
     gap: 2rem;
+    margin-top: 1.8rem;
   }
   .hero-item {
-    width: 100%;
+    width: 9rem;
+  }
+
+  .hero-item-long {
+    width: 9rem;
+    margin-top: 0.9rem;
   }
   .hero-item img {
-    width: 10rem;
+    width: 7rem;
   }
   .hero-item h3 {
+    font-size: 0.9rem;
+  }
+  .hero-item-long img {
+    width: 7rem;
+  }
+  .hero-item-long h3 {
     font-size: 0.9rem;
   }
   .explore button {
@@ -3243,11 +3426,559 @@ p {
   }
 
   .main {
+    margin-top: -2.5rem;
     min-height: 100vh;
   }
-  .graphs {
-    margin-top: 90rem;
+
+  .item .explore {
+    padding-left: 1.5rem;
   }
+  .header-content {
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding: 4rem 3rem;
+    left: 0;
+  }
+  .policy .main .section {
+    padding: 0rem 3rem;
+  }
+  .grey-sect {
+    padding: 4rem 3rem !important;
+  }
+  .about .about-heading {
+    padding: 3rem;
+  }
+  .about .about-heading h1:first-child {
+    font-size: 2.5rem;
+  }
+  .about .about-heading h1:last-child {
+    font-size: 2.5rem;
+  }
+  .about .about-heading h6 {
+    font-size: 1rem;
+  }
+  .story {
+    padding: 2rem;
+  }
+  .story .story-heading h1 {
+    font-size: 2.5rem;
+  }
+  .story-bg-element {
+    width: 210%;
+  }
+  .story-text-block {
+    padding: 3rem;
+  }
+  .people {
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+
+  .core {
+    padding: 1rem;
+  }
+  .core .core-heading h1 {
+    font-size: 2.5rem;
+  }
+  .core-items {
+    justify-content: center;
+  }
+  .parent-heading h1 {
+    font-size: 2.5rem;
+  }
+  .mind-heading h1 {
+    font-size: 2.5rem;
+  }
+  .value-title h1 {
+    font-size: 3.5rem;
+  }
+  .value-title-img {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .value-text-item h1 {
+    font-size: 1.5rem;
+  }
+  .connect-header {
+    padding: 2rem;
+  }
+  .mind {
+    padding: 3rem;
+  }
+  .connect-addresses {
+    margin-top: 22rem;
+  }
+  .explore h2 {
+    font-size: 1.1rem;
+  }
+  .tabular {
+    padding: 1rem;
+  }
+  .table .table-row:first-child .table-item:nth-child(3) {
+    padding: 2.75rem;
+  }
+  .clients {
+    padding: 3rem 1rem;
+  }
+  .quote h1 {
+    font-size: 1.5rem;
+  }
+  .about .about-heading h1 {
+    font-size: 2rem;
+  }
+  .story h1 {
+    font-size: 2rem;
+  }
+  .parent-heading h1 {
+    font-size: 2rem;
+  }
+  .values {
+    padding: 5rem 0rem;
+  }
+  .value-text-item h1 {
+    font-size: 2rem;
+  }
+  .core-heading h1 {
+    font-size: 2rem;
+  }
+  .core-items {
+    width: 100%;
+    padding: 3rem;
+  }
+  .core-items p {
+    text-align: left;
+  }
+
+  .people-text h1 {
+    font-size: 2rem;
+  }
+  .business .business-head h1,
+  .opt-heading-text h1,
+  .art-text h1,
+  .rec-heading h1 {
+    font-size: 3rem;
+  }
+  .studio-text {
+    gap: 0.5rem;
+  }
+  .studio h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .studio p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .case-highlights .highlight {
+    width: 100%;
+  }
+
+  .about-heading .main-heading {
+    padding: 3rem;
+  }
+  .art-img img {
+    width: 100%;
+  }
+  .projects {
+    padding: 5rem 0rem;
+  }
+  .projects-heading {
+    padding: 0rem;
+  }
+  .projects-heading-text {
+    padding: 3rem;
+  }
+  .projects-heading-text h1 {
+    font-size: 2.75rem;
+  }
+  .projects-heading-text p {
+    font-size: 1rem;
+  }
+  .fly-choice {
+    padding: 2rem;
+    height: 100vh;
+    margin-bottom: 5rem;
+  }
+  .choice-point {
+    flex-wrap: wrap;
+  }
+  .choice-content {
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    height: 100%;
+  }
+  .choice-heading h1 {
+    font-size: 2.75rem;
+  }
+  .point-content h3 {
+    font-size: 1rem;
+  }
+  .fly-benefits h1 {
+    font-size: 2.75rem;
+  }
+  .fl-benefits-img {
+    width: 100%;
+  }
+  .rec-projects h1,
+  .performers-content h1 {
+    font-size: 2.75rem;
+  }
+  .performers-content p {
+    font-size: 1rem;
+  }
+  .performers-wrapper {
+    padding: 0rem;
+  }
+  .performer-item {
+    margin-left: 1.5rem;
+  }
+  .fly-benefits {
+    padding: 1rem;
+  }
+  .performers .swiper-wrapper {
+    padding: 0rem 2rem;
+  }
+  .rec-projects-wrapper .swiper-wrapper {
+    padding: 0rem 2rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile-performers {
+    display: block;
+  }
+
+  .hero-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+  .graph-heading {
+    margin-top: 67rem;
+    font-size: 1rem;
+  }
+
+  .tes-text-content h2 {
+    text-align: center;
+  }
+
+  .video-bg-born video {
+    display: none;
+  }
+
+  .team-content-subheading p {
+    margin-top: 2rem;
+  }
+
+  .social-media {
+    margin-top: 0rem;
+  }
+
+  .testimonials {
+    padding: 0rem 0rem 2rem;
+  }
+
+  .born-content {
+    gap: 0rem;
+    font-weight: 400;
+  }
+
+  .styleBlock {
+    display: none;
+  }
+
+  .born-section {
+    margin-top: -10rem;
+  }
+  .tablet-performers {
+    display: none;
+  }
+
+  .quote {
+    margin-top: -4rem;
+    padding: 3rem 0rem;
+  }
+
+  .hustle-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 0 !important;
+  }
+
+  .graphSlide {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .refer-img-content img {
+    display: none;
+  }
+
+  .graph-wrapper {
+    margin-top: 0rem;
+  }
+
+  .main .gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .taglines h6 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+
+  .subheading {
+    text-align: center;
+  }
+
+  .mobile-projects {
+    display: block;
+  }
+  .tablet-projects {
+    display: none;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header .taglines {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+    height: auto;
+    text-align: center;
+  }
+  .main-heading h1 {
+    font-size: 2rem;
+  }
+  .taglines div h1 {
+    font-size: 2rem;
+  }
+  .taglines h4 {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  .hero {
+    padding-top: 0rem;
+  }
+
+  .bornToFly {
+    margin-top: -4rem;
+    padding: 0rem;
+  }
+
+  .jumbo-img {
+    width: 97%;
+    height: 48%;
+  }
+  .jumbo-img img {
+    height: 100%;
+  }
+  .main {
+    padding: 3rem;
+  }
+  .search {
+    height: 4rem;
+    width: 19rem;
+  }
+  .item {
+    min-width: 100px;
+  }
+  .item div:first-child {
+    top: 12.5rem;
+  }
+
+  .shape-eclipse {
+    height: 90%;
+  }
+  .shape-eclipse img {
+    height: 55vh;
+  }
+  .refer {
+    margin-top: -2rem;
+  }
+  .refer-text-content {
+    padding: 4rem;
+    width: 100%;
+    gap: 0rem;
+    align-items: center;
+  }
+  .refer-text-content h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0.6rem;
+  }
+
+  .refer-heading p {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .refer-heading {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .testimonials-heading {
+    width: 100%;
+    margin-top: -2rem;
+  }
+  .testimonials-heading h1 {
+    font-size: 2rem;
+  }
+  .team {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+  .team-image {
+    width: 100%;
+    height: auto;
+    margin-top: -3rem;
+  }
+  .team-content {
+    padding: 0;
+  }
+  .team-content h1 {
+    font-size: 2rem;
+  }
+  .footer {
+    padding: 1rem;
+  }
+  .footer .links {
+    gap: 0.9rem;
+    justify-content: center;
+  }
+  .footer h6 {
+    text-align: center;
+  }
+  .tes-text-content {
+    width: 100%;
+    padding: 2rem 1rem 2rem 2rem;
+    align-items: center;
+  }
+
+  .tes-slider {
+    margin-left: 1rem;
+  }
+
+  .tes-item-wrapper {
+    border-left: 0px solid var(--bgSecondary);
+  }
+  .tes-text-content p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -1rem;
+  }
+  .tes-item-wrapper > img {
+    width: 100%;
+  }
+  .nf-wrapper {
+    padding-left: 0rem;
+  }
+  .nf-title .heading h2 {
+    font-size: 1.5rem;
+  }
+  .nf-title .heading h1 {
+    font-size: 3.5rem;
+  }
+  .nf-title .subheading h4 {
+    font-size: 1rem;
+  }
+  .notify {
+    padding: 0rem 2rem;
+  }
+  .notify input {
+    width: 60%;
+    font-size: 1rem;
+  }
+  .notify input::placeholder {
+    font-size: 0.9rem;
+    outline: none;
+  }
+  .not-found {
+    padding-left: 3rem;
+  }
+  .notify button {
+    width: 40%;
+    font-size: 1rem;
+  }
+  .quote h1 {
+    font-size: 2rem;
+  }
+
+  .born-section .text-content {
+    width: 100%;
+    height: 61%;
+  }
+  .born-section .text-content h1 {
+    font-size: 2rem;
+  }
+  .born-img {
+    width: 100%;
+    padding: 2rem;
+    height: 40vh;
+  }
+  .quote img {
+    width: 90%;
+  }
+  .hero {
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1.8rem;
+  }
+  .hero-item {
+    width: 9rem;
+  }
+
+  .hero-item-long {
+    width: 9rem;
+    margin-top: 0.9rem;
+  }
+  .hero-item img {
+    width: 7rem;
+  }
+  .hero-item h3 {
+    font-size: 0.9rem;
+  }
+  .hero-item-long img {
+    width: 7rem;
+  }
+  .hero-item-long h3 {
+    font-size: 0.9rem;
+  }
+  .explore button {
+    width: 100%;
+  }
+  .gallery {
+    height: 100%;
+  }
+  .gallery-wrap .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    height: 27.5rem;
+  }
+  .item div h5 {
+    width: 17rem;
+  }
+
+  .main {
+    margin-top: -2.5rem;
+    min-height: 100vh;
+  }
+
   .item .explore {
     padding-left: 1.5rem;
   }
