@@ -3088,8 +3088,7 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
-
-  .navigation img{
+  .navigation img {
     margin-left: -1rem;
   }
   .hamburger {
@@ -3231,7 +3230,7 @@ p {
   }
 
   .bornToFly {
-    margin-top: -4rem;
+    margin-top: -5rem;
     padding: 0rem;
   }
 
