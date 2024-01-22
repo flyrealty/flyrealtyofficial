@@ -16,12 +16,12 @@ export default function Hero() {
   return (
     <div className="hero">
       <div className="main-heading">
-        <h1>Key Achievments</h1>
+        <h1>Key Achievements</h1>
       </div>
       <div className="hero-display">
         <div className="hero-item">
           <img src={progress1} alt="" />
-          <h3>Project Affiliated</h3>
+          <h3>Projects Affiliated</h3>
         </div>
         <div className="hero-item-long">
           <img src={progress2} alt="" />
