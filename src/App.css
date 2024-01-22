@@ -3088,9 +3088,13 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+
+  .navigation img{
+    margin-left: -1rem;
+  }
   .hamburger {
     display: block;
-    margin-right: 1.4rem;
+    margin-right: 0.8rem;
     color: var(--fifth);
   }
   .navigation .navbar {
@@ -3109,7 +3113,7 @@ p {
     gap: 2rem;
   }
   .graph-heading {
-    margin-top: 67rem;
+    margin-top: 79rem;
     font-size: 1rem;
   }
 
@@ -3143,7 +3147,8 @@ p {
   }
 
   .born-section {
-    margin-top: -7rem;
+    margin-top: 1rem;
+    box-shadow: unset;
   }
   .tablet-performers {
     display: none;
@@ -3219,7 +3224,7 @@ p {
     width: 100%;
     font-size: 1.25rem;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .hero {
     padding-top: 0rem;
@@ -3385,7 +3390,7 @@ p {
   .hero {
     width: 100%;
     gap: 2rem;
-    margin-top: 1.8rem;
+    margin-top: 2.1rem;
   }
   .hero-item {
     width: 9rem;
@@ -3650,11 +3655,15 @@ p {
     display: block;
   }
 
+  .video-bg-born {
+    display: none;
+  }
+
   .hero-display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -1rem;
+    margin-top: 0;
     gap: 2rem;
   }
   .graph-heading {
@@ -3975,7 +3984,7 @@ p {
   }
 
   .main {
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     min-height: 100vh;
   }
 
