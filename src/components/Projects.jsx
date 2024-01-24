@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-// import required modules
+import projectVideo from '../assets/video-projects.mp4'
 import { Navigation } from "swiper/modules";
 
 export default function Projects() {
@@ -20,7 +20,6 @@ export default function Projects() {
       <div className="projects">
         <div className="projects-heading">
           <div className="projects-heading-text">
-            <h1>Don't Worry,</h1>
             <h1>We're Professionals!</h1>
             <p>It's our job to assist you with home-buying.</p>
           </div>
@@ -42,9 +41,12 @@ export default function Projects() {
                   <h3>Because we only deal with RERA Approved Projects</h3>
                   <div className="point-desc">
                     <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
+                      <b>Because we only deal with RERA Approved Projects, </b>
+                      which holds the responsibility of protecting the interests
+                      of homebuyers and investors by promoting transparency and
+                      accountability. The RERA approval criteria are designed to
+                      ensure the utmost quality of the property by adhering to
+                      the predetermined standards.
                     </h6>
                   </div>
                 </div>
@@ -58,11 +60,7 @@ export default function Projects() {
                     Because we perform the Due Dilligence on the Property.
                   </h3>
                   <div className="point-desc">
-                    <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </h6>
+                    <h6></h6>
                   </div>
                 </div>
               </div>
@@ -73,17 +71,22 @@ export default function Projects() {
                 <div className="point-content">
                   <h3>Because we perform the Due Dilligence on the Builder.</h3>
                   <div className="point-desc">
-                    <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </h6>
+                    <h6></h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="fly-personalised">
+        <h1>Personalized Home Buying Journey
+        </h1>
+        <div className="fly-personalised-img">
+        
+        <video src={projectVideo} autoPlay loop muted/>
+     
+        </div>
+      </div>
         <div className="fly-benefits">
           <h1>How are We different?</h1>
           <div className="fly-benefits-img">

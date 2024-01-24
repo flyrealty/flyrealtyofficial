@@ -51,6 +51,36 @@
   }
 }
 
+.wrapper.blur {
+  filter: blur(5px);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
 .hamburger {
   display: none;
 }
@@ -70,11 +100,11 @@
 .hero-display {
   display: flex;
   margin-top: 3rem;
+  gap: 2rem;
 }
 .wrapper {
   width: 100%;
   margin-top: 5rem;
-  overflow-x: hidden;
 }
 .wrapper .policy {
   width: 100%;
@@ -274,7 +304,7 @@
 .connect-form {
   width: 100%;
   height: auto;
-  min-height: 70vh;
+  min-height: 100vh;
   background: rgb(242, 242, 242);
   display: flex;
   flex-direction: row;
@@ -293,25 +323,24 @@
   background: white;
   position: absolute;
   z-index: 5;
-  top: -1.5rem;
+  top: 5.3rem;
   border-radius: 1rem;
   padding: 3rem;
   box-shadow: 5px 5px 10px 0px rgba(201, 201, 201, 0.25);
 }
 .connect-content .form,
 .connect-persons {
-  width: 50%;
   min-width: 300px;
   flex-grow: 1;
 }
 .connect-content .form form {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
-  padding-right: 3rem;
+  padding-right: 0rem;
 }
 .connect-content .form form input,
 textarea {
@@ -319,6 +348,7 @@ textarea {
   background: rgb(237, 237, 237);
   height: 3rem;
   padding: 0rem 1.5rem;
+  border-radius: 0.5rem;
 }
 .connect-content .form form textarea {
   height: auto;
@@ -331,6 +361,7 @@ textarea {
   color: var(--bgPrimary);
   font-size: 1.25rem;
   font-weight: 600;
+  border-radius: 0.5rem;
 }
 .connect-persons {
   padding: 0rem 3rem;
@@ -339,7 +370,8 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
+  margin-top: 6rem;
 }
 .connect-persons .person {
   width: 100%;
@@ -366,13 +398,13 @@ textarea {
 .connect-addresses {
   width: 100%;
   height: auto;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 0rem 5rem 5rem 5rem;
   background: rgb(243, 243, 243);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 .connect-addresses .address-item {
   display: flex;
@@ -380,6 +412,7 @@ textarea {
   align-items: flex-start;
   justify-content: flex-start;
   min-width: 280px;
+  line-height: 1.5rem;
 }
 .connect-addresses .address-item > h6 {
   font-size: 1rem;
@@ -395,7 +428,7 @@ textarea {
   font-weight: 500;
 }
 .connect-addresses .address-item .address h6:nth-child(4) {
-  font-weight: 800;
+  font-weight: 500;
 }
 .connect-addresses .address-item a {
   background: var(--bgPrimary);
@@ -442,12 +475,12 @@ textarea {
   width: 50%;
   flex-grow: 1;
   padding: 5rem 0rem 5rem 5rem;
-  min-width: 380px;
+  
 }
 .about-heading-img {
   width: 50%;
   height: 100%;
-  min-width: 380px;
+  min-width: 360px;
 }
 .about-heading-img img {
   width: 100%;
@@ -1765,7 +1798,6 @@ h4 {
   position: absolute;
   z-index: -2;
   top: 0;
-  left: 45vw;
   height: 100%;
   width: 100%;
 }
@@ -1958,7 +1990,7 @@ h4 {
   height: 100%;
   object-fit: cover;
   position: relative;
-  left: 3rem;
+
 }
 .business-heading h1 {
   font-weight: 800;
@@ -2038,7 +2070,7 @@ h4 {
   width: 100%;
 }
 .opt-heading {
-  min-width: 390px;
+  
   width: 50%;
 }
 .opt-heading-text {
@@ -2054,6 +2086,7 @@ h4 {
   width: 100%;
 }
 .opt-heading-text h2 {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
   width: 100%;
@@ -2103,7 +2136,7 @@ h4 {
 .opt-item h6 {
   width: 50%;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .art {
   width: 100%;
@@ -2316,7 +2349,7 @@ h4 {
 }
 .recommend {
   width: 100%;
-  padding: 5rem;
+  padding: 0rem 5rem 3rem 5rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -2416,7 +2449,7 @@ p {
 .projects {
   width: 100vw;
   min-height: 100vh;
-  padding: 0rem 0rem 4rem 0rem;
+  padding: 0rem 0rem 5rem 0rem;
   overflow-x: hidden;
 }
 .projects-heading {
@@ -2436,11 +2469,12 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   padding: 5rem;
   min-width: 380px;
   flex-grow: 1;
+  gap: 1rem;
 }
 .projects-heading-text h1 {
   font-size: 4rem;
@@ -2485,7 +2519,7 @@ p {
   justify-content: center;
   min-width: 380px;
   flex-grow: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .choice-heading h1 {
   font-size: 4.5rem;
@@ -2565,9 +2599,35 @@ p {
   text-align: left;
   font-size: 0.7rem;
 }
+.fly-personalised {
+  width: 100vw;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  gap: 3rem;
+}
+
+.fly-personalised h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--bgPrimary);
+}
+
+.fly-personalised-img {
+  height: 100%;
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .fly-benefits {
   width: 100vw;
-  padding: 5rem;
+  padding: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2603,7 +2663,7 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 5rem 0rem;
+  padding: 3rem 0rem;
   gap: 3rem;
 }
 .rec-projects h1 {
@@ -2614,7 +2674,7 @@ p {
 .rec-projects-wrapper {
   width: 100%;
   height: auto;
-  padding: 0rem 1.25rem 0rem 0rem;
+  padding: 1rem 1.25rem 0rem 0rem;
 }
 .rec-project-item {
   display: flex;
@@ -2729,6 +2789,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 0rem 2rem;
+  margin-top: 1rem;
 }
 .projects > .cta a {
   background: var(--bgSecondary);
@@ -2946,7 +3007,6 @@ p {
     padding: 0;
   }
   .connect-addresses {
-    margin-top: 15rem;
     gap: 2rem;
   }
   .table-row .table-item:first-child {
@@ -3090,6 +3150,90 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+  .connect-persons .person {
+    align-items: center;
+  }
+
+  .connect-content .form,
+  .connect-persons {
+    min-width: 100%;
+  }
+  .fly-personalised h1 {
+    font-size: 2rem;
+  }
+
+  .connect-content {
+    padding: 2rem;
+  }
+
+  .form h1 {
+    text-align: center;
+  }
+
+  .fly-personalised {
+    padding: 1rem;
+  }
+
+  .fly-personalised-img {
+    width: 93% !important;
+  }
+
+  .fly-personalised-img video {
+    width: 100% !important;
+  }
+  .recommend a {
+    width: 20rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .art-text p {
+    text-align: center;
+  }
+
+  .opt-item h6 {
+    width: 100%;
+  }
+
+  .studio {
+    display: none;
+  }
+
+  .opt-heading-text h1 {
+    font-size: 2rem !important;
+  }
+
+  .projects > .cta a {
+    display: flex;
+    font-size: 0.9012rem;
+    width: 78%;
+  }
+
+  .opt-heading-img img {
+    display: none;
+  }
+
+  .connect-content .form form button {
+    margin-left: 0rem;
+  }
+
+  .hero-item-text {
+    font-size: 1.5rem !important;
+  }
+
+  .connect-content .form form input,
+  textarea {
+    margin-left: 0rem;
+  }
+
+  .connect-persons {
+    gap: 1rem;
+    margin-top: 4.5rem;
+  }
+
+  .connect-content {
+    top: 3rem;
+  }
   .com-refer-heading {
     margin-top: -1rem;
   }
@@ -3097,6 +3241,7 @@ p {
     width: 9rem;
     margin-left: 1rem;
   }
+
   .hamburger {
     display: block;
     margin-right: 0.8rem;
@@ -3468,10 +3613,12 @@ p {
     padding: 3rem;
   }
   .about .about-heading h1:first-child {
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
   }
   .about .about-heading h1:last-child {
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
   }
   .about .about-heading h6 {
     font-size: 1rem;
@@ -3525,7 +3672,7 @@ p {
     padding: 3rem;
   }
   .connect-addresses {
-    margin-top: 22rem;
+    padding-top: 24rem !important;
   }
   .explore h2 {
     font-size: 1.1rem;
@@ -3543,6 +3690,7 @@ p {
     font-size: 1.5rem;
   }
   .about .about-heading h1 {
+    text-align: center;
     font-size: 2rem;
   }
   .story h1 {
@@ -3575,7 +3723,30 @@ p {
   .opt-heading-text h1,
   .art-text h1,
   .rec-heading h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .opt-items {
+    margin-top: 1rem;
+  }
+
+  .art-text {
+    align-items: center;
+  }
+
+  .opt-heading-text h2 {
+    margin-left: -1rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .recommend {
+    padding: 3rem;
+  }
+
+  .art-img {
+    display: none;
   }
   .studio-text {
     gap: 0.5rem;
@@ -3594,7 +3765,7 @@ p {
   }
 
   .about-heading .main-heading {
-    padding: 3rem;
+    padding: 0rem;
   }
   .art-img img {
     width: 100%;
@@ -3609,15 +3780,15 @@ p {
     padding: 3rem;
   }
   .projects-heading-text h1 {
-    font-size: 2.75rem;
+    font-size: 2rem;
+    text-align: center;
   }
   .projects-heading-text p {
     font-size: 1rem;
+    text-align: center;
   }
   .fly-choice {
     padding: 2rem;
-    height: 100vh;
-    margin-bottom: 5rem;
   }
   .choice-point {
     flex-wrap: wrap;
@@ -3625,24 +3796,29 @@ p {
   .choice-content {
     align-items: center;
     justify-content: flex-start;
-    margin-top: 3rem;
+    margin-top: -2.5rem;
     height: 100%;
   }
   .choice-heading h1 {
-    font-size: 2.75rem;
+    font-size: 2rem;
   }
   .point-content h3 {
     font-size: 1rem;
   }
   .fly-benefits h1 {
-    font-size: 2.75rem;
+    font-size: 2rem;
   }
   .fl-benefits-img {
     width: 100%;
   }
   .rec-projects h1,
   .performers-content h1 {
-    font-size: 2.75rem;
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .rec-projects-wrapper {
+    margin-top: -1rem;
   }
   .performers-content p {
     font-size: 1rem;
@@ -3654,7 +3830,7 @@ p {
     margin-left: 1.5rem;
   }
   .fly-benefits {
-    padding: 1rem;
+    padding: 1.4rem;
   }
   .performers .swiper-wrapper {
     padding: 0rem 2rem;
@@ -4027,6 +4203,7 @@ p {
     font-size: 2.5rem;
   }
   .about .about-heading h6 {
+    text-align: center;
     font-size: 1rem;
   }
   .story {
@@ -4209,6 +4386,10 @@ p {
   .fly-benefits {
     padding: 1rem;
   }
+
+  .fly-personalised {
+    padding: 1rem;
+  }
   .performers .swiper-wrapper {
     padding: 0rem 2rem;
   }
@@ -4218,3 +4399,30 @@ p {
 }
 
 /* Add these styles to your existing CSS file */
+
+@media (max-width: 768px) {
+  .splide__arrow--prev {
+    margin-left: -1rem !important;
+  }
+
+  .splide__pagination {
+    bottom: -1.5em !important;
+  }
+
+  .splide__arrow--next {
+    margin-right: -0.7rem !important;
+  }
+
+  .builder-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Set a fixed height for better visibility on mobile */
+  }
+
+  .builder-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,12 +1,110 @@
-import React from 'react'
-import '../App.css'
-import { Nav, Footer} from '../exports';
+import React, { useState } from "react";
+import { ImCancelCircle } from "react-icons/im";
+import "../App.css";
+import { Nav, Footer } from "../exports";
 
 export default function Connect() {
+  const [formData, setFormData] = useState({
+    Name: "",
+    Email: "",
+    Phone: "",
+    Message: "",
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    phoneNumber: "",
+    email: "",
+  });
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const validatePhoneNumber = (phoneNumber) => {
+    const regex = /^[0-9]{10}$/;
+    return regex.test(phoneNumber);
+  };
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+
+    setErrors({
+      ...errors,
+      [name]: "",
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let formValid = true;
+
+    // Validate name
+    if (!formData.Name.trim()) {
+      setErrors((prevErrors) => ({ ...prevErrors, name: "Name is required" }));
+      formValid = false;
+    }
+
+    // Validate phone number
+    if (!validatePhoneNumber(formData.Phone)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        phoneNumber: "Invalid phone number (10 digits required)",
+      }));
+      formValid = false;
+    }
+
+    // Validate email
+    if (!validateEmail(formData.Email)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: "Invalid email address",
+      }));
+      formValid = false;
+    }
+
+    if (formValid) {
+      try {
+        // Form submission to Google Script link
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbzppvI4Se6Yvg_xPIjUCeH5GCWnO5ngtkrf3zJ13pvHoT9fWGYkmmYpPi3bl9LijpRM/exec",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: new URLSearchParams(formData).toString(),
+          }
+        );
+
+        if (response.ok) {
+          setShowPopup(true);
+        } else {
+          console.error("Failed to submit form data");
+        }
+      } catch (error) {
+        console.error("Error submitting form data:", error);
+      }
+    }
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
+
   return (
     <div className="container">
       <Nav />
-      <div className="wrapper">
+      <div className={`wrapper ${showPopup ? "blur" : ""}`}>
         <div className="connect">
           <div className="connect-header">
             <div className="heading">
@@ -21,13 +119,47 @@ export default function Connect() {
           <div className="connect-form">
             <div className="connect-content">
               <div className="form">
-                <h1><i class="fa-regular fa-address-card"></i> Get In Touch</h1>
-                <form action="">
-                  <input type="text" placeholder='Your Name' />
-                  <input type="number" placeholder='Phone Number' />
-                  <input type="email" placeholder='Email Address' />
-                  <textarea name="" id="" cols="30" rows="5" placeholder='Message'></textarea>
-                  <button>Send Now</button>
+                <form className="form" onSubmit={handleSubmit}>
+                  <h1>We Would Love To Hear From You!</h1>
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name *"
+                    value={formData.Name}
+                    onChange={handleInputChange}
+                  />
+                  {errors.name && <p className="error">{errors.name}</p>}
+
+                  <input
+                    type="tel"
+                    name="Phone"
+                    placeholder="Phone Number *"
+                    value={formData.Phone}
+                    onChange={handleInputChange}
+                  />
+                  {errors.phoneNumber && (
+                    <p className="error">{errors.phoneNumber}</p>
+                  )}
+
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email Address *"
+                    value={formData.Email}
+                    onChange={handleInputChange}
+                  />
+                  {errors.email && <p className="error">{errors.email}</p>}
+
+                  <textarea
+                    name="Message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Message"
+                    value={formData.Message}
+                    onChange={handleInputChange}
+                  ></textarea>
+
+                  <button type="submit">Send Now</button>
                 </form>
               </div>
               <div className="connect-persons">
@@ -46,33 +178,69 @@ export default function Connect() {
               </div>
             </div>
           </div>
-          <div className="connect-addresses">
-            <div className="address-item">
-              <h1>Bengaluru</h1>
-              <h6>Headquarters</h6>
-              <div className="address">
-                <h6>3rd Floor, Sakti Statesman Building</h6>
-                <h6>Outer Ring Rd, Green Glen Layout,</h6>
-                <h6>Bellandur, Bengaluru, 560103</h6>
-                <h6>+91 98444 73355</h6>
-              </div>
-              <a href="">View on Maps</a>
-            </div>
-            <div className="address-item">
-              <h1>Pune</h1>
-              <h6>Branch Office</h6>
-              <div className="address">
-                <h6>Office No. B-16, Floor No.6,</h6>
-                <h6>City Vista, Kharadi</h6>
-                <h6>Pune 411014</h6>
-                <h6>+91 97655 50717</h6>
-              </div>
-              <a>View on Maps</a>
-            </div>
-          </div>
+         
         </div>
+       
       </div>
+
+      <div className="connect-addresses">
+      <div className="address-item">
+        <h1>Bengaluru</h1>
+        <h6>Headquarters</h6>
+        <div className="address">
+          <h6>3rd Floor, Sakti Statesman Building</h6>
+          <h6>Outer Ring Rd, Green Glen Layout,</h6>
+          <h6>Bellandur, Bengaluru, 560103</h6>
+          <h6>PRM/KA/RERA/1251/309/</h6>
+          <h6>AG/220530/002939</h6>
+          <h6>+91 98444 73355</h6>
+        </div>
+        <a href="">View on Maps</a>
+      </div>
+      <div className="address-item">
+        <h1>Pune</h1>
+        <h6>Branch Office</h6>
+        <div className="address">
+          <h6>Office No. B-16, Floor No.6,</h6>
+          <h6>City Vista, Kharadi</h6>
+          <h6>Pune 411014</h6>
+          <h6>MahaRERA - A52100046472</h6>
+          <h6>+91 97655 50717</h6>
+        </div>
+        <a>View on Maps</a>
+      </div>
+    </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+          
+            <h2>Thank You!</h2>
+            <p>
+              Our Property Experts will get back
+              to you soon!
+            </p>
+            <button
+              onClick={() => {
+                setShowPopup(false);
+              }}
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+                marginTop: "15px",
+                color: "#0c1d3c",
+              }}
+            >
+              <ImCancelCircle size={30} />
+            </button>
+          </div>
+          
+        </div>
+
+        
+      )}
       <Footer />
     </div>
-  )
+  );
 }

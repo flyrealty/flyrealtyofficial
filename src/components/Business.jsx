@@ -102,7 +102,7 @@ export default function Business() {
                     </div>
                     <div className="case-studies">
                         <div className="case-wrapper">
-                            {/* <h1>Case Studies</h1> */}
+                            
                             <Splide aria-label="My Favorite Images">
                                 <SplideSlide>
                                     <div className="case">
@@ -201,47 +201,169 @@ export default function Business() {
                     </div>
                     <div className="clients">
                         <div className="builders-logo">
-                        <Splide aria-label="My Favorite Images">
+                        <Splide aria-label="My Favorite Images"  options={{
+                            perPage: 6, 
+                            breakpoints: {
+                              768: {
+                                perPage: 2, 
+                              },
+                            },
+                          }}>
                             <SplideSlide>
                                 <div className='builder-slide'>
                                     <img src={Assetz} alt="Image 1"/>
-                                    <img src={Bhartiya} alt="Image 1"/>
-                                    <img src={Brigade} alt="" />
-                                    <img src={Casagrand} alt="" />
-                                    <img src={Century} alt="" />
-                                    <img src={DNR} alt="" />
                                 </div>
                             </SplideSlide>
                             <SplideSlide>
                             <div className='builder-slide'>
-                                    <img src={Hiranandani} alt="" />
-                                    <img src={Inspira} alt="" />
-                                    <img src={Krishvi} alt="" />
-                                    <img src={Lodha} alt="" />
-                                    <img src={Godrej} alt="" />
-                                    <img src={Goyal} alt="" />
+                            <img src={Bhartiya} alt="Image 1"/>
                                 </div>
                             </SplideSlide>
                             <SplideSlide>
                                 <div className='builder-slide'>
-                                    <img src={Mahindra} alt="" />
-                                    <img src={Modern} alt="" />
-                                    <img src={Prestige} alt="" />
-                                    <img src={Provident} alt="" />
-                                    <img src={RK} alt="" />
-                                    <img src={Rohan} alt="" />
+                                <img src={Brigade} alt="" />                                  
                                 </div>
                             </SplideSlide>
                             <SplideSlide>
                                 <div className='builder-slide'>
-                                    <img src={Puravankara} alt="" />
-                                    <img src={Ramky} alt="" />
-                                    <img src={Sattva} alt="" />
-                                    <img src={Shriram} alt="" />
-                                    <img src={Sobha} alt="" />
-                                    <img src={Total} alt="" />
+
+                                <img src={Casagrand} alt="" />
                                 </div>
                                 </SplideSlide>
+
+                                <SplideSlide>
+                                <div className='builder-slide'>
+                                <img src={Century} alt="" />
+                                </div>
+                              </SplideSlide>
+
+                              <SplideSlide>
+                              <div className='builder-slide'>     
+                              <img src={DNR} alt="" />
+                              </div>
+                            </SplideSlide>
+
+                            <SplideSlide>
+                            <div className='builder-slide'>
+                            <img src={Hiranandani} alt="" />
+                            </div>
+                          </SplideSlide>
+
+                          <SplideSlide>
+                          <div className='builder-slide'>
+                          <img src={Inspira} alt="" />
+                          </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                        <div className='builder-slide'>
+                        <img src={Krishvi} alt="" />
+                        </div>
+                      </SplideSlide>
+
+                      <SplideSlide>
+                      <div className='builder-slide'>
+                      <img src={Lodha} alt="" />
+                      </div>
+                    </SplideSlide>
+
+                    <SplideSlide>
+                    <div className='builder-slide'>
+                    <img src={Godrej} alt="" />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                  <div className='builder-slide'>
+                  <img src={Goyal} alt="" />
+                  </div>
+                </SplideSlide>
+
+                
+                <SplideSlide>
+                <div className='builder-slide'>
+                <img src={Mahindra} alt="" />
+                </div>
+              </SplideSlide>
+
+              
+              <SplideSlide>
+              <div className='builder-slide'>
+              <img src={Modern} alt="" />
+              </div>
+            </SplideSlide>
+
+
+            <SplideSlide>
+            <div className='builder-slide'>
+            <img src={Prestige} alt="" />
+            </div>
+          </SplideSlide>
+
+
+          <SplideSlide>
+          <div className='builder-slide'>
+          <img src={Provident} alt="" />
+          </div>
+        </SplideSlide>
+
+
+        <SplideSlide>
+        <div className='builder-slide'>
+        <img src={RK} alt="" />
+        </div>
+      </SplideSlide>
+
+
+      <SplideSlide>
+      <div className='builder-slide'>
+      <img src={Rohan} alt="" />
+      </div>
+    </SplideSlide>
+
+
+    <SplideSlide>
+    <div className='builder-slide'>
+    <img src={Puravankara} alt="" />
+    </div>
+  </SplideSlide>
+
+
+  <SplideSlide>
+  <div className='builder-slide'>
+  <img src={Ramky} alt="" />
+  </div>
+</SplideSlide>
+
+
+<SplideSlide>
+<div className='builder-slide'>
+<img src={Sattva} alt="" />
+</div>
+</SplideSlide>
+
+
+<SplideSlide>
+<div className='builder-slide'>
+<img src={Shriram} alt="" />
+</div>
+</SplideSlide>
+
+
+<SplideSlide>
+<div className='builder-slide'>
+<img src={Sobha} alt="" />
+</div>
+</SplideSlide>
+
+<SplideSlide>
+<div className='builder-slide'>
+<img src={Total} alt="" />
+</div>
+</SplideSlide>
+
+
+                  
                         </Splide>
                         </div>
 
