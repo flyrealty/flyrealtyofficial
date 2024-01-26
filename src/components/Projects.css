@@ -1,0 +1,82 @@
+.filter-section {
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.active1 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ccff00 !important;
+  color: #ccff00;
+}
+
+/* Styles for Apartments button */
+.apart-btn {
+  font-size: 1.3rem;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 2px solid rgb(242, 242, 242);
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.apart-btn:hover {
+  background-color: #ccff00;
+  color: black;
+}
+
+.apart-btn:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ccff00;
+}
+
+/* Styles for Villas button */
+.villa-btn {
+  font-size: 1.3rem;
+  padding: 0px 40px;
+  margin: 5px;
+  border: 2px solid rgb(242, 242, 242);
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.villa-btn:hover {
+  background-color: #ccff00;
+  color: black;
+}
+
+.villa-btn:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ccff00;
+}
+
+/* Styles for Flats button */
+.flat-btn {
+  font-size: 1.3rem;
+  padding: 0px 40px;
+  margin: 5px;
+  border: 2px solid rgb(242, 242, 242);
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.flat-btn:hover {
+  background-color: #ccff00;
+  color: black;
+}
+
+.flat-btn:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ccff00;
+}

@@ -9,7 +9,7 @@ import '../assets/style.module.css';
 import chess from '../assets/chess.png';
 import hand from '../assets/hand.png';
 import pendoolum from '../assets/pendoolum.mp4'
-import buildings from '../assets/Buildings.png'
+import buildings from '../assets/Buildings.jpg'
 import {Assetz, Bhartiya, Brigade, Casagrand, Century, DNR, Godrej, Goyal, Hiranandani, Inspira, Krishvi, Lodha, Mahindra,
     Modern, Prestige, Provident, Puravankara, Ramky, RK, Rohan, Sattva, Shriram, Sobha, Sammita,Total} from '../assets/logos/imgExports'
 export default function Business() {
@@ -94,7 +94,10 @@ export default function Business() {
                             <h1>The Science and Art of Real Estate Marketing</h1>
                             <p>We understand the Science of Real Estate Campaigns - Strategy, Lead Management and Metrics Analysis.</p>
                             <p>We know the Art of Delivering Real Estate Campaigns - Media, Design and Communications.</p>
-                            <Link to="/">Know More</Link>
+                            <a href="tel:+91984473355">
+             
+              <h5>Call us</h5>
+            </a>
                         </div>
                         <div className="art-img">
                             <img src={buildings} alt="" />
@@ -373,6 +376,18 @@ export default function Business() {
                             <h1><span>Clients</span> Recommend Us</h1>
                         </div>
                         <div className="rec-items">
+                        <Splide
+                        
+                        options={{
+                          perPage: 3, // Show 3 items at a time on desktop
+                          breakpoints: {
+                            768: {
+                              perPage: 1, // Show 1 item at a time on mobile
+                            },
+                          },
+                        }}
+                      >
+                        <SplideSlide>
                             <div className="rec-item">
                                 <div className="rec-img">
                                     <img src={Krishvi} alt="" />
@@ -382,6 +397,8 @@ export default function Business() {
                                     <h1>Arhanth Dinesh – Director</h1>
                                 </div>
                             </div>
+                            </SplideSlide>
+                            <SplideSlide>
                             <div className="rec-item">
                                 <div className="rec-img">
                                     <img src={RK} alt="" />
@@ -391,6 +408,8 @@ export default function Business() {
                                     <h1>Bharath Reddy – Director</h1>
                                 </div>
                             </div>
+                            </SplideSlide>
+                            <SplideSlide>
                             <div className="rec-item">
                                 <div className="rec-img">
                                     <img src={Sammita} alt="" />
@@ -400,6 +419,9 @@ export default function Business() {
                                     <h1>Saketh Bala Reddy - Director</h1>
                                 </div>
                             </div>
+                            </SplideSlide>
+                            
+                            </Splide>
                         </div>
                         <Link to="/connect">CONNECT TO ACCELERATE SALES VELOCITY</Link>
                     </div>

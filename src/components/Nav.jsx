@@ -10,16 +10,20 @@ export default function Nav() {
   const { setIsSidebarOpen, isSidebarOpen } = useContext(SidebarContext);
 
   const handleLinkClick = () => {
+    // Scroll to the top of the page when a navigation link is clicked
+    window.scrollTo(0, 0);
+
     if (isSidebarOpen) {
       setIsSidebarOpen(false);
     }
   };
+
   return (
     <>
       <Sidebar />
       <div className="navigation">
         <NavLink to="/" onClick={handleLinkClick} exact>
-          <img src={logo} alt="Fly Realty Logo" />
+          <img className="logo" src={logo} alt="Fly Realty Logo" />
         </NavLink>
         <div className="navbar">
           <NavLink
