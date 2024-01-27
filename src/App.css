@@ -3273,6 +3273,10 @@ p {
 }
 @media screen and (max-width: 800px) {
 
+  .rec-item {
+    width: 100%
+  }
+
   .rec-img{
     background: none;
   }
@@ -3662,6 +3666,7 @@ p {
     position: relative;
     height: auto;
     text-align: center;
+    align-items: center;
   }
   .main-heading h1 {
     font-size: 2rem;
@@ -3673,7 +3678,7 @@ p {
     width: 100%;
     font-size: 1.25rem;
     text-align: center;
-    margin-left: 1rem;
+   
   }
   .hero {
     padding-top: 0rem;
