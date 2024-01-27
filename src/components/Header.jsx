@@ -8,7 +8,7 @@ export default function Header() {
       <div className="taglines">
         <h6>#RealEstateConsultingFirm</h6>
         <div className="heading">
-          <h1>Beyond Channel Partners,</h1>
+          <h1>Beyond <br></br>Channel Partners,</h1>
           <h1>We're Consultants, for real.</h1>
           <div className='styleBlock'></div>
         </div>
