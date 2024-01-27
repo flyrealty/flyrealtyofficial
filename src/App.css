@@ -3209,7 +3209,7 @@ p {
   .opt-heading-text {
     width: 100%;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   .opt-heading-text h1,
   h2 {
@@ -3272,6 +3272,14 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+
+  .case-studies{
+    margin-top: 2.5rem;
+  }
+
+  .art{
+    margin-top: 1rem;
+  }
   .rec-item {
     width: 100%;
   }
@@ -3475,7 +3483,7 @@ p {
     width: 20rem;
     font-size: 1rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2.8rem;
   }
 
   .art-text p {
@@ -3526,7 +3534,7 @@ p {
     top: 3rem;
   }
   .com-refer-heading {
-    margin-top: -1rem;
+    margin-top: -0.5rem;
   }
   .navigation img {
     width: 9rem;
@@ -3550,11 +3558,11 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0rem;
+    margin-top: -1rem;
     gap: 2rem;
   }
   .graph-heading {
-    margin-top: 79rem;
+    margin-top: 80rem;
     font-size: 1rem;
   }
 
@@ -3628,6 +3636,7 @@ p {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: -1rem;
   }
 
   .taglines h6 {
@@ -3684,6 +3693,7 @@ p {
   }
   .jumbo-img img {
     height: 100%;
+    margin-top: 1rem;
   }
   .main {
     width: 100%;
@@ -3717,7 +3727,7 @@ p {
     margin-top: -2rem;
   }
   .refer-text-content {
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding: 2rem;
     width: 100%;
     gap: 0rem;
@@ -3830,7 +3840,7 @@ p {
   .born-section .text-content {
     width: 100%;
     height: 61%;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
   }
   .born-section .text-content h1 {
     font-size: 2rem;
@@ -3846,7 +3856,7 @@ p {
   .hero {
     width: 100%;
     gap: 2rem;
-    margin-top: 2.1rem;
+    margin-top: 2.7rem;
   }
   .hero-item {
     width: 7rem;
@@ -3900,7 +3910,7 @@ p {
   }
 
   .main {
-    margin-top: -2.5rem;
+    margin-top: 0rem;
     min-height: 100vh;
   }
 
@@ -4005,7 +4015,7 @@ p {
     padding: 2.75rem;
   }
   .clients {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
   .quote h1 {
     font-size: 1.5rem;
@@ -4072,7 +4082,7 @@ p {
 
   .recommend {
     padding: 2rem;
-    margin-top: -1rem;
+    margin-top: 1rem;
     padding-bottom: 3rem;
   }
 
@@ -4263,6 +4273,7 @@ p {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
+    
   }
 
   .taglines h6 {
@@ -4318,6 +4329,7 @@ p {
   }
   .jumbo-img img {
     height: 100%;
+  
   }
   .main {
     padding: 3rem;
@@ -4452,6 +4464,7 @@ p {
   .born-section .text-content {
     width: 100%;
     height: 61%;
+    margin-top: 2.5rem;
   }
   .born-section .text-content h1 {
     font-size: 2rem;
