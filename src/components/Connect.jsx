@@ -164,7 +164,7 @@ export default function Connect() {
               <div className="connect-persons">
                 <div className="person">
                   <h2>Business Enquiries</h2>
-                  <h3>aishwarya@flyrealty.in</h3>
+                  <h3>marketing@flyrealty.in</h3>
                 </div>
                 <div className="person">
                   <h2>Sales Enquiries</h2>
@@ -172,7 +172,7 @@ export default function Connect() {
                 </div>
                 <div className="person">
                   <h2>Careers/Internships</h2>
-                  <h3>renukumari@flyrealty.in</h3>
+                  <h3>hr@flyrealty.in</h3>
                 </div>
               </div>
             </div>

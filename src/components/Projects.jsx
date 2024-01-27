@@ -18,6 +18,14 @@ import SamithaSerine from "../assets/SamithaSerine.png";
 import SoulacebyModernSpaaces from "../assets/SoulacebyModernSpaaces.png";
 import Urbanrise from "../assets/Urbanrise.png";
 
+import DNRParkLinkPhase2 from "../assets/DNRParkLinkPhase2.png";
+import GodrejAnandaPhase3 from "../assets/GodrejAnandaPhase3.png";
+import Krishvievilla from "../assets/Krishvievilla.png";
+import KumarProspera from "../assets/KumarProspera.png";
+import RAKFelicity from "../assets/RAKFelicity.png";
+import SNNHighGardens from "../assets/SNNHighGardens.png";
+import SumadhuraFolium from "../assets/SumadhuraFolium.png";
+
 
 import flyBenefits from "../assets/flyBenefits.png";
 import { Link } from "react-router-dom";
@@ -336,8 +344,10 @@ export default function Projects() {
         </div>
 
         <div className="cta">
-          <Link>Connect With Dedicated Real Property Consultants</Link>
-        </div>
+        <a href="tel:+91984473355">
+          Connect With Dedicated Real Property Consultants
+        </a>
+      </div>
       </div>
       <Footer />
     </div>
@@ -435,6 +445,96 @@ const apartmentData = [
       </>
     ),
   },
+  {
+    name: "DNR Parklink Phase II",
+    location: "Hennur Main Road",
+    image: DNRParkLinkPhase2,
+    informationHeading: "3 BHK Luxury Apartments",
+    informationHeading1: "Starting from Rs. 1.20 Cr Onwards",
+    informationText: (
+      <>
+        <ul>
+          <li>8.5 Acres of Land Parcel</li>
+          <li>70% Open Space | 784 Units</li>
+          <li>70+ World Class Amenities</li>
+          <li>15 Mins from Manyata Tech Park</li>
+          <li>RERA Approved | BBMP Approved</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    name: "SNN Raj High Gardens",
+    location: "Chandapura, Near Electronic City",
+    image: SNNHighGardens,
+    informationHeading: "2 & 3 BHK Premium Apartments",
+    informationHeading1: "Starting from Rs. 85 Lakhs Onwards",
+    informationText: (
+      <>
+        <ul>
+          <li>9 Acres of Land Parcel</li>
+          <li>70% Open Space | 1050 Units</li>
+          <li>1 Lakh Sq Ft Amenity Zone</li>
+          <li>10 Mins from Bommasandra Metro Station</li>
+          <li>RERA Registered | BDA Approved</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    name: "Sumadhura Folium - Phase II",
+    location: "Whitefield, Near Nexus Forum Mall.",
+    image: SumadhuraFolium,
+    informationHeading: "2, 3 & 4 BHK Luxury Apartments",
+    informationHeading1: "Starting from Rs. 2.15 Crore Onwards",
+    informationText: (
+      <>
+        <ul>
+          <li>11 Acres of Land Parcel</li>
+          <li>84% Open Space | 400 Units</li>
+          <li>52,000 Sq Ft Clubhouse</li>
+          <li>20 Mins from Whitefield Metro Station</li>
+          <li>RERA Approved</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    name: "Godrej Ananda Phase III ",
+    location: "KIADB Aerospace Park, Bagalur",
+    image: GodrejAnandaPhase3,
+    informationHeading: "2 BHK, 3 BHK & Jodi Apartments",
+    informationHeading1: "Starting from Rs. 75 Lakhs Onwards",
+    informationText: (
+      <>
+        <ul>
+          <li>21 Acres of Land Parcel</li>
+          <li>85% Open Space | 806 Units</li>
+          <li>38,000 Sq Ft Clubhouse | 30+ Amenities</li>
+          <li>15 Mins from International Airport Road</li>
+          <li>BIAPPA Approved | RERA Approved</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    name: "Kumar Prospera",
+    location: "Hennur Main Road",
+    image: KumarProspera,
+    informationHeading: "2 & 3 BHK Premium Apartments",
+    informationHeading1: "Starting from 1.05 Cr Onwards",
+    informationText: (
+      <>
+        <ul>
+          <li>2.10 Acres of Land Parcel</li>
+          <li>229 Units with no common walls</li>
+          <li>35+ Amenities</li>
+          <li>10 Mins to Manyata Tech Park</li>
+          <li>RERA Approved</li>
+        </ul>
+      </>
+    ),
+  },
 ];
 
 const villaData = [
@@ -459,7 +559,7 @@ const villaData = [
   {
     name: "Provident Deansgate",
     location: "Devanahalli, IVC Main Road",
-    image: project001,
+    image: project002,
     informationHeading: "3 BHK Luxury Villas",
     informationHeading1: "Starting from Rs. 1.90 Cr Onwards",
     informationText: (
@@ -492,78 +592,26 @@ const villaData = [
       </>
     ),
   },
+
   {
-    name: "Nikoo Homes",
-    location: "Thanisandra Main Road",
-    image: project003,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
+    name: "Krishvi e’Villa",
+    location: "Chandapura, Electronic City",
+    image: Krishvievilla,
+    informationHeading: "4 BHK Eco-Conscious Villas",
+    informationHeading1: "Starting from 1.50 Cr Onwards",
     informationText: (
       <>
         <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
+          <li>2.22 Acres of Land Parcel</li>
+          <li>10,000 Sft Clubhouse</li>
+          <li>42 Customizable Units</li>
+          <li>20+ Amenities</li>
+          <li>RERA/BMRDA/STRR Approved</li>
         </ul>
       </>
     ),
   },
-  {
-    name: "BRIGADE CALISTA",
-    location: "Cheemasandra, Bommenahalli",
-    image: project001,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    name: "Provident Deansgate",
-    location: "IVC Road, Devanahalli",
-    image: project002,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    name: "Nikoo Homes",
-    location: "Thanisandra Main Road",
-    image: project003,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
+ 
 ];
 
 const flatData = [
@@ -623,95 +671,24 @@ const flatData = [
     ),
   },
   {
-    name: "Provident Deansgate",
-    location: "IVC Road, Devanahalli",
-    image: project002,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
+    name: "RAK Felicity by Vencer Properties",
+    location: "Devanahalli, Adjacent to STRR",
+    image: RAKFelicity,
+    informationHeading: "1200 Sq Ft - 2400 Sq Ft Premium Plots",
+    informationHeading1: "Starting from Rs. 4499/Sq Ft",
     informationText: (
       <>
         <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
+          <li>15 Acres of Land Parcel</li>
+          <li>250 Vastu Compliant Plots</li>
+          <li>30+ Amenities</li>
+          <li>Close to KIADB Aerospace SEZ</li>
+          <li>BIAPPA Approved | RERA Approved</li>
         </ul>
       </>
     ),
   },
-  {
-    name: "Nikoo Homes",
-    location: "Thanisandra Main Road",
-    image: project003,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    name: "BRIGADE CALISTA",
-    location: "Cheemasandra, Bommenahalli",
-    image: project001,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    name: "Provident Deansgate",
-    location: "IVC Road, Devanahalli",
-    image: project002,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    name: "Nikoo Homes",
-    location: "Thanisandra Main Road",
-    image: project003,
-    informationHeading:
-      "2 & 3 BHK Premium Apartments Starting from 85 Lakhs Onwards.",
-    informationText: (
-      <>
-        <ul>
-          <li>14+ Acres of land parcel</li>
-          <li>65% Open</li>
-          <li>9 Towers, 1110 Units</li>
-          <li>25+ world-class amenities</li>
-          <li>RERA Registered</li>
-        </ul>
-      </>
-    ),
-  },
+  
 ];
 
 const projectData = [

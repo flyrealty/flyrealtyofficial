@@ -24,7 +24,7 @@ export default function Team() {
       <button
         className="hustle-btn"
         onClick={() => {
-          window.location.href = "/about";
+          window.location.href = "/connect";
         }}
       >
         Join the Hustle

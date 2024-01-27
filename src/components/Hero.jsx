@@ -107,7 +107,7 @@ export default function Hero() {
           <h3>Delighted Customers</h3>
         </div>
 
-        <div className="hero-item">
+        <div className="hero-item-long1">
           <CircularProgressbarWithChildren
             value={inView ? 100 : 0}
             styles={buildStyles({

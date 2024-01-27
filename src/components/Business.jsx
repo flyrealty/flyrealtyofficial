@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
+import { Sammita } from '../assets/logos/imgExports'
 import '../App.css'
 import { Link } from 'react-router-dom'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -11,7 +12,7 @@ import hand from '../assets/hand.png';
 import pendoolum from '../assets/pendoolum.mp4'
 import buildings from '../assets/Buildings.jpg'
 import {Assetz, Bhartiya, Brigade, Casagrand, Century, DNR, Godrej, Goyal, Hiranandani, Inspira, Krishvi, Lodha, Mahindra,
-    Modern, Prestige, Provident, Puravankara, Ramky, RK, Rohan, Sattva, Shriram, Sobha, Sammita,Total} from '../assets/logos/imgExports'
+    Modern, Prestige, Provident, Puravankara, Ramky, RK, Rohan, Sattva, Shriram, Sobha, Total} from '../assets/logos/imgExports'
 export default function Business() {
   return (
     <div className="container">
@@ -400,7 +401,7 @@ export default function Business() {
                             </SplideSlide>
                             <SplideSlide>
                             <div className="rec-item">
-                                <div className="rec-img">
+                                <div className="rec-img1">
                                     <img src={RK} alt="" />
                                 </div>
                                 <div className="rec-text">

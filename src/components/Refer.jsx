@@ -13,8 +13,9 @@ export default function Refer() {
               recommendations.{" "}
             </p>
             <p>
-              <span>Get Referral Bonus Upto 1%</span> of Residential Property
-              Value for each sale.
+              <span>Get Referral Bonus Upto 1%</span> 
+             <br></br> of Residential Property  Value for each sale.
+             
             </p>
             <p>
               Reach out to our dedicated referral team for any assistance -

@@ -18,14 +18,14 @@ export default function About() {
             <div className="main-heading">
               <h1>We consult two sides of the same coin,</h1>
               <h1>
-                <span>THE BUILDERS</span> <span>and</span>
+                <span>THE BUILDERS</span> <span><b></b>AND</span>
               </h1>
               <h1>
                 {" "}
                 <span>THE HOME-BUYERS.</span>
               </h1>
-              <h6>Essentially, we serve as consultants for all</h6>
-              <h6>aspects of real estate needs.</h6>
+              <h6>Essentially, we serve as consultants for all aspects of real estate needs.</h6>
+              
             </div>
             <div className="about-heading-img">
               <img src={flipcoin} alt="" />

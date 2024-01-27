@@ -527,6 +527,7 @@ textarea {
   padding: 5rem 0rem 5rem 5rem;
 }
 .about-heading-img {
+  margin-top: -4rem;
   width: 50%;
   height: 100%;
   min-width: 360px;
@@ -587,6 +588,7 @@ textarea {
 }
 .story-text-block p:first-child {
   margin-bottom: 2rem;
+  font-size: 1.25rem;
 }
 .story-text-block p:first-child span {
   font-weight: 700;
@@ -594,6 +596,7 @@ textarea {
 .story-text-block p:last-child {
   margin-top: 2rem;
   font-weight: 700;
+  font-size: 1.25rem;
 }
 .parent-sib {
   width: 100%;
@@ -1195,6 +1198,17 @@ h4 {
   margin-top: 1.3rem;
 }
 
+.hero-item-long1 {
+  width: 15rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
 .hero-item h3 {
   font-weight: 600;
   text-align: center;
@@ -1207,7 +1221,16 @@ h4 {
   font-weight: 600;
   text-align: center;
 }
+
+.hero-item-long1 h3 {
+  font-weight: 600;
+  text-align: center;
+}
 .hero-item-long img {
+  width: 12rem;
+}
+
+.hero-item-long1 img {
   width: 12rem;
 }
 
@@ -2471,12 +2494,29 @@ p {
   width: 100px;
   height: 100px;
 }
+
+.rec-item .rec-img1 {
+  width: 100px;
+  height: 100px;
+}
 .rec-img {
   background: #e6e6e6;
   border-radius: 50%;
   padding: 1.5rem;
 }
+
+.rec-img1 {
+  background: #e6e6e6;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
 .rec-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rec-img1 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -2954,6 +2994,7 @@ p {
     gap: 0.7rem;
     text-align: center;
     margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
   }
   .main-heading h1 {
     font-size: 2.5rem;
@@ -3122,6 +3163,11 @@ p {
   }
   .rec-items {
     gap: 2rem;
+    margin-top: 1rem;
+  }
+  .rec-item{
+    height:18rem;
+    gap:0rem;
   }
   .footer .links {
     gap: 1rem;
@@ -3163,6 +3209,7 @@ p {
   .opt-heading-text {
     width: 100%;
     padding: 2rem;
+    margin-top: 1rem;
   }
   .opt-heading-text h1,
   h2 {
@@ -3176,7 +3223,7 @@ p {
   }
   .opt-items {
     width: 100%;
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
   }
   .art-text {
     padding: 3rem;
@@ -3194,6 +3241,7 @@ p {
   }
   .choice-points {
     width: 75%;
+    gap: 2rem
   }
   .rec-projects {
     display: none;
@@ -3224,10 +3272,124 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+
+  .rec-img{
+    background: none;
+  }
+
+  .rec-img1{
+    background: none;
+  }
+
+  .rec-img img {
+    width: 6rem;
+    height: 6rem;
+    margin-top: -1.8rem;
+    margin-left: -1.8rem;
+  }
+
+  .rec-img1 img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: -1.8rem;
+    margin-left: -0.8rem;
+
+  }
+
+  .art-text a{
+    margin-top: 1rem;
+  }
+
+
+    .hero-item-long h3 {
+      font-size: 0.9rem;
+    }
+
+    .hero-item-long1 h3 {
+      font-size: 0.9rem;
+    }
+
+  
+
+  .graph-heading h1{
+    font-weight: 800;
+  }
+
+  .business-img img{
+    margin-top: -6rem;
+  }
+
+  .projects > .cta{
+    margin-top: -1rem
+  }
+  .rec-projects-wrapper .swiper-button-prev {
+    background: none;
+
+  }
+
+  .swiper-button-prev{
+ 
+    --swiper-navigation-size: 22px;
+  }
+  .swiper-button-next{
+   
+    --swiper-navigation-size: 22px;
+  }
+  .rec-projects-wrapper .swiper-button-next {
+    background: none;
+
+  }
+
+  .about-heading .main-heading span:nth-child(2){
+    font-weight: 800;
+  }
+
+  .case-wrapper{
+    margin-top: 0rem;
+  }
+
+  .fly-benefits-img{
+    width:100%;
+    align-items: center;
+  }
+
+  .fly-benefits-img img{
+    width: 18rem;
+   
+  }
+
+  .connect-addresses .address-item{
+    margin-top: 1rem;
+  }
+
+  .accordion-wrapper{
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
+
+  .connect-header .heading h1{
+    text-align: center;
+  }
+
+  .connect-header .heading h6{
+    text-align: center;
+  }
+
+  .connect-header{
+    align-items: center;
+  }
+
+  .accordion-points{
+    padding: 1rem;
+  }
+
+  .accordion-points h2 {
+  text-align: left;
+}
   .rec-project-item-img h2 {
     text-align: center;
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
   }
 
   .rec-project-item-img h4 {
@@ -3240,6 +3402,7 @@ p {
   .filter-section {
     gap: 0rem !important;
     margin-bottom: 4rem;
+    margin-top: 1rem;
   }
 
   .apart-btn {
@@ -3298,10 +3461,13 @@ p {
 
   .form h1 {
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .fly-personalised {
     padding: 1rem;
+    margin-top: -0.5rem;
+    gap:2rem
   }
 
   .fly-personalised-img {
@@ -3349,7 +3515,7 @@ p {
   }
 
   .hero-item-text {
-    font-size: 1.5rem !important;
+    font-size: 1.1rem !important;
   }
 
   .connect-content .form form input,
@@ -3390,7 +3556,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -1rem;
+    margin-top: 0rem;
     gap: 2rem;
   }
   .graph-heading {
@@ -3407,7 +3573,7 @@ p {
   }
 
   .team-content-subheading p {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: unset;
   }
 
@@ -3416,7 +3582,7 @@ p {
   }
 
   .testimonials {
-    padding: 0rem 0rem 2rem;
+    padding: 1rem 0rem 2rem;
   }
 
   .born-content {
@@ -3491,8 +3657,8 @@ p {
     height: 100vh;
   }
   .header .taglines {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     position: relative;
     height: auto;
     text-align: center;
@@ -3550,13 +3716,15 @@ p {
     height: 90%;
   }
   .shape-eclipse img {
-    height: 55vh;
+    height: 37vh;
+    width: 7rem;
   }
   .refer {
     margin-top: -2rem;
   }
   .refer-text-content {
-    padding: 4rem;
+    margin-top: 4rem;
+    padding: 2rem;
     width: 100%;
     gap: 0rem;
     align-items: center;
@@ -3570,6 +3738,7 @@ p {
   .refer-heading p {
     text-align: center;
     font-size: 1.25rem;
+
   }
   .refer-heading {
     width: 100%;
@@ -3577,18 +3746,18 @@ p {
   }
   .testimonials-heading {
     width: 100%;
-    margin-top: -2rem;
+    margin-top: 0rem;
   }
   .testimonials-heading h1 {
     font-size: 2rem;
   }
   .team {
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 2rem 3rem 3rem 3rem;
   }
   .team-image {
     width: 100%;
     height: auto;
-    margin-top: -3rem;
+    margin-top: -4rem;
   }
   .team-content {
     padding: 0;
@@ -3614,6 +3783,7 @@ p {
 
   .tes-slider {
     margin-left: 1rem;
+    margin-top: -2rem;
   }
 
   .tes-item-wrapper {
@@ -3646,6 +3816,7 @@ p {
   .notify input {
     width: 60%;
     font-size: 1rem;
+    padding: 0rem;
   }
   .notify input::placeholder {
     font-size: 0.9rem;
@@ -3657,6 +3828,7 @@ p {
   .notify button {
     width: 40%;
     font-size: 1rem;
+    padding: 1rem 0rem !important;
   }
   .quote h1 {
     font-size: 2rem;
@@ -3683,12 +3855,17 @@ p {
     margin-top: 2.1rem;
   }
   .hero-item {
-    width: 9rem;
+    width: 7rem;
   }
 
   .hero-item-long {
-    width: 9rem;
-    margin-top: 0.9rem;
+    width: 7rem;
+    margin-top: -0.1rem;
+  }
+
+  .hero-item-long1 {
+    width: 7rem;
+    margin-top: -0.1rem;
   }
   .hero-item img {
     width: 7rem;
@@ -3699,7 +3876,15 @@ p {
   .hero-item-long img {
     width: 7rem;
   }
+
+  .hero-item-long1 img {
+    width: 7rem;
+  }
   .hero-item-long h3 {
+    font-size: 0.9rem;
+  }
+
+  .hero-item-long1 h3 {
     font-size: 0.9rem;
   }
   .explore button {
@@ -3742,11 +3927,12 @@ p {
     padding: 4rem 3rem !important;
   }
   .about .about-heading {
-    padding: 3rem;
+    padding: 1.3rem;
   }
   .about .about-heading h1:first-child {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
   .about .about-heading h1:last-child {
     text-align: center;
@@ -3754,29 +3940,38 @@ p {
   }
   .about .about-heading h6 {
     font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center !important;
   }
   .story {
-    padding: 2rem;
+    padding: 1rem;
   }
   .story .story-heading h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
   }
   .story-bg-element {
     width: 210%;
   }
   .story-text-block {
     padding: 3rem;
+    margin-top: 3rem;
   }
   .people {
     padding: 0;
     padding-bottom: 3rem;
+  
   }
 
   .core {
+    margin-top: 3rem;
     padding: 1rem;
+    padding-bottom: 4rem;
   }
   .core .core-heading h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
   }
   .core-items {
     justify-content: center;
@@ -3805,6 +4000,7 @@ p {
   }
   .connect-addresses {
     padding-top: 24rem !important;
+    padding-bottom: 3rem;
   }
   .explore h2 {
     font-size: 1.1rem;
@@ -3833,16 +4029,23 @@ p {
   }
   .values {
     padding: 5rem 0rem;
+    gap:3rem
   }
   .value-text-item h1 {
     font-size: 2rem;
+    text-align: center;
+  }
+
+  .value-text-item p{
+  text-align: center;
+  width:100%;
   }
   .core-heading h1 {
     font-size: 2rem;
   }
   .core-items {
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
   }
   .core-items p {
     text-align: left;
@@ -3860,21 +4063,26 @@ p {
   }
 
   .opt-items {
-    margin-top: 1rem;
+    margin-top: 0rem;
+    gap: 2rem !important;
   }
 
   .art-text {
     align-items: center;
+    margin-top: 0rem;
+    gap:1rem;
   }
 
   .opt-heading-text h2 {
-    margin-left: -1rem;
+   
     font-size: 1.25rem;
-    margin-top: 1rem;
+   
   }
 
   .recommend {
-    padding: 3rem;
+    padding: 2rem;
+    margin-top: -1rem;
+    padding-bottom: 3rem;
   }
 
   .art-img {
@@ -3894,6 +4102,7 @@ p {
 
   .case-highlights .highlight {
     width: 100%;
+    margin-top: 1rem;
   }
 
   .about-heading .main-heading {
@@ -3903,7 +4112,7 @@ p {
     width: 100%;
   }
   .projects {
-    padding: 5rem 0rem;
+    padding: 3rem 0rem;
   }
   .projects-heading {
     padding: 0rem;
@@ -3921,6 +4130,7 @@ p {
   }
   .fly-choice {
     padding: 2rem;
+   
   }
   .choice-point {
     flex-wrap: wrap;
@@ -3946,11 +4156,11 @@ p {
   .rec-projects h1,
   .performers-content h1 {
     font-size: 2rem;
-    padding: 3rem;
+    padding: 1rem;
   }
 
   .rec-projects-wrapper {
-    margin-top: -1rem;
+    margin-top: -2rem;
   }
   .performers-content p {
     font-size: 1rem;
@@ -3963,12 +4173,14 @@ p {
   }
   .fly-benefits {
     padding: 1.4rem;
+    margin-top: -2rem;
+    gap:1rem;
   }
   .performers .swiper-wrapper {
     padding: 0rem 2rem;
   }
   .rec-projects-wrapper .swiper-wrapper {
-    padding: 0rem 2rem;
+    padding: 0rem 1.5rem;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -4040,6 +4252,7 @@ p {
     flex-wrap: nowrap;
     flex-direction: row;
     margin-left: 0 !important;
+    margin-top: -1rem;
   }
 
   .graphSlide {
@@ -4274,6 +4487,10 @@ p {
     width: 9rem;
     margin-top: 0.9rem;
   }
+  .hero-item-long1 {
+    width: 9rem;
+    margin-top: 0.9rem;
+  }
   .hero-item img {
     width: 7rem;
   }
@@ -4283,7 +4500,13 @@ p {
   .hero-item-long img {
     width: 7rem;
   }
+  .hero-item-long1 img {
+    width: 7rem;
+  }
   .hero-item-long h3 {
+    font-size: 0.9rem;
+  }
+  .hero-item-long1 h3 {
     font-size: 0.9rem;
   }
   .explore button {
@@ -4335,7 +4558,7 @@ p {
     font-size: 2.5rem;
   }
   .about .about-heading h6 {
-    text-align: center;
+    text-align: center !important;
     font-size: 1rem;
   }
   .story {
@@ -4357,6 +4580,7 @@ p {
 
   .core {
     padding: 1rem;
+ 
   }
   .core .core-heading h1 {
     font-size: 2.5rem;
@@ -4415,6 +4639,7 @@ p {
   }
   .values {
     padding: 5rem 0rem;
+    gap:3rem
   }
   .value-text-item h1 {
     font-size: 2rem;
@@ -4521,6 +4746,7 @@ p {
 
   .fly-personalised {
     padding: 1rem;
+    margin-top: 2rem;
   }
   .performers .swiper-wrapper {
     padding: 0rem 2rem;
