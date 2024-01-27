@@ -409,7 +409,7 @@ textarea {
   background-color: var(--bgSecondary);
   padding: 1rem 0rem;
   color: var(--bgPrimary);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   border-radius: 0.5rem;
 }
@@ -510,7 +510,7 @@ textarea {
   font-weight: 800;
 }
 .about .about-heading h6 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-align: left;
 }
@@ -588,7 +588,7 @@ textarea {
 }
 .story-text-block p:first-child {
   margin-bottom: 2rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .story-text-block p:first-child span {
   font-weight: 700;
@@ -596,7 +596,7 @@ textarea {
 .story-text-block p:last-child {
   margin-top: 2rem;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .parent-sib {
   width: 100%;
@@ -933,7 +933,7 @@ h4 {
   background: var(--bgSecondary);
 }
 .accordion-points h2 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-align: left;
 }
 .core-item {
@@ -1274,7 +1274,7 @@ color: #CDCDCD;
   position: relative;
 }
 .explore-projects h6 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .benefits {
@@ -1406,7 +1406,7 @@ color: #CDCDCD;
 }
 .item div h5 {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--bgPrimary);
   font-weight: 600;
   padding: 0rem 1rem;
@@ -1454,7 +1454,7 @@ color: #CDCDCD;
   color: white;
   padding: 1rem;
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .graphs {
@@ -1509,7 +1509,7 @@ color: #CDCDCD;
   padding: 5rem;
 }
 .graphSummary h6 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .graphSlide p {
@@ -1643,7 +1643,7 @@ color: #CDCDCD;
   margin-bottom: 2rem;
 }
 .team-content-subheading p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--bgPrimary);
   font-weight: 500;
   text-align: center;
@@ -1739,7 +1739,7 @@ color: #CDCDCD;
   color: white;
 }
 .social-media i {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .tes-slider {
   width: 58.5%;
@@ -1771,7 +1771,7 @@ color: #CDCDCD;
 }
 .tes-text-content p {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
   text-align: left;
 }
@@ -2025,7 +2025,7 @@ h4 {
   text-align: center;
 }
 .table i {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .business {
   display: flex;
@@ -2213,7 +2213,7 @@ h4 {
 .opt-item h6 {
   width: 50%;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .art {
   width: 100%;
@@ -2247,7 +2247,7 @@ h4 {
 }
 .art-text p {
   width: 80%;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-align: left;
   font-weight: 500;
 }
@@ -2255,7 +2255,7 @@ h4 {
   background: var(--bgSecondary);
   color: var(--bgPrimary);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   padding: 1rem 2rem;
   width: 15rem;
   text-align: center;
@@ -2357,7 +2357,7 @@ h4 {
   gap: 0.5rem;
 }
 .case-points h4 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .case-text h1 {
   background-color: var(--bgSecondary);
@@ -2535,7 +2535,7 @@ p {
   color: var(--bgPrimary);
   padding: 1rem 2rem;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   box-shadow: 5px 5px 10px 0px rgba(122, 122, 122, 0.25);
 }
 .slider-item {
@@ -2771,7 +2771,7 @@ p {
 .rec-projects-wrapper {
   width: 100%;
   height: auto;
-  padding: 1rem 1.25rem 0rem 0rem;
+  padding: 1rem 1.1rem 0rem 0rem;
 }
 .rec-project-item {
   display: flex;
@@ -2972,7 +2972,7 @@ p {
     justify-content: flex-start;
   }
   .taglines h6 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .taglines div h1 {
     font-size: 2.5rem;
@@ -3082,7 +3082,7 @@ p {
     font-size: 2.5rem;
   }
   .born-section .born-content p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: unset;
   }
   .born-section .text-content {
@@ -3147,7 +3147,7 @@ p {
   }
   .business-head h2 {
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-align: center;
   }
   .business-img {
@@ -3158,7 +3158,7 @@ p {
     height: 60vh;
   }
   .studio-text p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 0rem 4rem;
   }
   .rec-items {
@@ -3631,7 +3631,7 @@ p {
   }
 
   .taglines h6 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-left: 0.9rem;
     text-align: center;
   }
@@ -3731,7 +3731,7 @@ p {
 
   .refer-heading p {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .refer-heading {
     width: 100%;
@@ -3783,7 +3783,7 @@ p {
     border-left: 0px solid var(--bgSecondary);
   }
   .tes-text-content p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
     margin-top: -1rem;
@@ -4067,7 +4067,7 @@ p {
   }
 
   .opt-heading-text h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .recommend {
@@ -4266,7 +4266,7 @@ p {
   }
 
   .taglines h6 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-left: 2rem;
   }
@@ -4299,7 +4299,7 @@ p {
   }
   .taglines h4 {
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-left: 2rem;
   }
@@ -4356,7 +4356,7 @@ p {
 
   .refer-heading p {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .refer-heading {
     width: 100%;
@@ -4407,7 +4407,7 @@ p {
     border-left: 0px solid var(--bgSecondary);
   }
   .tes-text-content p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
     margin-top: -1rem;
