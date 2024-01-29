@@ -7,7 +7,7 @@ export default function Team() {
   return (
     <div className="team">
       <div className="team-content">
-        <h1>Powerhouse Team of 100+ Professionals</h1>
+        <h1>Powerhouse Team 100+ Professionals</h1>
 
         <div className="team-content-subheading">
           <p>

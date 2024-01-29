@@ -308,7 +308,7 @@ export default function Projects() {
                   <ReactCardFlip
                     isFlipped={flippedIndexes.includes(index)}
                     flipDirection="horizontal"
-                  >
+                  ><div className="wrap-rec-project-item">
                     <div
                       className="rec-project-item"
                       onMouseEnter={() => handleCardFlip(index)}
@@ -322,6 +322,7 @@ export default function Projects() {
                           {project.location}
                         </h4>
                       </div>
+                    </div>
                     </div>
                     <div
                       className="rec-project-item"

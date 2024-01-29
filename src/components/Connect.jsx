@@ -179,7 +179,7 @@ export default function Connect() {
           </div>
         </div>
       </div>
-
+<div className="wrap-connect-address">
       <div className="connect-addresses">
         <div className="address-item">
           <h1>Bengaluru</h1>
@@ -211,6 +211,7 @@ export default function Connect() {
           </a>
         </div>
       </div>
+      </div>
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
@@ -234,7 +235,7 @@ export default function Connect() {
           </div>
         </div>
       )}
-      <Footer />
+     <Footer/>
     </div>
   );
 }

@@ -51,6 +51,12 @@
   }
 }
 
+.bullet-list {
+  list-style-type: disc; 
+  color: black; 
+  margin-left: 20px; 
+}
+
 .wrapper.blur {
   filter: blur(5px);
 }
@@ -301,7 +307,7 @@
 .connect {
   width: 100%;
   height: auto;
-  min-height: 100vh;
+ 
   position: relative;
   background: rgb(242, 242, 242);
 }
@@ -1460,7 +1466,7 @@ color: #CDCDCD;
 .graphs {
   margin-top: -2rem;
   height: auto;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2671,7 +2677,7 @@ p {
 }
 .point-index {
   padding: 1rem;
-  border-radius: 50%;
+ 
   background-color: rgb(242, 242, 242);
 }
 .point-index h1 {
@@ -3257,8 +3263,9 @@ p {
     display: none;
   }
   .rec-project-item {
-    width: 20rem;
-    height: 20rem;
+    width: 89%;
+    height: 23rem;
+    margin-left: -0.6rem;
   }
   .tablet-projects .rec-project-item {
     width: 18rem;
@@ -3273,11 +3280,46 @@ p {
 }
 @media screen and (max-width: 800px) {
 
-  .case-studies{
+  .core-wrapper{
+    min-height: 0;
+  }
+
+  .parent-sib{
+    margin-top: 1rem;
+  }
+  .story-text{
+   
+    position: initial;
+  }
+
+  .choice-point:hover{
+    margin: 7rem 0rem;
+  }
+
+  .connect-header{
+    height:45rem;
+  }
+.connect{
+  height:113rem; 
+}
+
+  .case-content {
+    gap: 0;
+  }
+  .wrap-rec-project-item {
+    width: 100%;
+    margin-left: -2rem;
+  }
+
+  .business-head h2 {
+    margin-top: -1rem;
+  }
+
+  .case-studies {
     margin-top: 2.5rem;
   }
 
-  .art{
+  .art {
     margin-top: 1rem;
   }
   .rec-item {
@@ -3357,11 +3399,11 @@ p {
   }
 
   .fly-benefits-img img {
-    width: 18rem;
+    width: 19rem;
   }
 
   .connect-addresses .address-item {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .accordion-wrapper {
@@ -3404,7 +3446,7 @@ p {
   .filter-section {
     gap: 0rem !important;
     margin-bottom: 4rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .apart-btn {
@@ -3468,8 +3510,8 @@ p {
 
   .fly-personalised {
     padding: 1rem;
-    margin-top: -0.5rem;
-    gap: 2rem;
+    margin-top: 1rem;
+    gap: 1rem;
   }
 
   .fly-personalised-img {
@@ -3558,8 +3600,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -1rem;
-    gap: 2rem;
+    margin-top: 0rem;
+    gap: 4rem;
   }
   .graph-heading {
     margin-top: 80rem;
@@ -3755,7 +3797,7 @@ p {
     font-size: 2rem;
   }
   .team {
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 2rem 1rem 3rem 1rem;
   }
   .team-image {
     width: 100%;
@@ -3869,7 +3911,7 @@ p {
 
   .hero-item-long1 {
     width: 7rem;
-    margin-top: -0.1rem;
+    margin-top: -1.3rem;
   }
   .hero-item img {
     width: 7rem;
@@ -3911,7 +3953,7 @@ p {
 
   .main {
     margin-top: 0rem;
-    min-height: 100vh;
+    height: 46rem;
   }
 
   .item .explore {
@@ -3948,7 +3990,7 @@ p {
     text-align: center !important;
   }
   .story {
-    padding: 1rem;
+    padding: 2rem;
   }
   .story .story-heading h1 {
     font-size: 2rem;
@@ -3956,7 +3998,7 @@ p {
     margin-top: 2rem;
   }
   .story-bg-element {
-    width: 210%;
+    display : none;
   }
   .story-text-block {
     padding: 3rem;
@@ -4002,8 +4044,8 @@ p {
     padding: 3rem;
   }
   .connect-addresses {
-    padding-top: 24rem !important;
-    padding-bottom: 3rem;
+    padding-top: 3rem !important;
+    padding-bottom: 4rem;
   }
   .explore h2 {
     font-size: 1.1rem;
@@ -4067,7 +4109,7 @@ p {
 
   .opt-items {
     margin-top: 0rem;
-    gap: 2rem !important;
+    gap: 1rem !important;
   }
 
   .art-text {
@@ -4120,6 +4162,7 @@ p {
   }
   .projects-heading-text {
     padding: 3rem;
+    margin-top: 2.5rem;
   }
   .projects-heading-text h1 {
     font-size: 2rem;
@@ -4131,6 +4174,7 @@ p {
   }
   .fly-choice {
     padding: 2rem;
+    margin-top: 2rem;
   }
   .choice-point {
     flex-wrap: wrap;
@@ -4157,6 +4201,7 @@ p {
   .performers-content h1 {
     font-size: 2rem;
     padding: 1rem;
+    margin-top: 2rem;
   }
 
   .rec-projects-wrapper {
@@ -4173,14 +4218,14 @@ p {
   }
   .fly-benefits {
     padding: 1.4rem;
-    margin-top: -2rem;
+    margin-top: 0rem;
     gap: 1rem;
   }
   .performers .swiper-wrapper {
     padding: 0rem 2rem;
   }
   .rec-projects-wrapper .swiper-wrapper {
-    padding: 0rem 1.5rem;
+    margin-top: 0rem;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -4197,7 +4242,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0;
-    gap: 2rem;
+    gap: 4rem;
   }
   .graph-heading {
     margin-top: 67rem;
@@ -4273,7 +4318,6 @@ p {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
-    
   }
 
   .taglines h6 {
@@ -4329,7 +4373,6 @@ p {
   }
   .jumbo-img img {
     height: 100%;
-  
   }
   .main {
     padding: 3rem;
