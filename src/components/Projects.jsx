@@ -268,6 +268,7 @@ export default function Projects() {
         </div>
         <div className="rec-projects mobile-projects">
           <h1>Recommended Projects</h1>
+          <div className="wrap-filter-section">
           <div className="filter-section">
             <button
               className={`apart-btn ${
@@ -293,6 +294,7 @@ export default function Projects() {
             >
               Plots
             </button>
+          </div>
           </div>
           <div className="rec-projects-wrapper">
             <Swiper

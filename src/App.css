@@ -3280,6 +3280,12 @@ p {
 }
 @media screen and (max-width: 800px) {
 
+  .case-points h4{
+    text-align: center;
+  }
+  .case-highlights{
+    margin-top: 2rem;
+  }
   .core-wrapper{
     min-height: 0;
   }
@@ -3316,7 +3322,7 @@ p {
   }
 
   .case-studies {
-    margin-top: 2.5rem;
+    margin-top: 2.1rem;
   }
 
   .art {
@@ -3399,7 +3405,7 @@ p {
   }
 
   .fly-benefits-img img {
-    width: 20rem;
+    width: 21rem;
   }
 
   .connect-addresses .address-item {
@@ -3443,10 +3449,12 @@ p {
     font-size: 1rem;
   }
 
+
   .filter-section {
+    width: 100%;
     gap: 0rem !important;
     margin-bottom: 4rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
 
   .apart-btn {
@@ -3759,7 +3767,7 @@ p {
   }
 
   .shape-eclipse {
-    height: 90%;
+   display: none;
   }
   .shape-eclipse img {
     height: 37vh;
@@ -3898,7 +3906,7 @@ p {
   .hero {
     width: 100%;
     gap: 2rem;
-    margin-top: 2.7rem;
+    margin-top: 2.3rem;
   }
   .hero-item {
     width: 7rem;
@@ -4103,7 +4111,7 @@ p {
   .opt-heading-text h1,
   .art-text h1,
   .rec-heading h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: center;
   }
 
@@ -4146,6 +4154,7 @@ p {
   .case-highlights .highlight {
     width: 100%;
     margin-top: 1rem;
+    margin: 1rem;
   }
 
   .about-heading .main-heading {
