@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import { Sammita } from "../assets/logos/imgExports";
+
 import "../App.css";
 import { Link } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -11,32 +11,26 @@ import chess from "../assets/chess.png";
 import hand from "../assets/hand.png";
 import pendoolum from "../assets/pendoolum.mp4";
 import buildings from "../assets/Buildings.jpg";
-import {
-  Assetz,
-  Bhartiya,
-  Brigade,
-  Casagrand,
-  Century,
-  DNR,
-  Godrej,
-  Goyal,
-  Hiranandani,
-  Inspira,
-  Krishvi,
-  Lodha,
-  Mahindra,
-  Modern,
-  Prestige,
-  Provident,
-  Puravankara,
-  Ramky,
-  RK,
-  Rohan,
-  Sattva,
-  Shriram,
-  Sobha,
-  Total,
-} from "../assets/logos/imgExports";
+
+import Assetz from "../assets/logos/Assetz.png";
+import Bhartiya from "../assets/logos/BhartiyaCity.png";
+import Brigade from "../assets/logos/Brigade.png";
+import Vajram from "../assets/logos/Vajram.png";
+import Century from "../assets/logos/Century.png";
+import DNR from "../assets/logos/DNR.png";
+import Godrej from "../assets/logos/Goorej.png";
+import Goyal from "../assets/logos/Goyal.png";
+import Inspira from "../assets/logos/Inspira.png";
+import Krishvi from "../assets/logos/Krishvi.png";
+import Modern from "../assets/logos/ModernSpace.png";
+import Provident from "../assets/logos/Provident.png";
+import Puravankara from "../assets/logos/Puravankara.png";
+import Samhita from "../assets/logos/Samhita.png";
+import RK from "../assets/logos/RK.png";
+import Rohan from "../assets/logos/Rohan.png";
+import Sobha from "../assets/logos/Shoba.png";
+import Sumadhura from "../assets/logos/Sumadhura.png";
+
 export default function Business() {
   return (
     <div className="container">
@@ -191,21 +185,21 @@ export default function Business() {
                         </div>
                       </div>
                       <div className="case-highlights">
-                      <div className="highlight">
-                        <ul className="bullet-list">
-                          <li>100,000 Sft Worth 200 Cr Inventory Sold</li>
-                          <li>200% Marketing ROI</li>
-                          <li>5,000/Sft Avg. Basic Price Achieved</li>
-                        </ul>
+                        <div className="highlight">
+                          <ul className="bullet-list">
+                            <li>100,000 Sft Worth 200 Cr Inventory Sold</li>
+                            <li>200% Marketing ROI</li>
+                            <li>5,000/Sft Avg. Basic Price Achieved</li>
+                          </ul>
+                        </div>
+                        <div className="highlight">
+                          <ul className="bullet-list">
+                            <li>20+ Channel Partners Activated</li>
+                            <li>49% Lead Qualification Ratio</li>
+                            <li>15% Site Visit to Closure Ratio</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="highlight">
-                        <ul className="bullet-list">
-                          <li>20+ Channel Partners Activated</li>
-                          <li>49% Lead Qualification Ratio</li>
-                          <li>15% Site Visit to Closure Ratio</li>
-                        </ul>
-                      </div>
-                    </div>
                     </div>
                   </div>
                 </SplideSlide>
@@ -220,7 +214,7 @@ export default function Business() {
                   perPage: 6,
                   breakpoints: {
                     768: {
-                      perPage: 2,
+                      perPage: 1,
                     },
                   },
                 }}
@@ -240,9 +234,10 @@ export default function Business() {
                     <img src={Brigade} alt="" />
                   </div>
                 </SplideSlide>
+
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Casagrand} alt="" />
+                    <img src={Vajram} alt="" />
                   </div>
                 </SplideSlide>
 
@@ -260,12 +255,6 @@ export default function Business() {
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Hiranandani} alt="" />
-                  </div>
-                </SplideSlide>
-
-                <SplideSlide>
-                  <div className="builder-slide">
                     <img src={Inspira} alt="" />
                   </div>
                 </SplideSlide>
@@ -278,7 +267,7 @@ export default function Business() {
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Lodha} alt="" />
+                    <img src={Goyal} alt="" />
                   </div>
                 </SplideSlide>
 
@@ -290,31 +279,19 @@ export default function Business() {
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Goyal} alt="" />
-                  </div>
-                </SplideSlide>
-
-                <SplideSlide>
-                  <div className="builder-slide">
-                    <img src={Mahindra} alt="" />
-                  </div>
-                </SplideSlide>
-
-                <SplideSlide>
-                  <div className="builder-slide">
                     <img src={Modern} alt="" />
                   </div>
                 </SplideSlide>
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Prestige} alt="" />
+                    <img src={Provident} alt="" />
                   </div>
                 </SplideSlide>
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Provident} alt="" />
+                    <img src={Puravankara} alt="" />
                   </div>
                 </SplideSlide>
 
@@ -332,25 +309,7 @@ export default function Business() {
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Puravankara} alt="" />
-                  </div>
-                </SplideSlide>
-
-                <SplideSlide>
-                  <div className="builder-slide">
-                    <img src={Ramky} alt="" />
-                  </div>
-                </SplideSlide>
-
-                <SplideSlide>
-                  <div className="builder-slide">
-                    <img src={Sattva} alt="" />
-                  </div>
-                </SplideSlide>
-
-                <SplideSlide>
-                  <div className="builder-slide">
-                    <img src={Shriram} alt="" />
+                    <img src={Samhita} alt="" />
                   </div>
                 </SplideSlide>
 
@@ -362,7 +321,7 @@ export default function Business() {
 
                 <SplideSlide>
                   <div className="builder-slide">
-                    <img src={Total} alt="" />
+                    <img src={Sumadhura} alt="" />
                   </div>
                 </SplideSlide>
               </Splide>
@@ -420,7 +379,7 @@ export default function Business() {
                 <SplideSlide>
                   <div className="rec-item">
                     <div className="rec-img">
-                      <img src={Sammita} alt="" />
+                      <img src={Samhita} alt="" />
                     </div>
                     <div className="rec-text">
                       <p>

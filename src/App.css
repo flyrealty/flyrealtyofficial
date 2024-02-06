@@ -51,10 +51,19 @@
   }
 }
 
+.builders-logo .splide__pagination {
+  bottom: -1em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
 .bullet-list {
-  list-style-type: disc; 
-  color: black; 
-  margin-left: 20px; 
+  list-style-type: disc;
+  color: black;
+  margin-left: 20px;
 }
 
 .wrapper.blur {
@@ -307,7 +316,7 @@
 .connect {
   width: 100%;
   height: auto;
- 
+
   position: relative;
   background: rgb(242, 242, 242);
 }
@@ -2677,7 +2686,7 @@ p {
 }
 .point-index {
   padding: 1rem;
- 
+
   background-color: rgb(242, 242, 242);
 }
 .point-index h1 {
@@ -3279,35 +3288,33 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
-
-  .case-points h4{
+  .case-points h4 {
     text-align: center;
   }
-  .case-highlights{
+  .case-highlights {
     margin-top: 2rem;
   }
-  .core-wrapper{
+  .core-wrapper {
     min-height: 0;
   }
 
-  .parent-sib{
+  .parent-sib {
     margin-top: 1rem;
   }
-  .story-text{
-   
+  .story-text {
     position: initial;
   }
 
-  .choice-point:hover{
+  .choice-point:hover {
     margin: 7rem 0rem;
   }
 
-  .connect-header{
-    height:45rem;
+  .connect-header {
+    height: 45rem;
   }
-.connect{
-  height:113rem; 
-}
+  .connect {
+    height: 113rem;
+  }
 
   .case-content {
     gap: 0;
@@ -3448,7 +3455,6 @@ p {
     margin-left: 1rem;
     font-size: 1rem;
   }
-
 
   .filter-section {
     width: 100%;
@@ -3767,7 +3773,7 @@ p {
   }
 
   .shape-eclipse {
-   display: none;
+    display: none;
   }
   .shape-eclipse img {
     height: 37vh;
@@ -4006,7 +4012,7 @@ p {
     margin-top: 2rem;
   }
   .story-bg-element {
-    display : none;
+    display: none;
   }
   .story-text-block {
     padding: 3rem;
