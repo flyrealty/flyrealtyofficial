@@ -51,6 +51,22 @@
   }
 }
 
+.whatsapp-icon {
+  position: fixed;
+  bottom: 0px; 
+
+  z-index: 9999; 
+  cursor: pointer;
+  
+}
+
+.whatsapp-icon img {
+  width: 6rem; /* Adjust the size of the logo */
+  height: auto;
+
+}
+
+
 .builders-logo .splide__pagination {
   bottom: -1em;
   left: 0;
