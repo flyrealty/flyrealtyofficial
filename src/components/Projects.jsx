@@ -99,6 +99,10 @@ export default function Projects() {
                       ensure the utmost quality of the property by adhering to
                       the predetermined standards.
                     </h6>
+                     {/* Close button */}
+      <button className="close-button" onClick={() => handlePointClose()}>
+      <i className="fa fa-times"></i>
+    </button>
                   </div>
                 </div>
               </div>

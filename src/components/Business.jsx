@@ -158,9 +158,10 @@ export default function Business() {
                             <li>100,000 Sft Worth 200 Cr Inventory Sold</li>
                             <li>200% Marketing ROI</li>
                             <li>5,000/Sft Avg. Basic Price Achieved</li>
+                            
                           </ul>
                         </div>
-                        <div className="highlight">
+                        <div className="highlight1">
                           <ul className="bullet-list">
                             <li>20+ Channel Partners Activated</li>
                             <li>49% Lead Qualification Ratio</li>
@@ -192,7 +193,7 @@ export default function Business() {
                             <li>5,000/Sft Avg. Basic Price Achieved</li>
                           </ul>
                         </div>
-                        <div className="highlight">
+                        <div className="highlight1">
                           <ul className="bullet-list">
                             <li>20+ Channel Partners Activated</li>
                             <li>49% Lead Qualification Ratio</li>
