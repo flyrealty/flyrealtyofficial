@@ -588,7 +588,7 @@ textarea {
 }
 .story h1 {
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--bgPrimary);
 }
 .story h1:nth-child(2) {
@@ -670,7 +670,7 @@ h4 {
 }
 .parent-heading h1 {
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   width: 100%;
   color: var(--bgPrimary);
@@ -910,7 +910,7 @@ h4 {
 
 .core-heading h1 {
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--bgPrimary);
 }
 .core-items {
@@ -1172,7 +1172,7 @@ h4 {
   font-weight: 400;
 }
 .taglines div h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 4.5rem;
   color: var(--bgPrimary);
 }
@@ -1300,7 +1300,7 @@ h4 {
   position: relative;
 }
 .main-heading h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 4.5rem;
   color: var(--bgPrimary);
 }
@@ -1581,7 +1581,7 @@ color: #CDCDCD;
   padding-right: 0rem;
 }
 .refer-text-content h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 4.5rem;
   color: var(--bgPrimary);
 }
@@ -1678,7 +1678,7 @@ color: #CDCDCD;
 .team-content h1 {
   text-align: center;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--bgPrimary);
 }
 .team-content h1:nth-child(2) {
@@ -1842,7 +1842,7 @@ color: #CDCDCD;
 .quote h1 {
   font-size: 4rem;
   color: var(--bgPrimary);
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -1968,7 +1968,7 @@ h4 {
 }
 .born-section .text-content h1 {
   text-align: left;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 4.5rem;
   color: var(--bgPrimary);
 }
@@ -2114,7 +2114,7 @@ h4 {
   position: relative;
 }
 .business-heading h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 4.5rem;
   color: var(--bgPrimary);
   padding-bottom: 1rem;
@@ -2285,7 +2285,7 @@ h4 {
 }
 .art-text h1 {
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: left;
   width: 100%;
 }
@@ -2499,7 +2499,7 @@ h4 {
 }
 .rec-heading h1 {
   font-size: 4.5rem;
-  font-weight: 680;
+  font-weight: 700;
   color: var(--bgPrimary);
   text-align: center;
 }
@@ -2628,7 +2628,7 @@ p {
 }
 .projects-heading-text h1 {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: left;
 }
 .projects-heading-text p {
@@ -2673,7 +2673,7 @@ p {
 }
 .choice-heading h1 {
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--bgPrimary);
 }
 .choice-content {
@@ -2819,7 +2819,7 @@ p {
 .rec-projects h1 {
   text-align: center;
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .rec-projects-wrapper {
   width: 100%;
@@ -3418,7 +3418,7 @@ p {
   }
 
   .graph-heading h1 {
-    font-weight: 800;
+    font-weight: 700;
   }
 
   .business-img img {
@@ -3908,7 +3908,7 @@ p {
     font-size: 1.5rem;
   }
   .nf-title .heading h1 {
-    font-size: 3.5rem;
+    font-size: 2.1rem;
   }
   .nf-title .subheading h4 {
     font-size: 1rem;
