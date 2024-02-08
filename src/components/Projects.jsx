@@ -26,7 +26,6 @@ import RAKFelicity from "../assets/RAKFelicity.png";
 import SNNHighGardens from "../assets/SNNHighGardens.png";
 import SumadhuraFolium from "../assets/SumadhuraFolium.png";
 
-
 import flyBenefits from "../assets/flyBenefits.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -57,6 +56,8 @@ export default function Projects() {
     setActiveButton(category);
   };
 
+
+
   const filteredProjects =
     projectCategory === "all"
       ? projectData
@@ -65,6 +66,9 @@ export default function Projects() {
       : projectCategory === "villas"
       ? villaData
       : flatData;
+
+
+
   return (
     <div className="container">
       <Nav />
@@ -90,6 +94,7 @@ export default function Projects() {
                 </div>
                 <div className="point-content">
                   <h3>Because we only deal with RERA Approved Projects</h3>
+
                   <div className="point-desc">
                     <h6>
                       <b>Because we only deal with RERA Approved Projects, </b>
@@ -99,10 +104,14 @@ export default function Projects() {
                       ensure the utmost quality of the property by adhering to
                       the predetermined standards.
                     </h6>
-                     {/* Close button */}
-      <button className="close-button" onClick={() => handlePointClose()}>
-      <i className="fa fa-times"></i>
-    </button>
+
+                    {/* Close button */}
+                    <button
+                      className="close-button"
+                      onClick={() => handlePointClose()}
+                    >
+                      <i className="fa fa-times"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -115,7 +124,32 @@ export default function Projects() {
                     Because we perform the Due Dilligence on the Property.
                   </h3>
                   <div className="point-desc">
-                    <h6><b> Because we perform the Due Dilligence on the Property, </b>We understand buying a property is a big decision, so we want to take the worry off your shoulders. That's why we offer comprehensive due diligence before you commit. We'll meticulously comb through legal documents to ensure clear ownership, check for any liens or encumbrances, and conduct thorough physical inspections to identify potential structural issues or hidden problems. We'll even research zoning regulations and delve into the neighborhood's history and future plans. Think of it as a detailed background check for your potential home, giving you the peace of mind to make an informed and confident decision based on all the facts.</h6>
+                    <h6>
+                      <b>
+                        {" "}
+                        Because we perform the Due Dilligence on the Property,{" "}
+                      </b>
+                      We understand buying a property is a big decision, so we
+                      want to take the worry off your shoulders. That's why we
+                      offer comprehensive due diligence before you commit. We'll
+                      meticulously comb through legal documents to ensure clear
+                      ownership, check for any liens or encumbrances, and
+                      conduct thorough physical inspections to identify
+                      potential structural issues or hidden problems. We'll even
+                      research zoning regulations and delve into the
+                      neighborhood's history and future plans. Think of it as a
+                      detailed background check for your potential home, giving
+                      you the peace of mind to make an informed and confident
+                      decision based on all the facts.
+                    </h6>
+
+                    {/* Close button */}
+                    <button
+                      className="close-button"
+                      onClick={() => handlePointClose()}
+                    >
+                      <i className="fa fa-times"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -126,7 +160,22 @@ export default function Projects() {
                 <div className="point-content">
                   <h3>Because we perform the Due Dilligence on the Builder.</h3>
                   <div className="point-desc">
-                    <h6><b>Because we perform the Due Dilligence on the Builder,</b> By conducting thorough due diligence, we minimize the risks associated with choosing the wrong builder and give you peace of mind knowing you're entrusting your investment to a credible and reliable professional.</h6>
+                    <h6>
+                      <b>
+                        Because we perform the Due Dilligence on the Builder,
+                      </b>{" "}
+                      By conducting thorough due diligence, we minimize the
+                      risks associated with choosing the wrong builder and give
+                      you peace of mind knowing you're entrusting your
+                      investment to a credible and reliable professional.
+                    </h6>
+                    {/* Close button */}
+                    <button
+                      className="close-button"
+                      onClick={() => handlePointClose()}
+                    >
+                      <i className="fa fa-times"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -273,32 +322,32 @@ export default function Projects() {
         <div className="rec-projects mobile-projects">
           <h1>Recommended Projects</h1>
           <div className="wrap-filter-section">
-          <div className="filter-section">
-            <button
-              className={`apart-btn ${
-                activeButton === "apartments" ? "active1" : ""
-              }`}
-              onClick={() => filterProjects("apartments")}
-            >
-              Apartments
-            </button>
-            <button
-              className={`villa-btn ${
-                activeButton === "villas" ? "active1" : ""
-              }`}
-              onClick={() => filterProjects("villas")}
-            >
-              Villas
-            </button>
-            <button
-              className={`flat-btn ${
-                activeButton === "flats" ? "active1" : ""
-              }`}
-              onClick={() => filterProjects("flats")}
-            >
-              Plots
-            </button>
-          </div>
+            <div className="filter-section">
+              <button
+                className={`apart-btn ${
+                  activeButton === "apartments" ? "active1" : ""
+                }`}
+                onClick={() => filterProjects("apartments")}
+              >
+                Apartments
+              </button>
+              <button
+                className={`villa-btn ${
+                  activeButton === "villas" ? "active1" : ""
+                }`}
+                onClick={() => filterProjects("villas")}
+              >
+                Villas
+              </button>
+              <button
+                className={`flat-btn ${
+                  activeButton === "flats" ? "active1" : ""
+                }`}
+                onClick={() => filterProjects("flats")}
+              >
+                Plots
+              </button>
+            </div>
           </div>
           <div className="rec-projects-wrapper">
             <Swiper
@@ -314,21 +363,22 @@ export default function Projects() {
                   <ReactCardFlip
                     isFlipped={flippedIndexes.includes(index)}
                     flipDirection="horizontal"
-                  ><div className="wrap-rec-project-item">
-                    <div
-                      className="rec-project-item"
-                      onMouseEnter={() => handleCardFlip(index)}
-                      onClick={() => handleCardFlip(index)}
-                    >
-                      <div className="rec-project-item-img">
-                        <img src={project.image} alt="" />
-                        <h2>{project.name}</h2>
-                        <h4 className="location-info">
-                          <i className="fa-solid fa-location-dot"></i>
-                          {project.location}
-                        </h4>
+                  >
+                    <div className="wrap-rec-project-item">
+                      <div
+                        className="rec-project-item"
+                        onMouseEnter={() => handleCardFlip(index)}
+                        onClick={() => handleCardFlip(index)}
+                      >
+                        <div className="rec-project-item-img">
+                          <img src={project.image} alt="" />
+                          <h2>{project.name}</h2>
+                          <h4 className="location-info">
+                            <i className="fa-solid fa-location-dot"></i>
+                            {project.location}
+                          </h4>
+                        </div>
                       </div>
-                    </div>
                     </div>
                     <div
                       className="rec-project-item"
@@ -337,7 +387,7 @@ export default function Projects() {
                     >
                       <div className="rec-project-item-text">
                         <h3>{project.informationHeading}</h3>
-                       
+
                         <div className="rec-project-item-location">
                           <h6>{project.informationText}</h6>
                         </div>
@@ -351,10 +401,10 @@ export default function Projects() {
         </div>
 
         <div className="cta">
-        <a href="tel:+91984473355">
-          Connect With Dedicated Real Property Consultants
-        </a>
-      </div>
+          <a href="tel:+91984473355">
+            Connect With Dedicated Real Property Consultants
+          </a>
+        </div>
       </div>
       <Footer />
     </div>
@@ -548,7 +598,7 @@ const villaData = [
   {
     name: "Urbanrise - City with Infinite Life ",
     location: "Off Kanakura Road",
-    image:Urbanrise,
+    image: Urbanrise,
     informationHeading: "4 BHK Luxury Villas",
     informationHeading1: "Starting from Rs. 2.88 Cr Onwards",
     informationText: (
@@ -618,7 +668,6 @@ const villaData = [
       </>
     ),
   },
- 
 ];
 
 const flatData = [
@@ -626,9 +675,8 @@ const flatData = [
     name: "Brigade Oasis",
     location: "Devanahalli, Doddaballapura",
     image: BrigadeOasis,
-    informationHeading:
-      "1200 Sq Ft - 2400 Sq Ft Premium Plots ",
-      informationHeading1: "Starting at Rs. 6,500/Sq Ft",
+    informationHeading: "1200 Sq Ft - 2400 Sq Ft Premium Plots ",
+    informationHeading1: "Starting at Rs. 6,500/Sq Ft",
     informationText: (
       <>
         <ul>
@@ -670,7 +718,7 @@ const flatData = [
         <ul>
           <li>60+ Acres of land parcel</li>
           <li>25,000 Sft Clubhouse</li>
-          <li>45 % Open Space |  600+ Units</li>
+          <li>45 % Open Space | 600+ Units</li>
           <li>30+ Amenities</li>
           <li>BMRDA Approved | e-Katha</li>
         </ul>
@@ -695,7 +743,6 @@ const flatData = [
       </>
     ),
   },
-  
 ];
 
 const projectData = [

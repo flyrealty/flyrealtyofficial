@@ -51,17 +51,20 @@
   }
 }
 
-.toggle-button h3{
+.close-button {
+  display: none;
+}
+.toggle-button h3 {
   font-size: 2rem;
 }
 
 .toggle-button {
-    background-color: white !important;
-    border: none !important;
-    padding-top: 2rem !important;
-    color: black !important;
-    cursor: pointer !important;
-    width: 100% !important;
+  background-color: white !important;
+  border: none !important;
+  padding-top: 2rem !important;
+  color: black !important;
+  cursor: pointer !important;
+  width: 100% !important;
 }
 
 .whatsapp-icon {
@@ -3323,6 +3326,12 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+  .close-button {
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+    display: block;
+  }
   .case-points h4 {
     text-align: center;
   }
