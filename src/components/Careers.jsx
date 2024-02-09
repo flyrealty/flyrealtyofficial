@@ -13,7 +13,7 @@ export default function Careers() {
           <div className="hero-overlay">
             <h1 className="hero-text">
               Seeking a career that challenges you, inspires you, and rewards
-              your hustle?<span> Then, Work With Us!</span>
+              your hustle?
             </h1>
           </div>
           <img className="hero-img" src={flipcoin} alt="" />
