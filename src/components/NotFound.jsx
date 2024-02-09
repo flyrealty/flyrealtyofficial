@@ -15,7 +15,7 @@ export default function NotFound() {
         <div className="not-found">
           <div className="nf-title">
             <div className="heading">
-              <h2>OUR WEBSITE IS</h2>
+           
               <h1>COMING SOON</h1>
             </div>
             <div className="subheading">

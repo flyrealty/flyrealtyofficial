@@ -1,0 +1,58 @@
+.hero-section {
+  position: relative;
+  width: 100% !important;
+}
+
+.hero-overlay {
+  display: flex;
+  position: absolute;
+  top:10rem;
+  
+  
+ 
+  z-index: 1;
+}
+
+.hero-text {
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.job-card {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: lightblue;
+  border-radius: 8px;
+}
+
+.position-name {
+  color: black;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}

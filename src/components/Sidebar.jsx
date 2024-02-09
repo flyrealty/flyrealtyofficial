@@ -21,9 +21,11 @@ function Sidebar() {
                 <Link to="/" onClick={toggleSidebar}>Home</Link>
                 <Link to="/business" onClick={toggleSidebar}>Services</Link>
                 <Link to="/projects" onClick={toggleSidebar}>Projects</Link>
-                <Link to="/insights" onClick={toggleSidebar}>Insights</Link>
+                {/* <Link to="/insights" onClick={toggleSidebar}>Insights</Link>*/}
                 <Link to="/about" onClick={toggleSidebar}>About Us</Link>
+                <Link to="/careers" onClick={toggleSidebar}>Careers</Link>
                 <Link to="/connect" onClick={toggleSidebar}>Connect</Link>
+               
             </div>
             <button className="toggle-button" onClick={toggleSidebar}>
            <h3> <b>x </b></h3>

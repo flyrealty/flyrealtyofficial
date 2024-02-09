@@ -48,6 +48,8 @@ export default function Nav() {
           >
             Projects
           </NavLink>
+
+          {/*
           <NavLink
             to="/insights"
             onClick={handleLinkClick}
@@ -55,6 +57,7 @@ export default function Nav() {
           >
             Insights
           </NavLink>
+  */}
           <NavLink
             to="/about"
             onClick={handleLinkClick}
@@ -63,12 +66,20 @@ export default function Nav() {
             About Us
           </NavLink>
           <NavLink
+          to="/careers"
+          onClick={handleLinkClick}
+          activeClassName="active"
+        >
+          Careers
+        </NavLink>
+          <NavLink
             to="/connect"
             onClick={handleLinkClick}
             activeClassName="active"
           >
             Connect
           </NavLink>
+         
         </div>
         <div
           className="hamburger"
