@@ -15,7 +15,7 @@ import Slideshow from "./components/Slideshow";
 import Refer from "./components/Refer";
 import Testimonials from "./components/Testimonials";
 import PrivacyPolicy from "./components/PrivacyPolilcy";
-import Careers from "./components/careers";
+import Careers from "./components/Careers";
 
 export {
   PrivacyPolicy,
