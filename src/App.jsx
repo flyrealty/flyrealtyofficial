@@ -6,10 +6,10 @@ import {
   Connect,
   PrivacyPolicy,
   Insights,
-  Home,  
+  Home,
+  Careers,
 } from "./exports";
 import NotFound from "./components/NotFound";
-import Careers from "./components/careers";
 
 import Business from "./components/Business";
 import Auth from "./components/cms/Auth";
@@ -32,10 +32,10 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/careers" element={<Careers />} />
-
         <Route path="/privacy" element={<PrivacyPolicy />} />
-        {/* <Route path='/auth' element={<Auth />} />
-        <Route path='/dashboard' element={<Dashboard />} /> */}
+
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
       {/* WhatsApp Icon */}

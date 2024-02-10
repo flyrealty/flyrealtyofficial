@@ -158,7 +158,6 @@ export default function Business() {
                             <li>100,000 Sft Worth 200 Cr Inventory Sold</li>
                             <li>200% Marketing ROI</li>
                             <li>5,000/Sft Avg. Basic Price Achieved</li>
-                            
                           </ul>
                         </div>
                         <div className="highlight1">
