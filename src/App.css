@@ -3336,6 +3336,9 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+  .whatsapp-icon img {
+    width: 4rem;
+  }
   .close-button {
     width: 100%;
     background-color: white;
