@@ -90,10 +90,11 @@ input[type="file"] {
   display: block;
   width: 25%;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ccff00;
+  color: #000000;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -229,5 +230,10 @@ select::-ms-expand {
   }
   .form-group {
     width: 100%;
+  }
+
+  .close-button-popup {
+    top: 0;
+    right: 0;
   }
 }
