@@ -241,13 +241,14 @@
     text-align: center !important;
   }
   .sets-aprt-head {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 0rem;
   }
 
   .jobs-open-head {
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 2rem;
   }
   .job-card {
     width: 90%;
@@ -256,8 +257,10 @@
   }
 
   .dont-hustle-head {
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    margin-top: 2rem;
     width: 81%;
     text-align: center;
   }

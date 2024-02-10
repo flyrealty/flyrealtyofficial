@@ -54,7 +54,7 @@
 }
 
 .job-description-container {
-  max-height: 600px;
+  height: 90%;
   overflow-y: auto;
 }
 
