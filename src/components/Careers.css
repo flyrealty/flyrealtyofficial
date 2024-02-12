@@ -247,22 +247,29 @@
   .title-img-wrapp {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 
   .careers-head {
-    margin-top: 2.5rem;
+    width: 80%;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     margin-left: 0;
   }
+  .hero-section {
+    margin-top: 2rem;
+  }
 
   .careers-head p {
     font-size: 1.1rem;
   }
   .careers-head h1 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 2.1rem;
   }
 
   .job-title {
@@ -294,7 +301,7 @@
   .jobs-open-head {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .job-card {
     width: 90%;
