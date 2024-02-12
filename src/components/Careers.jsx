@@ -22,8 +22,17 @@ export default function Careers() {
     <div className="container">
       <Nav />
       <div className="wrapper">
-        <div className="hero-section">
-          <img className="hero-img" src={flipcoin} alt="" />
+        <div className="title-img-wrapp">
+          <div className="careers-head">
+            <p>
+              Seeking a career that challenges you, inspires you, and rewards
+              your hustle?{" "}
+            </p>
+            <h1>Then, Work With Us!</h1>
+          </div>
+          <div className="hero-section">
+            <img className="hero-img" src={flipcoin} alt="" />
+          </div>
         </div>
         <div className="sets-contain">
           <div className="sets-apart-wrapper">

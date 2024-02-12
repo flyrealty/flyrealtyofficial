@@ -2741,6 +2741,7 @@ p {
   color: grey;
 }
 .point-content h3 {
+  font-weight: 600;
   text-align: left;
 }
 .point-content {

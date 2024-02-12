@@ -3,6 +3,11 @@
   width: 100% !important;
 }
 
+.title-img-wrapp {
+  display: flex;
+  background-color: #e6e6e6;
+}
+
 .hero-overlay {
   display: flex;
   position: absolute;
@@ -165,6 +170,7 @@
 
 .job-title {
   font-size: 24px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -172,7 +178,7 @@
   font-size: 16px;
   color: #000000;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left !important;
 }
 
@@ -215,10 +221,48 @@
   height: 4rem;
   margin-top: 3rem;
 }
+.careers-head {
+  display: flex;
+  width: 100%;
+  gap: 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.careers-head p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.careers-head h1 {
+  font-size: 4rem;
+}
 
 @media screen and (max-width: 800px) {
   .bottom-image img {
     width: 12rem;
+  }
+
+  .title-img-wrapp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .careers-head {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .careers-head p {
+    font-size: 1.1rem;
+  }
+  .careers-head h1 {
+    font-size: 2rem;
   }
 
   .job-title {
@@ -239,16 +283,18 @@
   }
   .point-apart {
     text-align: center !important;
+    margin-top: 0.5rem;
+    font-weight: 400;
   }
   .sets-aprt-head {
-    margin-top: 3rem;
-    margin-bottom: 0rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   .jobs-open-head {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .job-card {
     width: 90%;
@@ -257,7 +303,7 @@
   }
 
   .dont-hustle-head {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 700;
     margin-top: 2rem;
@@ -295,6 +341,7 @@
 
   .job-title {
     text-align: center;
+    font-weight: 500;
   }
   .job-requirements {
     text-align: center !important;
@@ -304,6 +351,7 @@
   }
   .point-heading {
     text-align: center;
+    font-weight: 600;
   }
   .point-wrapper {
     align-items: center;
@@ -313,5 +361,8 @@
   }
   .point-wrapper {
     margin-top: 1rem;
+  }
+  .img-text-head img {
+    margin-top: 1.5rem;
   }
 }

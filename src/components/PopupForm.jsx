@@ -256,7 +256,7 @@ function PopupForm({ job, onClose }) {
                         />
                       </div>
 
-                      <div className="form-group">
+                      <div className="form-group-submit">
                         <button type="submit" className="submit-button">
                           Submit
                         </button>
@@ -443,7 +443,7 @@ function PopupForm({ job, onClose }) {
                           />
                         </div>
 
-                        <div className="form-group">
+                        <div className="form-group-submit">
                           <button type="submit" className="submit-button">
                             Submit
                           </button>
@@ -635,7 +635,7 @@ function PopupForm({ job, onClose }) {
                           />
                         </div>
 
-                        <div className="form-group">
+                        <div className="form-group-submit">
                           <button type="submit" className="submit-button">
                             Submit
                           </button>

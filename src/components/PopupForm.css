@@ -20,6 +20,12 @@
   -webkit-backdrop-filter: blur(8px);
 }
 
+.form-group-submit {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
 .close-button-popup {
   width: 100%;
   display: flex;
@@ -205,6 +211,17 @@ select::-ms-expand {
 }
 
 @media screen and (max-width: 800px) {
+  .form-group-submit {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .submit-button {
+    width: 40%;
+  }
+
   .popup-container {
     width: 88%;
     padding-left: 1.5rem;
