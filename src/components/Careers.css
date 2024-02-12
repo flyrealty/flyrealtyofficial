@@ -6,6 +6,7 @@
 .title-img-wrapp {
   display: flex;
   background-color: #e6e6e6;
+  padding: 6rem 0rem 5rem 2rem;
 }
 
 .hero-overlay {
@@ -249,6 +250,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding: 0;
   }
 
   .careers-head {

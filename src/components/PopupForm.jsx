@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./PopupForm.css";
 import emailjs from "emailjs-com";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import ThankYouPopup from "./ThankYouPopup";
+import cloudinary from "cloudinary-core";
 
 function PopupForm({ job, onClose }) {
   const [resume, setResume] = useState(null);
+  const [showThankYou, setShowThankYou] = useState(false);
 
   useEffect(() => {
     document.body.classList.add("popup-open");
@@ -13,6 +16,13 @@ function PopupForm({ job, onClose }) {
       document.body.classList.remove("popup-open");
     };
   }, []);
+
+  // Configure Cloudinary with your credentials
+  const cloudinaryInstance = cloudinary.Cloudinary.new({
+    cloud_name: "dd1vzsruc",
+    api_key: "122952366476122",
+    api_secret: "AVBPpHn9LcNhPLwyIMbrB4aMsg4",
+  });
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -38,35 +48,37 @@ function PopupForm({ job, onClose }) {
       );
 
       if (resume) {
-        // Handle file upload separately and include link in the email
-        const fileUploadParams = {
-          file: resume,
-          upload_preset: "your_cloudinary_upload_preset",
-        };
+        // Upload resume to Cloudinary
+        const formData = new FormData();
+        formData.append("file", resume);
 
-        // You need to use a service like Cloudinary for file hosting
-        const fileUploadResponse = await fetch(
-          "https://api.cloudinary.com/v1_1/your_cloudinary_cloud_name/upload",
+        const response = await fetch(
+          `https://api.cloudinary.com/v1_1/${
+            cloudinaryInstance.config().cloud_name
+          }/auto/upload`,
           {
             method: "POST",
-            body: new FormData().append("file", resume),
+            body: formData,
           }
         );
 
-        const fileUploadData = await fileUploadResponse.json();
-
-        // Include the link to the file in the email
-        templateParams.resumeLink = fileUploadData.secure_url;
+        const data = await response.json();
+        templateParams.resumeLink = data.secure_url;
       }
-
       console.log("Email sent successfully!", emailResponse.text);
       setSubmitting(false);
       setResume(null);
       onClose();
+      setShowThankYou(true);
     } catch (error) {
       console.error("Error sending email:", error);
       setSubmitting(false);
     }
+  };
+
+  const closePopups = () => {
+    setShowThankYou(false);
+    onClose();
   };
 
   return (
@@ -646,6 +658,8 @@ function PopupForm({ job, onClose }) {
                 </div>
               </>
             )}
+            {/* Thank you popup */}
+            {showThankYou && <ThankYouPopup onClose={closePopups} />}
           </div>
         </div>
       </div>
