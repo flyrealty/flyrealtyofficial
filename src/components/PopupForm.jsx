@@ -8,6 +8,7 @@ import cloudinary from "cloudinary-core";
 function PopupForm({ job, onClose }) {
   const [resume, setResume] = useState(null);
   const [showThankYou, setShowThankYou] = useState(false);
+  const [uploadError, setUploadError] = useState(null);
 
   useEffect(() => {
     document.body.classList.add("popup-open");
@@ -17,7 +18,6 @@ function PopupForm({ job, onClose }) {
     };
   }, []);
 
-  // Configure Cloudinary with your credentials
   const cloudinaryInstance = cloudinary.Cloudinary.new({
     cloud_name: "dd1vzsruc",
     api_key: "122952366476122",
@@ -32,6 +32,12 @@ function PopupForm({ job, onClose }) {
     const { fullName, email, phoneNumber } = values;
 
     try {
+      if (!fullName || !email || !phoneNumber || !resume) {
+        throw new Error(
+          "Please fill in all fields and upload your resume before submitting the form."
+        );
+      }
+
       const templateParams = {
         fullName: fullName,
         email: email,
@@ -48,30 +54,35 @@ function PopupForm({ job, onClose }) {
       );
 
       if (resume) {
-        // Upload resume to Cloudinary
         const formData = new FormData();
         formData.append("file", resume);
 
         const response = await fetch(
           `https://api.cloudinary.com/v1_1/${
             cloudinaryInstance.config().cloud_name
-          }/auto/upload`,
+          }/auto/upload/resume`,
           {
             method: "POST",
             body: formData,
           }
         );
 
+        if (!response.ok) {
+          throw new Error("Failed to upload file to Cloudinary");
+        }
+
         const data = await response.json();
         templateParams.resumeLink = data.secure_url;
       }
+
       console.log("Email sent successfully!", emailResponse.text);
       setSubmitting(false);
       setResume(null);
       onClose();
       setShowThankYou(true);
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("Error submitting form:", error.message);
+      setUploadError("Form not submitted");
       setSubmitting(false);
     }
   };
@@ -267,6 +278,9 @@ function PopupForm({ job, onClose }) {
                           onChange={handleFileChange}
                         />
                       </div>
+                      {uploadError && (
+                        <div className="error-message">{uploadError}</div>
+                      )}
 
                       <div className="form-group-submit">
                         <button type="submit" className="submit-button">
