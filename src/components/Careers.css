@@ -363,6 +363,7 @@
   }
   .sets-aprt-content {
     width: 71%;
+    gap: 1rem;
   }
   .point-heading {
     text-align: center;
