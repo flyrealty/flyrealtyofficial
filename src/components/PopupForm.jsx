@@ -18,16 +18,18 @@ function PopupForm({ job, onClose }) {
     };
   }, []);
 
-  const cloudinaryInstance = cloudinary.Cloudinary.new({
+  const cloudinaryDetails = {
     cloud_name: "dd1vzsruc",
     api_key: "122952366476122",
     api_secret: "AVBPpHn9LcNhPLwyIMbrB4aMsg4",
-  });
+    upload_preset: "Upload-Resume",
+  };
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setResume(file);
   };
+
   const handleSubmit = async (values, { setSubmitting }) => {
     const { fullName, email, phoneNumber } = values;
 
@@ -45,22 +47,15 @@ function PopupForm({ job, onClose }) {
         job: job,
       };
 
-      // Send email
-      const emailResponse = await emailjs.send(
-        "service_f4ug9qn",
-        "template_dtxu0po",
-        templateParams,
-        "G0GF7MMYoYxAdLwgJ"
-      );
+      let resumeLink = null;
 
       if (resume) {
         const formData = new FormData();
         formData.append("file", resume);
+        formData.append("upload_preset", cloudinaryDetails.upload_preset);
 
         const response = await fetch(
-          `https://api.cloudinary.com/v1_1/${
-            cloudinaryInstance.config().cloud_name
-          }/auto/upload/resume`,
+          `https://api.cloudinary.com/v1_1/${cloudinaryDetails.cloud_name}/upload`,
           {
             method: "POST",
             body: formData,
@@ -72,8 +67,16 @@ function PopupForm({ job, onClose }) {
         }
 
         const data = await response.json();
-        templateParams.resumeLink = data.secure_url;
+        resumeLink = data.secure_url;
+        templateParams.resumeLink = resumeLink;
       }
+
+      const emailResponse = await emailjs.send(
+        "service_f4ug9qn",
+        "template_dtxu0po",
+        templateParams,
+        "G0GF7MMYoYxAdLwgJ"
+      );
 
       console.log("Email sent successfully!", emailResponse.text);
       setSubmitting(false);
@@ -81,7 +84,7 @@ function PopupForm({ job, onClose }) {
       onClose();
       setShowThankYou(true);
     } catch (error) {
-      console.error("Error submitting form:", error.message);
+      console.error("Error submitting form:", error);
       setUploadError("Form not submitted");
       setSubmitting(false);
     }
@@ -99,7 +102,7 @@ function PopupForm({ job, onClose }) {
           x
         </button>
         <h2>Job Description for {job}</h2>
-        <hr /> {/* Line separator */}
+        <hr />
         <div className="job-description-container">
           <div className="job-description">
             {job === "Relationship Manager" && (

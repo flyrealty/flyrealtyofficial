@@ -25,8 +25,8 @@ export default function Careers() {
         <div className="title-img-wrapp">
           <div className="careers-head">
             <p>
-              Seeking a career that challenges you, inspires you, and rewards
-              your hustle?{" "}
+              Seeking a career that challenges you, inspires you,<br></br> and
+              rewards your hustle?{" "}
             </p>
             <h1>Then, Work With Us!</h1>
           </div>

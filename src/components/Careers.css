@@ -6,7 +6,7 @@
 .title-img-wrapp {
   display: flex;
   background-color: #e6e6e6;
-  padding: 6rem 0rem 5rem 2rem;
+  padding: 6rem 0rem 0rem 2rem;
 }
 
 .hero-overlay {
@@ -48,28 +48,30 @@
 }
 
 .sets-aprt-head {
-  font-size: 4rem;
+  font-weight: 500;
   margin-top: 5rem;
   margin-bottom: 3rem;
   display: flex;
   font-size: 4rem;
   margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   justify-content: center;
 }
 
 .jobs-open-head {
+  font-weight: 500;
   font-size: 4rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
   display: flex;
   font-size: 4rem;
   margin-top: 0rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   justify-content: center;
 }
 
 .dont-hustle-head {
+  font-weight: 500;
   width: 40%;
   font-size: 4rem;
   margin-top: 5rem;
@@ -91,7 +93,7 @@
 .point-apart {
   text-align: left !important;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 .point-wrapper {
@@ -144,7 +146,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .job-card {
@@ -225,19 +227,21 @@
 .careers-head {
   display: flex;
   width: 100%;
-  gap: 0rem;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 4rem;
 }
 
 .careers-head p {
   font-size: 1.5rem;
   font-weight: 500;
+  text-align: left;
 }
 .careers-head h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -269,6 +273,7 @@
 
   .careers-head p {
     font-size: 1.1rem;
+    text-align: center;
   }
   .careers-head h1 {
     text-align: center;
@@ -293,7 +298,7 @@
   }
   .point-apart {
     text-align: center !important;
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
     font-weight: 400;
   }
   .sets-aprt-head {
