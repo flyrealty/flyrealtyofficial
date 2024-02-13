@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./PopupForm.css";
 import emailjs from "emailjs-com";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import ThankYouPopup from "./ThankYouPopup";
-import cloudinary from "cloudinary-core";
 
 function PopupForm({ job, onClose }) {
   const [resume, setResume] = useState(null);
-  const [showThankYou, setShowThankYou] = useState(false);
   const [uploadError, setUploadError] = useState(null);
+  const [showBufferAnimation, setShowBufferAnimation] = useState(false);
+  const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+  const [countdown, setCountdown] = useState(5); // Countdown for 5 seconds
 
   useEffect(() => {
     document.body.classList.add("popup-open");
@@ -30,7 +30,7 @@ function PopupForm({ job, onClose }) {
     setResume(file);
   };
 
-  const handleSubmit = async (values, { setSubmitting }) => {
+  const handleSubmit = async (values, { setSubmitting, resetForm }, job) => {
     const { fullName, email, phoneNumber } = values;
 
     try {
@@ -39,6 +39,8 @@ function PopupForm({ job, onClose }) {
           "Please fill in all fields and upload your resume before submitting the form."
         );
       }
+
+      setShowBufferAnimation(true); // Show buffer animation
 
       const templateParams = {
         fullName: fullName,
@@ -78,26 +80,42 @@ function PopupForm({ job, onClose }) {
         "G0GF7MMYoYxAdLwgJ"
       );
 
-      console.log("Email sent successfully!", emailResponse.text);
+      console.log("Email sent successfully!");
       setSubmitting(false);
       setResume(null);
-      onClose();
-      setShowThankYou(true);
+      setUploadError(null);
+      setShowThankYouMessage(true);
+      startCountdown();
     } catch (error) {
       console.error("Error submitting form:", error);
-      setUploadError("Form not submitted");
+      setUploadError("Your application has been submitted successfully.");
+    } finally {
+      setShowBufferAnimation(false);
       setSubmitting(false);
+      resetForm();
     }
   };
 
-  const closePopups = () => {
-    setShowThankYou(false);
-    onClose();
+  // Countdown function to automatically close popup after 5 seconds
+  const startCountdown = () => {
+    const interval = setInterval(() => {
+      setCountdown((prevCount) => prevCount - 1);
+    }, 1000);
+
+    setTimeout(() => {
+      clearInterval(interval);
+      onClose(); // Close the popup after countdown ends
+    }, 5000);
   };
 
   return (
-    <div className="popup-overlay locked-background">
-      <div className="popup-container">
+    <div
+      className={`popup-overlay ${
+        showThankYouMessage ? "blurred-background" : ""
+      } locked-background`}
+    >
+      {showBufferAnimation && <div className="buffer-animation"></div>}
+      <div className={`popup-container ${showBufferAnimation ? "blur" : ""}`}>
         <button className="close-button-popup" onClick={onClose}>
           x
         </button>
@@ -246,51 +264,57 @@ function PopupForm({ job, onClose }) {
 
                       email: "",
                     }}
-                    onSubmit={(values, { setSubmitting }) =>
-                      handleSubmit(values, setSubmitting, job)
+                    onSubmit={(values, { setSubmitting, resetForm }) =>
+                      handleSubmit(values, { setSubmitting, resetForm }, job)
                     }
                   >
-                    <Form>
-                      <div className="form-group">
-                        <label htmlFor="fullName">Full Name:</label>
-                        <Field type="text" id="fullName" name="fullName" />
-                        <ErrorMessage name="fullName" component="div" />
-                      </div>
+                    {({ isSubmitting }) => (
+                      <Form>
+                        <div className="form-group">
+                          <label htmlFor="fullName">Full Name:</label>
+                          <Field type="text" id="fullName" name="fullName" />
+                          <ErrorMessage name="fullName" component="div" />
+                        </div>
 
-                      <div className="form-group">
-                        <label htmlFor="email">Email:</label>
-                        <Field type="email" id="email" name="email" />
-                        <ErrorMessage name="email" component="div" />
-                      </div>
+                        <div className="form-group">
+                          <label htmlFor="email">Email:</label>
+                          <Field type="email" id="email" name="email" />
+                          <ErrorMessage name="email" component="div" />
+                        </div>
 
-                      <div className="form-group">
-                        <label htmlFor="phoneNumber">Phone Number:</label>
-                        <Field
-                          type="text"
-                          id="phoneNumber"
-                          name="phoneNumber"
-                        />
-                        <ErrorMessage name="phoneNumber" component="div" />
-                      </div>
+                        <div className="form-group">
+                          <label htmlFor="phoneNumber">Phone Number:</label>
+                          <Field
+                            type="text"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                          />
+                          <ErrorMessage name="phoneNumber" component="div" />
+                        </div>
 
-                      <div className="form-group">
-                        <label htmlFor="resume">Upload Resume:</label>
-                        <input
-                          type="file"
-                          id="resume"
-                          onChange={handleFileChange}
-                        />
-                      </div>
-                      {uploadError && (
-                        <div className="error-message">{uploadError}</div>
-                      )}
+                        <div className="form-group">
+                          <label htmlFor="resume">Upload Resume:</label>
+                          <input
+                            type="file"
+                            id="resume"
+                            onChange={handleFileChange}
+                          />
+                        </div>
+                        {uploadError && (
+                          <div className="error-message">{uploadError}</div>
+                        )}
 
-                      <div className="form-group-submit">
-                        <button type="submit" className="submit-button">
-                          Submit
-                        </button>
-                      </div>
-                    </Form>
+                        <div className="form-group-submit">
+                          <button
+                            type="submit"
+                            className="submit-button"
+                            disabled={isSubmitting}
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </Form>
+                    )}
                   </Formik>
                 )}
               </div>
@@ -438,46 +462,57 @@ function PopupForm({ job, onClose }) {
 
                         email: "",
                       }}
-                      onSubmit={(values, { setSubmitting }) =>
-                        handleSubmit(values, setSubmitting, job)
+                      onSubmit={(values, { setSubmitting, resetForm }) =>
+                        handleSubmit(values, { setSubmitting, resetForm }, job)
                       }
                     >
-                      <Form>
-                        <div className="form-group">
-                          <label htmlFor="fullName">Full Name:</label>
-                          <Field type="text" id="fullName" name="fullName" />
-                          <ErrorMessage name="fullName" component="div" />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="email">Email:</label>
-                          <Field type="email" id="email" name="email" />
-                          <ErrorMessage name="email" component="div" />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="phoneNumber">Phone Number:</label>
-                          <Field
-                            type="text"
-                            id="phoneNumber"
-                            name="phoneNumber"
-                          />
-                          <ErrorMessage name="phoneNumber" component="div" />
-                        </div>
+                      {({ isSubmitting }) => (
+                        <Form>
+                          <div className="form-group">
+                            <label htmlFor="fullName">Full Name:</label>
+                            <Field type="text" id="fullName" name="fullName" />
+                            <ErrorMessage name="fullName" component="div" />
+                          </div>
 
-                        <div className="form-group">
-                          <label htmlFor="resume">Upload Resume:</label>
-                          <input
-                            type="file"
-                            id="resume"
-                            onChange={handleFileChange}
-                          />
-                        </div>
+                          <div className="form-group">
+                            <label htmlFor="email">Email:</label>
+                            <Field type="email" id="email" name="email" />
+                            <ErrorMessage name="email" component="div" />
+                          </div>
 
-                        <div className="form-group-submit">
-                          <button type="submit" className="submit-button">
-                            Submit
-                          </button>
-                        </div>
-                      </Form>
+                          <div className="form-group">
+                            <label htmlFor="phoneNumber">Phone Number:</label>
+                            <Field
+                              type="text"
+                              id="phoneNumber"
+                              name="phoneNumber"
+                            />
+                            <ErrorMessage name="phoneNumber" component="div" />
+                          </div>
+
+                          <div className="form-group">
+                            <label htmlFor="resume">Upload Resume:</label>
+                            <input
+                              type="file"
+                              id="resume"
+                              onChange={handleFileChange}
+                            />
+                          </div>
+                          {uploadError && (
+                            <div className="error-message">{uploadError}</div>
+                          )}
+
+                          <div className="form-group-submit">
+                            <button
+                              type="submit"
+                              className="submit-button"
+                              disabled={isSubmitting}
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </Form>
+                      )}
                     </Formik>
                   )}
                 </div>
@@ -630,55 +665,71 @@ function PopupForm({ job, onClose }) {
 
                         email: "",
                       }}
-                      onSubmit={(values, { setSubmitting }) =>
-                        handleSubmit(values, setSubmitting, job)
+                      onSubmit={(values, { setSubmitting, resetForm }) =>
+                        handleSubmit(values, { setSubmitting, resetForm }, job)
                       }
                     >
-                      <Form>
-                        <div className="form-group">
-                          <label htmlFor="fullName">Full Name:</label>
-                          <Field type="text" id="fullName" name="fullName" />
-                          <ErrorMessage name="fullName" component="div" />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="email">Email:</label>
-                          <Field type="email" id="email" name="email" />
-                          <ErrorMessage name="email" component="div" />
-                        </div>
-                        <div className="form-group">
-                          <label htmlFor="phoneNumber">Phone Number:</label>
-                          <Field
-                            type="text"
-                            id="phoneNumber"
-                            name="phoneNumber"
-                          />
-                          <ErrorMessage name="phoneNumber" component="div" />
-                        </div>
+                      {({ isSubmitting }) => (
+                        <Form>
+                          <div className="form-group">
+                            <label htmlFor="fullName">Full Name:</label>
+                            <Field type="text" id="fullName" name="fullName" />
+                            <ErrorMessage name="fullName" component="div" />
+                          </div>
 
-                        <div className="form-group">
-                          <label htmlFor="resume">Upload Resume:</label>
-                          <input
-                            type="file"
-                            id="resume"
-                            onChange={handleFileChange}
-                          />
-                        </div>
+                          <div className="form-group">
+                            <label htmlFor="email">Email:</label>
+                            <Field type="email" id="email" name="email" />
+                            <ErrorMessage name="email" component="div" />
+                          </div>
 
-                        <div className="form-group-submit">
-                          <button type="submit" className="submit-button">
-                            Submit
-                          </button>
-                        </div>
-                      </Form>
+                          <div className="form-group">
+                            <label htmlFor="phoneNumber">Phone Number:</label>
+                            <Field
+                              type="text"
+                              id="phoneNumber"
+                              name="phoneNumber"
+                            />
+                            <ErrorMessage name="phoneNumber" component="div" />
+                          </div>
+
+                          <div className="form-group">
+                            <label htmlFor="resume">Upload Resume:</label>
+                            <input
+                              type="file"
+                              id="resume"
+                              onChange={handleFileChange}
+                            />
+                          </div>
+                          {uploadError && (
+                            <div className="error-message">{uploadError}</div>
+                          )}
+
+                          <div className="form-group-submit">
+                            <button
+                              type="submit"
+                              className="submit-button"
+                              disabled={isSubmitting}
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </Form>
+                      )}
                     </Formik>
                   )}
                 </div>
               </>
             )}
-            {/* Thank you popup */}
-            {showThankYou && <ThankYouPopup onClose={closePopups} />}
           </div>
         </div>
+
+        {/* Place the thank you message here */}
+        {showThankYouMessage && (
+          <div className="thank-you-message">
+            Submitted! ( {countdown} seconds.)
+          </div>
+        )}
       </div>
     </div>
   );

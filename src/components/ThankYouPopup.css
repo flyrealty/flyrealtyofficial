@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999999;
 }
 
 .thank-you-popup-content {
@@ -37,4 +38,16 @@
 .thank-you-popup-content p {
   font-size: 18px;
   margin-bottom: 0;
+}
+
+.thank-you-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  z-index: 1000; /* Ensure it appears above other elements */
 }
