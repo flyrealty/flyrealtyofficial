@@ -125,9 +125,13 @@
 }
 
 .rec-items .splide__track {
-  width: 85vw;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.rec-items .splide__slide {
+  width: 30% !important;
 }
 
 .popup {
@@ -2574,7 +2578,7 @@ h4 {
   margin-top: 4rem;
 }
 .rec-item {
-  width: 20rem;
+  width: 23rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -3389,11 +3393,27 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
-  .rec-items .splide__track {
-    padding-left: 171px !important;
+  .rec-items .splide.is-initialized {
+    width: 100%;
   }
+  .rec-items {
+    width: 100%;
+  }
+  .rec-items .splide__list {
+    gap: 0 !important;
+  }
+  .rec-items .splide__slide {
+    display: flex;
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  .rec-items .splide__track {
+    width: 100%;
+  }
+
   .rec-item {
-    width: 54%;
+    width: 67%;
   }
   .connect-form {
     padding-top: 3rem;
@@ -3610,6 +3630,10 @@ p {
 
   .case-wrapper .splide__arrow--next {
     margin-right: 0.05rem !important;
+  }
+
+  .splide__slide {
+    margin-left: 0rem !important;
   }
 
   .connect-persons .person {
@@ -4260,7 +4284,7 @@ p {
   }
 
   .recommend {
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 1rem;
     padding-bottom: 3rem;
   }

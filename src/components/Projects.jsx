@@ -31,8 +31,8 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import projectVideo from "../assets/video-projects.mp4";
 import { Navigation } from "swiper/modules";
+import projectVideo from "../assets/video-projects.mp4";
 import ReactCardFlip from "react-card-flip";
 import "./Projects.css";
 
