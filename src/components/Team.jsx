@@ -16,19 +16,19 @@ export default function Team() {
             that our team will continue to be committed to excellence and be the
             driving force behind our success.
           </p>
+          <button
+            className="hustle-btn"
+            onClick={() => {
+              window.location.href = "/connect";
+            }}
+          >
+            Join the Hustle
+          </button>
         </div>
       </div>
       <div className="team-image">
         <img src={teamImg} alt="" />
       </div>
-      <button
-        className="hustle-btn"
-        onClick={() => {
-          window.location.href = "/connect";
-        }}
-      >
-        Join the Hustle
-      </button>
     </div>
   );
 }

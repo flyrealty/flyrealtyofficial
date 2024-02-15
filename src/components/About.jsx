@@ -246,9 +246,9 @@ export default function About() {
                 <h1>People - First</h1>
                 <p>
                   Creating a healthy work environment built on trust,
-                  transparency, honesty, loyalty, and empathy. This in turn
-                  helps us engage you with professionalism, patience, and an
-                  ethical approach.
+                  transparency, honesty, loyalty, and empathy. <br></br>This in
+                  turn helps us engage you with professionalism, patience, and
+                  an ethical approach.
                 </p>
               </div>
               <div className="people-img">

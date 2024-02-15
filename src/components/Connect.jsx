@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ImCancelCircle } from "react-icons/im";
 import "../App.css";
 import { Nav, Footer } from "../exports";
+import banner from "../assets/bussiness-connect.png";
 
 export default function Connect() {
   const [formData, setFormData] = useState({
@@ -103,6 +104,7 @@ export default function Connect() {
   return (
     <div className="container">
       <Nav />
+
       <div className={`wrapper ${showPopup ? "blur" : ""}`}>
         <div className="connect">
           <div className="connect-header">
@@ -118,7 +120,7 @@ export default function Connect() {
           <div className="connect-form">
             <div className="connect-content">
               <div className="form">
-                <form className="form" onSubmit={handleSubmit}>
+                <form className="form-wrap" onSubmit={handleSubmit}>
                   <h1>We Would Love To Hear From You!</h1>
                   <input
                     type="text"
@@ -179,38 +181,38 @@ export default function Connect() {
           </div>
         </div>
       </div>
-<div className="wrap-connect-address">
-      <div className="connect-addresses">
-        <div className="address-item">
-          <h1>Bengaluru</h1>
-          <h6>Headquarters</h6>
-          <div className="address">
-            <h6>3rd Floor, Sakti Statesman Building</h6>
-            <h6>Outer Ring Rd, Green Glen Layout,</h6>
-            <h6>Bellandur, Bengaluru, 560103</h6>
-            <h6>PRM/KA/RERA/1251/309/</h6>
-            <h6>AG/220530/002939</h6>
-            <h6>+91 98444 73355</h6>
+      <div className="wrap-connect-address">
+        <div className="connect-addresses">
+          <div className="address-item">
+            <h1>Bengaluru</h1>
+            <h6>Headquarters</h6>
+            <div className="address">
+              <h6>3rd Floor, Sakti Statesman Building</h6>
+              <h6>Outer Ring Rd, Green Glen Layout,</h6>
+              <h6>Bellandur, Bengaluru, 560103</h6>
+              <h6>PRM/KA/RERA/1251/309/</h6>
+              <h6>AG/220530/002939</h6>
+              <h6>+91 98444 73355</h6>
+            </div>
+            <a href="https://www.google.com/maps/dir//3rd+Floor,+Sakti+Statesman,+Building+Iblur,+Outer+Ring+Rd,+Green+Glen+Layout,+Bellandur,+Bengaluru,+Karnataka+560103/@12.9239613,77.5851863,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae1394202080ff:0x138b8e3f3971dd15!2m2!1d77.6675882!2d12.9239742?entry=ttu">
+              View on Maps
+            </a>
           </div>
-          <a href="https://www.google.com/maps/dir//3rd+Floor,+Sakti+Statesman,+Building+Iblur,+Outer+Ring+Rd,+Green+Glen+Layout,+Bellandur,+Bengaluru,+Karnataka+560103/@12.9239613,77.5851863,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae1394202080ff:0x138b8e3f3971dd15!2m2!1d77.6675882!2d12.9239742?entry=ttu">
-            View on Maps
-          </a>
-        </div>
-        <div className="address-item">
-          <h1>Pune</h1>
-          <h6>Branch Office</h6>
-          <div className="address">
-            <h6>Office No. B-16, Floor No.6,</h6>
-            <h6>City Vista, Kharadi</h6>
-            <h6>Pune 411014</h6>
-            <h6>MahaRERA - A52100046472</h6>
-            <h6>+91 97655 50717</h6>
+          <div className="address-item">
+            <h1>Pune</h1>
+            <h6>Branch Office</h6>
+            <div className="address">
+              <h6>Office No. B-16, Floor No.6,</h6>
+              <h6>City Vista, Kharadi</h6>
+              <h6>Pune 411014</h6>
+              <h6>MahaRERA - A52100046472</h6>
+              <h6>+91 97655 50717</h6>
+            </div>
+            <a href="https://www.google.com/maps/dir/12.9140765,77.6650548/fly+realty+pune/@15.6837959,73.1549959,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2c1bb4e1c923b:0x949fed19272dee7c!2m2!1d73.9312748!2d18.5508936?entry=ttu">
+              View on Maps
+            </a>
           </div>
-          <a href="https://www.google.com/maps/dir/12.9140765,77.6650548/fly+realty+pune/@15.6837959,73.1549959,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2c1bb4e1c923b:0x949fed19272dee7c!2m2!1d73.9312748!2d18.5508936?entry=ttu">
-            View on Maps
-          </a>
         </div>
-      </div>
       </div>
       {showPopup && (
         <div className="popup">
@@ -235,7 +237,7 @@ export default function Connect() {
           </div>
         </div>
       )}
-     <Footer/>
+      <Footer />
     </div>
   );
 }

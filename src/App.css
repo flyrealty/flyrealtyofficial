@@ -51,6 +51,17 @@
   }
 }
 
+.builders-logo .splide__arrow--prev {
+  margin-left: -2rem;
+}
+
+.builders-logo .splide__arrow--next {
+  margin-right: -2rem;
+}
+
+.wrap-connect-address {
+  position: relative;
+}
 .recommend {
   width: 100%;
   padding: 0rem 5rem 5rem;
@@ -108,16 +119,15 @@
   filter: blur(5px);
 }
 
-.splide__slide {
-  margin-left: 2.2rem !important;
-}
-
 .rec-items .splide__list {
   display: flex;
+  gap: 2rem;
 }
 
 .rec-items .splide__track {
   width: 85vw;
+  display: flex;
+  justify-content: center;
 }
 
 .popup {
@@ -197,7 +207,7 @@
 
 .hero-display {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 1rem;
   gap: 2rem;
 }
 
@@ -353,20 +363,23 @@
 }
 .connect {
   width: 100%;
-  height: auto;
+  height: 100%;
 
   position: relative;
   background: rgb(242, 242, 242);
 }
 .connect-header {
   width: 100%;
-  height: 25rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 6rem;
   background: url("./assets/bussiness-connect.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Optional: Cover the entire background */
+  background-position: center;
 }
 .connect-header .heading {
   color: white;
@@ -378,13 +391,21 @@
 .connect-header .heading h1 {
   text-align: left;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 60px;
 }
 .connect-content .form h1 i {
   margin-left: 0.5rem;
 }
+
+.form-wrap {
+  width: 77%;
+}
+.form h1 {
+  font-size: 54px;
+  font-weight: 600;
+}
 .connect-header .heading h6 {
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 400;
   margin: 1rem 0rem;
   text-align: left;
@@ -405,9 +426,10 @@
   font-size: 1rem;
 }
 .connect-form {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
   width: 100%;
   height: auto;
-  min-height: 100vh;
   background: rgb(242, 242, 242);
   display: flex;
   flex-direction: row;
@@ -424,9 +446,8 @@
   height: auto;
   width: 90%;
   background: white;
-  position: absolute;
-  z-index: 5;
-  top: 5.3rem;
+  position: relative;
+
   border-radius: 1rem;
   padding: 3rem;
   box-shadow: 5px 5px 10px 0px rgba(201, 201, 201, 0.25);
@@ -467,6 +488,7 @@ textarea {
   border-radius: 0.5rem;
 }
 .connect-persons {
+  margin-right: 7rem;
   padding: 0rem 3rem;
   height: 100%;
   display: flex;
@@ -492,11 +514,15 @@ textarea {
   border: none;
 }
 .connect-persons .person h2 {
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 .connect-persons .person h3 {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 400;
+}
+.connect-content .form form input,
+textarea {
+  font-size: 1rem;
 }
 .connect-addresses {
   width: 100%;
@@ -553,17 +579,18 @@ textarea {
   width: 100%;
 }
 .about .about-heading h1 {
-  font-size: 4.5rem;
+  font-size: 60px;
+  font-weight: 700;
 }
 .about .about-heading h1:first-child {
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: 25px;
 }
 .about .about-heading h1:last-child {
   font-weight: 800;
 }
 .about .about-heading h6 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: left;
 }
@@ -592,13 +619,13 @@ textarea {
 }
 .story {
   background: white;
-  padding: 5rem;
+  padding: 5rem 5rem 1rem 5rem;
   width: 100%;
   height: auto;
 }
 .story h1 {
-  font-size: 4.5rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   color: var(--bgPrimary);
 }
 .story h1:nth-child(2) {
@@ -637,7 +664,7 @@ textarea {
 }
 .story-text-block p {
   text-align: left;
-  line-height: 1.7rem;
+  line-height: 25px;
 }
 .story-text-block p:first-child {
   margin-bottom: 2rem;
@@ -658,7 +685,10 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   gap: 3rem;
 }
 .parent-sib h3,
@@ -679,8 +709,8 @@ h4 {
   text-align: center;
 }
 .parent-heading h1 {
-  font-size: 4.5rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   text-align: center;
   width: 100%;
   color: var(--bgPrimary);
@@ -785,16 +815,17 @@ h4 {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.5rem;
   min-width: 320px;
 }
 .value-text-item h1 {
-  font-size: 2.5rem;
+  font-weight: 600;
+  font-size: 54px;
   margin-bottom: 0.25rem;
 }
 .value-text-item p {
   width: 90%;
-  line-height: 1.5rem;
+  line-height: 18px;
   text-align: left;
 }
 .value-title-img {
@@ -811,7 +842,7 @@ h4 {
 }
 .value-title,
 .value-img {
-  width: 50%;
+  width: 70%;
   min-width: 320px;
 }
 
@@ -919,8 +950,8 @@ h4 {
 }
 
 .core-heading h1 {
-  font-size: 4.5rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   color: var(--bgPrimary);
 }
 .core-items {
@@ -940,7 +971,7 @@ h4 {
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem 2rem;
-  margin-left: 15rem;
+  margin-top: 2.5rem;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .accordion-wrapper {
@@ -986,7 +1017,7 @@ h4 {
   background: var(--bgSecondary);
 }
 .accordion-points h2 {
-  font-size: 1.1rem;
+  font-size: 18px;
   text-align: left;
 }
 .core-item {
@@ -1077,11 +1108,12 @@ h4 {
   padding: 3rem 0rem;
 }
 .people-text h1 {
-  font-size: 4.5rem;
+  font-size: 54px;
   font-weight: 800;
   text-align: center;
 }
 .people-text p {
+  font-size: 18px;
   text-align: center;
   line-height: 1.7rem;
 }
@@ -1183,12 +1215,12 @@ h4 {
 }
 .taglines div h1 {
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 60px;
   color: var(--bgPrimary);
 }
 .taglines h4 {
   width: 100%;
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 400;
   text-align: left;
 }
@@ -1206,17 +1238,17 @@ h4 {
 }
 .jumbo-img {
   float: right;
-  width: 33%;
+  width: 41%;
   height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  padding-bottom: 3rem;
 }
 .jumbo-img img {
-  width: 100%;
-  height: 95%;
+  height: 85%;
   object-fit: contain;
 }
 .hero {
@@ -1228,10 +1260,11 @@ h4 {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 1rem 0rem;
+  padding: 3rem 0rem;
+  padding-top: 5rem;
 }
 .hero-item {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1241,7 +1274,7 @@ h4 {
 }
 
 .hero-item-long {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1252,14 +1285,14 @@ h4 {
 }
 
 .hero-item-long1 {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1.3rem;
+  margin-top: 0rem;
 }
 
 .hero-item h3 {
@@ -1310,9 +1343,14 @@ h4 {
   position: relative;
 }
 .main-heading h1 {
-  font-weight: 700;
-  font-size: 4.5rem;
+  font-weight: 600;
+  font-size: 54px;
   color: var(--bgPrimary);
+}
+
+.graph-heading h1 {
+  font-size: 54px;
+  font-weight: 600;
 }
 
 /* .main-heading h1:nth-child(2){
@@ -1529,10 +1567,10 @@ color: #CDCDCD;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem 0rem;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 .graphSlide img {
-  width: 40%;
+  width: 80%;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   border-radius: 1.75rem;
@@ -1591,8 +1629,8 @@ color: #CDCDCD;
   padding-right: 0rem;
 }
 .refer-text-content h1 {
-  font-weight: 700;
-  font-size: 4.5rem;
+  font-weight: 600;
+  font-size: 54px;
   color: var(--bgPrimary);
 }
 .refer-heading {
@@ -1602,7 +1640,7 @@ color: #CDCDCD;
 }
 .refer-heading p {
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 18px;
   line-height: 1.7rem;
   color: var(--bgPrimary);
   text-align: left;
@@ -1641,6 +1679,8 @@ color: #CDCDCD;
 .testimonials {
   width: 100%;
   padding: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1655,9 +1695,9 @@ color: #CDCDCD;
   justify-content: center;
 }
 .testimonials-heading h1 {
-  font-size: 4.5rem;
+  font-size: 54px;
   color: var(--bgPrimary);
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 .testimonials-slides {
@@ -1666,6 +1706,7 @@ color: #CDCDCD;
 }
 .team {
   padding: 5rem;
+  padding-bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1686,9 +1727,9 @@ color: #CDCDCD;
   padding: 0rem 2rem;
 }
 .team-content h1 {
-  text-align: center;
-  font-size: 4.5rem;
-  font-weight: 700;
+  text-align: left;
+  font-size: 54px;
+  font-weight: 600;
   color: var(--bgPrimary);
 }
 .team-content h1:nth-child(2) {
@@ -1696,10 +1737,10 @@ color: #CDCDCD;
   margin-bottom: 2rem;
 }
 .team-content-subheading p {
-  font-size: 1.1rem;
+  font-size: 18px;
   color: var(--bgPrimary);
-  font-weight: 500;
-  text-align: center;
+
+  text-align: left;
 }
 .team-content-subheading {
   margin-bottom: 3rem;
@@ -1850,9 +1891,9 @@ color: #CDCDCD;
   width: 60%;
 }
 .quote h1 {
-  font-size: 4rem;
+  font-size: 54px;
   color: var(--bgPrimary);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -1945,7 +1986,9 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
 }
 .born-section {
   width: 100%;
@@ -1973,13 +2016,13 @@ h4 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 3;
+
   height: 100%;
 }
 .born-section .text-content h1 {
   text-align: left;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 46px;
   color: var(--bgPrimary);
 }
 .born-section .text-content h1 span {
@@ -2125,7 +2168,7 @@ h4 {
 }
 .business-heading h1 {
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 60px;
   color: var(--bgPrimary);
   padding-bottom: 1rem;
   text-align: left;
@@ -2133,7 +2176,7 @@ h4 {
 }
 .business-heading h2 {
   color: var(--bgPrimary);
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 500;
   text-align: left;
   width: 80%;
@@ -2177,15 +2220,15 @@ h4 {
   color: var(--bgPrimary);
 }
 .studio h1 {
-  font-size: 4.5rem;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 700;
   padding-bottom: 1rem;
   text-align: center;
 }
 .studio p {
   width: 70%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 300;
 }
 .studio p span {
@@ -2212,13 +2255,13 @@ h4 {
   padding: 5rem 0rem 0rem 5rem;
 }
 .opt-heading-text h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   width: 100%;
 }
 .opt-heading-text h2 {
   text-align: flex-start;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 400;
   width: 100%;
 }
@@ -2271,6 +2314,7 @@ h4 {
   font-weight: 500;
 }
 .art {
+  margin-top: 1rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -2295,14 +2339,14 @@ h4 {
   padding: 8rem 0rem 8rem 10rem;
 }
 .art-text h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   text-align: left;
   width: 100%;
 }
 .art-text p {
   width: 80%;
-  font-size: 1.1rem;
+  font-size: 18px;
   text-align: left;
   font-weight: 400;
 }
@@ -2340,6 +2384,7 @@ h4 {
 }
 
 .case-wrapper {
+  margin-top: 1rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -2402,6 +2447,8 @@ h4 {
   padding: 0.5rem 1rem;
 }
 .case-head-title h1 {
+  font-size: 40px;
+  font-weight: 500;
   text-align: center;
 }
 .case-text {
@@ -2450,9 +2497,10 @@ h4 {
   font-weight: 800;
 }
 .clients {
+  padding-top: 2.5rem;
   width: 100%;
   height: auto;
-  padding: 5rem;
+  padding: 2.5rem 5rem 6rem 5rem;
 }
 .client-heading {
   width: 100%;
@@ -2484,8 +2532,6 @@ h4 {
   width: 175px;
   height: 200px;
   object-fit: contain;
-  /* -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%); */
 }
 .builder-slide img:hover {
   -webkit-filter: grayscale(0%);
@@ -2509,8 +2555,8 @@ h4 {
   gap: 1rem;
 }
 .rec-heading h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   color: var(--bgPrimary);
   text-align: center;
 }
@@ -2525,7 +2571,7 @@ h4 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .rec-item {
   width: 20rem;
@@ -2638,12 +2684,12 @@ p {
   gap: 1rem;
 }
 .projects-heading-text h1 {
-  font-size: 4.5rem;
+  font-size: 60px;
   font-weight: 700;
   text-align: left;
 }
 .projects-heading-text p {
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 500;
   text-align: left;
 }
@@ -2683,8 +2729,8 @@ p {
   margin-bottom: 4rem;
 }
 .choice-heading h1 {
-  font-size: 4.5rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
   color: var(--bgPrimary);
 }
 .choice-content {
@@ -2742,7 +2788,7 @@ p {
   color: grey;
 }
 .point-content h3 {
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
 }
 .point-content {
@@ -2769,11 +2815,11 @@ p {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  gap: 3rem;
 }
 
 .fly-personalised h1 {
-  font-size: 4rem;
+  font-size: 54px;
+  font-weight: 600;
   text-align: center;
   color: var(--bgPrimary);
 }
@@ -2798,13 +2844,14 @@ p {
   gap: 3rem;
 }
 .fly-benefits h1 {
-  font-size: 4rem;
+  font-weight: 600;
+  font-size: 54px;
   text-align: center;
   color: var(--bgPrimary);
 }
 .fly-benefits-img {
   height: 100%;
-  width: 59%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2825,13 +2872,14 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 3rem 0rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   gap: 3rem;
 }
 .rec-projects h1 {
   text-align: center;
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 600;
 }
 .rec-projects-wrapper {
   width: 100%;
@@ -3151,7 +3199,9 @@ p {
     font-weight: unset;
   }
   .born-section .text-content {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0;
   }
   .born-img {
     height: 40vh;
@@ -3232,6 +3282,7 @@ p {
   }
   .rec-item {
     height: 18rem;
+
     gap: 0rem;
   }
   .footer .links {
@@ -3338,6 +3389,12 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+  .connect-form {
+    padding-top: 3rem;
+  }
+  .team-image img {
+    margin-top: 2rem;
+  }
   .whatsapp-icon img {
     width: 4rem;
   }
@@ -3358,7 +3415,8 @@ p {
   }
 
   .parent-sib {
-    margin-top: 1rem;
+    gap: 2rem;
+    padding-top: 2rem;
   }
   .story-text {
     position: initial;
@@ -3393,9 +3451,6 @@ p {
 
   .art {
     margin-top: 1rem;
-  }
-  .rec-item {
-    width: 100%;
   }
 
   .rec-img {
@@ -3433,7 +3488,9 @@ p {
   }
 
   .graph-heading h1 {
+    text-align: center;
     font-weight: 700;
+    font-size: 2rem;
   }
 
   .business-img img {
@@ -3576,14 +3633,19 @@ p {
     padding: 2rem;
   }
 
+  .form-wrap {
+    width: 100%;
+  }
+
   .form h1 {
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
   }
 
   .fly-personalised {
     padding: 1rem;
-    margin-top: 1rem;
+
     gap: 1rem;
   }
 
@@ -3645,9 +3707,6 @@ p {
     margin-top: 4.5rem;
   }
 
-  .connect-content {
-    top: 3rem;
-  }
   .com-refer-heading {
     margin-top: -0.5rem;
   }
@@ -3677,7 +3736,7 @@ p {
     gap: 4rem;
   }
   .graph-heading {
-    margin-top: 80rem;
+    margin-top: 77rem;
     font-size: 1rem;
   }
 
@@ -3690,10 +3749,18 @@ p {
   }
 
   .team-content-subheading p {
+    text-align: center;
     margin-top: 1rem;
     font-weight: unset;
   }
 
+  .tes-slider .splide__arrow--next {
+    right: 2em;
+  }
+
+  .graph-wrapper .splide__arrow--next {
+    right: 1em;
+  }
   .social-media {
     margin-top: 0rem;
   }
@@ -3712,7 +3779,7 @@ p {
   }
 
   .born-section {
-    margin-top: 1rem;
+    margin-top: -3rem;
     box-shadow: unset;
   }
   .tablet-performers {
@@ -3743,7 +3810,7 @@ p {
   }
 
   .graph-wrapper {
-    margin-top: 0rem;
+    margin-top: -1rem;
   }
 
   .main .gallery {
@@ -3803,10 +3870,11 @@ p {
   }
 
   .jumbo-img {
-    width: 97%;
-    height: 48%;
+    width: 100%;
+    height: 100%;
   }
   .jumbo-img img {
+    width: 100%;
     height: 100%;
     margin-top: 1rem;
   }
@@ -3839,11 +3907,10 @@ p {
     width: 7rem;
   }
   .refer {
-    margin-top: -2rem;
+    margin-top: 3rem;
   }
   .refer-text-content {
-    margin-top: 5rem;
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     width: 100%;
     gap: 0rem;
     align-items: center;
@@ -3870,7 +3937,7 @@ p {
     font-size: 2rem;
   }
   .team {
-    padding: 2rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
   }
   .team-image {
     width: 100%;
@@ -3955,7 +4022,7 @@ p {
   .born-section .text-content {
     width: 100%;
     height: 61%;
-    margin-top: 2.5rem;
+    padding-top: 0rem;
   }
   .born-section .text-content h1 {
     font-size: 2rem;
@@ -3971,7 +4038,6 @@ p {
   .hero {
     width: 100%;
     gap: 2rem;
-    margin-top: 2.3rem;
   }
   .hero-item {
     width: 7rem;
@@ -4025,6 +4091,7 @@ p {
   }
 
   .main {
+    padding-top: 0rem;
     margin-top: 0rem;
     height: 46rem;
   }
@@ -4064,22 +4131,22 @@ p {
   }
   .story {
     padding: 2rem;
+    padding-bottom: 3rem;
   }
   .story .story-heading h1 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .story-bg-element {
     display: none;
   }
   .story-text-block {
     padding: 3rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .people {
     padding: 0;
-    padding-bottom: 3rem;
   }
 
   .core {
@@ -4146,8 +4213,8 @@ p {
     font-size: 2rem;
   }
   .values {
-    padding: 5rem 0rem;
-    gap: 3rem;
+    padding: 2rem 0rem;
+    gap: 0rem;
   }
   .value-text-item h1 {
     font-size: 2rem;
@@ -4171,13 +4238,15 @@ p {
 
   .people-text h1 {
     font-size: 2rem;
+    font-weight: 600;
   }
   .business .business-head h1,
   .opt-heading-text h1,
   .art-text h1,
   .rec-heading h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
     text-align: center;
+    padding-bottom: 0.8rem;
   }
 
   .opt-items {
@@ -4254,7 +4323,7 @@ p {
   }
   .fly-choice {
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .choice-point {
     flex-wrap: wrap;
@@ -4281,7 +4350,6 @@ p {
   .performers-content h1 {
     font-size: 2rem;
     padding: 1rem;
-    margin-top: 2rem;
   }
 
   .rec-projects-wrapper {

@@ -62,7 +62,7 @@ export default function Hero() {
               className="hero-item-text"
               end={projectsCount}
               duration={1}
-              style={{ fontSize: "3rem", fontWeight: "bold" }}
+              style={{ fontSize: "2.5rem", fontWeight: "bold" }}
               formattingFn={(value) => `${value}+`}
             />
           </CircularProgressbarWithChildren>
@@ -81,7 +81,7 @@ export default function Hero() {
               className="hero-item-text"
               end={realEstateCount}
               duration={1}
-              style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+              style={{ fontSize: "2rem", fontWeight: "bold" }}
               formattingFn={(value) => `INR ${value}+`}
             />
           </CircularProgressbarWithChildren>
@@ -100,7 +100,7 @@ export default function Hero() {
               className="hero-item-text"
               end={customersCount}
               duration={1}
-              style={{ fontSize: "3rem", fontWeight: "bold" }}
+              style={{ fontSize: "2.5rem", fontWeight: "bold" }}
               formattingFn={(value) => `${value}+`}
             />
           </CircularProgressbarWithChildren>
@@ -119,7 +119,7 @@ export default function Hero() {
               className="hero-item-text"
               end={professionalsCount}
               duration={1}
-              style={{ fontSize: "3rem", fontWeight: "bold" }}
+              style={{ fontSize: "2.5rem", fontWeight: "bold" }}
               formattingFn={(value) => `${value}+`}
             />
           </CircularProgressbarWithChildren>
@@ -138,7 +138,7 @@ export default function Hero() {
               className="hero-item-text"
               end={branchOfficesCount}
               duration={2}
-              style={{ fontSize: "3rem", fontWeight: "bold" }}
+              style={{ fontSize: "2.5rem", fontWeight: "bold" }}
             />
           </CircularProgressbarWithChildren>
           <h3>Branch Offices</h3>

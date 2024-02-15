@@ -11,10 +11,27 @@ import Graph4 from "../assets/Gra4.png";
 export default function Slideshow() {
   return (
     <>
-      <div className="shape-eclipse">
-        <img src={shape} alt="eclipse shape" />
-      </div>
-      <Splide aria-label="My Favorite Images">
+      <div className="shape-eclipse"></div>
+      <Splide
+        options={{
+          perPage: 2,
+          breakpoints: {
+            800: {
+              perPage: 1,
+            },
+            600: {
+              perPage: 1,
+            },
+            400: {
+              perPage: 1,
+            },
+            300: {
+              perPage: 1,
+            },
+          },
+        }}
+        aria-label="My Favorite Images"
+      >
         <SplideSlide>
           <div className="graphSlide">
             <img src={Graph1} alt="Image 1" />
