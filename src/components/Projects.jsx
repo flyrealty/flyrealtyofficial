@@ -56,8 +56,6 @@ export default function Projects() {
     setActiveButton(category);
   };
 
-
-
   const filteredProjects =
     projectCategory === "all"
       ? projectData
@@ -66,8 +64,6 @@ export default function Projects() {
       : projectCategory === "villas"
       ? villaData
       : flatData;
-
-
 
   return (
     <div className="container">
@@ -104,14 +100,6 @@ export default function Projects() {
                       ensure the utmost quality of the property by adhering to
                       the predetermined standards.
                     </h6>
-
-                    {/* Close button */}
-                    <button
-                      className="close-button"
-                      onClick={() => handlePointClose()}
-                    >
-                      <i className="fa fa-times"></i>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -144,12 +132,6 @@ export default function Projects() {
                     </h6>
 
                     {/* Close button */}
-                    <button
-                      className="close-button"
-                      onClick={() => handlePointClose()}
-                    >
-                      <i className="fa fa-times"></i>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -170,12 +152,6 @@ export default function Projects() {
                       investment to a credible and reliable professional.
                     </h6>
                     {/* Close button */}
-                    <button
-                      className="close-button"
-                      onClick={() => handlePointClose()}
-                    >
-                      <i className="fa fa-times"></i>
-                    </button>
                   </div>
                 </div>
               </div>
