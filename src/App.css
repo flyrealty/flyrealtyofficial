@@ -3390,20 +3390,10 @@ p {
 }
 @media screen and (max-width: 800px) {
   .rec-items .splide__track {
-    padding-left: 10rem !important;
+    padding-left: 171px !important;
   }
-  .rec-items {
-    width: 100%;
-    display: flex;
-  }
-  .rec-items .splide__list {
-    gap: 0;
-    display: flex;
-    justify-content: center;
-  }
-
   .rec-item {
-    width: 65%;
+    width: 54%;
   }
   .connect-form {
     padding-top: 3rem;
@@ -3622,13 +3612,6 @@ p {
     margin-right: 0.05rem !important;
   }
 
-  .splide__slide {
-    margin-left: 0rem !important;
-  }
-
-  .splide__list {
-    margin-left: 1.5rem !important;
-  }
   .connect-persons .person {
     align-items: center;
   }
