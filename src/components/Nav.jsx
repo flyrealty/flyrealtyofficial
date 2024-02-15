@@ -10,7 +10,6 @@ export default function Nav() {
   const { setIsSidebarOpen, isSidebarOpen } = useContext(SidebarContext);
 
   const handleLinkClick = () => {
-    // Scroll to the top of the page when a navigation link is clicked
     window.scrollTo(0, 0);
 
     if (isSidebarOpen) {
@@ -66,12 +65,12 @@ export default function Nav() {
             About Us
           </NavLink>
           <NavLink
-          to="/careers"
-          onClick={handleLinkClick}
-          activeClassName="active"
-        >
-          Careers
-        </NavLink>
+            to="/careers"
+            onClick={handleLinkClick}
+            activeClassName="active"
+          >
+            Careers
+          </NavLink>
           <NavLink
             to="/connect"
             onClick={handleLinkClick}
@@ -79,7 +78,6 @@ export default function Nav() {
           >
             Connect
           </NavLink>
-         
         </div>
         <div
           className="hamburger"

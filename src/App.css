@@ -51,6 +51,19 @@
   }
 }
 
+.text-content-fly {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.text-content-fly h1 {
+  text-align: center;
+}
+
 .builders-logo .splide__arrow--prev {
   margin-left: -2rem;
 }
@@ -1152,12 +1165,12 @@ h4 {
   padding: 1rem 3rem;
   padding-right: 3.5rem;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  z-index: 100;
+  z-index: 9 !important;
   top: 0;
   background: white;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
@@ -1194,17 +1207,19 @@ h4 {
   box-shadow: none !important;
 }
 .header {
-  height: 90vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 .header .taglines {
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  z-index: 0;
   left: 0;
   top: 0;
-  width: 70%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1242,7 +1257,7 @@ h4 {
 }
 .jumbo-img {
   float: right;
-  width: 41%;
+  width: 100%;
   height: 100%;
   position: relative;
   display: flex;
@@ -1252,7 +1267,8 @@ h4 {
   padding-bottom: 3rem;
 }
 .jumbo-img img {
-  height: 85%;
+  width: 79%;
+  height: 100%;
   object-fit: contain;
 }
 .hero {
@@ -2052,6 +2068,11 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 80%;
+}
+
+.born-content p {
+  text-align: center;
 }
 .born-section .text-content {
   display: flex;
@@ -2059,7 +2080,6 @@ h4 {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  width: 60%;
 }
 .slider {
   width: 100%;
@@ -2578,7 +2598,7 @@ h4 {
   margin-top: 4rem;
 }
 .rec-item {
-  width: 23rem;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -3199,13 +3219,13 @@ p {
     font-size: 2.5rem;
   }
   .born-section .born-content p {
+    line-height: 25px;
     font-size: 1.1rem;
     font-weight: unset;
   }
   .born-section .text-content {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 0;
   }
   .born-img {
     height: 40vh;
@@ -3324,6 +3344,9 @@ p {
   .people-text {
     width: 100vw;
     padding: 3rem;
+    padding-bottom: 0;
+    padding-top: 2rem;
+    gap: 1rem;
   }
 
   .opt-heading-text {
@@ -3393,6 +3416,32 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+  .tes-slider .splide__pagination {
+    position: static;
+  }
+  .text-content-fly {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  .text-content-fly h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .story-text-block p {
+    text-align: center;
+  }
+  .people-text p {
+    line-height: 25px;
+  }
+  .point-desc h6 {
+    line-height: 16px;
+    text-align: center;
+  }
+  .value-text-item p {
+    line-height: 25px;
+  }
   .rec-items .splide.is-initialized {
     width: 100%;
   }
@@ -3443,6 +3492,7 @@ p {
   .parent-sib {
     gap: 2rem;
     padding-top: 2rem;
+    padding-bottom: 3rem;
   }
   .story-text {
     position: initial;
@@ -3469,6 +3519,7 @@ p {
 
   .business-head h2 {
     margin-top: -1rem;
+    line-height: 25px;
   }
 
   .case-studies {
@@ -3683,6 +3734,7 @@ p {
   }
 
   .art-text p {
+    line-height: 25px;
     text-align: center;
   }
 
@@ -3771,6 +3823,7 @@ p {
     text-align: center;
     margin-top: 1rem;
     font-weight: unset;
+    line-height: 25px;
   }
 
   .tes-slider .splide__arrow--next {
@@ -3785,12 +3838,16 @@ p {
   }
 
   .testimonials {
-    padding: 1rem 0rem 2rem;
+    padding: 1rem 0rem 1rem;
   }
 
   .born-content {
+    padding: 2rem;
+    padding-bottom: 0rem;
     gap: 0rem;
+    padding-top: 1rem;
     font-weight: 400;
+    width: 100%;
   }
 
   .styleBlock {
@@ -3798,7 +3855,7 @@ p {
   }
 
   .born-section {
-    margin-top: -3rem;
+    margin-top: 0rem;
     box-shadow: unset;
   }
   .tablet-performers {
@@ -3858,7 +3915,14 @@ p {
     display: none;
   }
   .header {
+    position: relative;
+    display: flex;
+    width: 100%;
     height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    z-index: 0 !important;
+    margin-top: 6rem;
   }
   .header .taglines {
     padding-left: 2rem;
@@ -3884,13 +3948,14 @@ p {
   }
 
   .bornToFly {
-    margin-top: -5rem;
+    margin-top: 0rem;
     padding: 0rem;
   }
 
   .jumbo-img {
     width: 100%;
     height: 100%;
+    padding-bottom: 0rem;
   }
   .jumbo-img img {
     width: 100%;
@@ -4039,9 +4104,6 @@ p {
   }
 
   .born-section .text-content {
-    width: 100%;
-    height: 61%;
-    padding-top: 0rem;
   }
   .born-section .text-content h1 {
     font-size: 2rem;
@@ -4162,16 +4224,18 @@ p {
   }
   .story-text-block {
     padding: 3rem;
-    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
   }
   .people {
     padding: 0;
   }
 
   .core {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     padding: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
   .core .core-heading h1 {
     font-size: 2rem;
@@ -4232,7 +4296,7 @@ p {
     font-size: 2rem;
   }
   .values {
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
     gap: 0rem;
   }
   .value-text-item h1 {
@@ -4307,7 +4371,7 @@ p {
   .case-highlights .highlight {
     width: 100%;
     margin-top: 1rem;
-    margin: 1rem;
+    padding-bottom: 1rem;
   }
 
   .case-highlights .highlight1 {
@@ -4503,9 +4567,7 @@ p {
   .tablet-projects {
     display: none;
   }
-  .header {
-    height: 100vh;
-  }
+
   .header .taglines {
     padding-left: 3rem;
     padding-right: 3rem;

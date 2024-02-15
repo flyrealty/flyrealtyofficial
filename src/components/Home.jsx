@@ -1,28 +1,47 @@
-import React from 'react'
-import {Testimonials , Graphs,Nav, Header, Hero, Main, Team, Footer, Refer} from "../exports"
-import '../App.css'
-import borntofly from '../assets/borntofly.png'
-import bornVideo from '../assets/bornVideo.mp4'
+import React from "react";
+import {
+  Testimonials,
+  Graphs,
+  Nav,
+  Header,
+  Hero,
+  Main,
+  Team,
+  Footer,
+  Refer,
+} from "../exports";
+import "../App.css";
+import borntofly from "../assets/borntofly.png";
+import bornVideo from "../assets/bornVideo.mp4";
 export default function Home() {
   return (
     <div className="container">
       <Nav />
-      <Header/>
+      <Header />
       <div className="bornToFly">
         <div className="born-section">
           {/* <div className='born-img'>
             <img src={borntofly} alt="" />
           </div> */}
           <div className="video-bg-born">
-              <video src={bornVideo} autoPlay loop muted/>
+            <video src={bornVideo} autoPlay loop muted />
           </div>
-          <div className="text-content">
+          <div className="text-content-fly">
             <h1>Born To FLY</h1>
             <div className="born-content">
-              <p>We specialize in delivering actionable Marketing and Sales Consulting Services exclusively for builders, guiding them through every step from strategic planning to seamless execution.
-              Additionally, we extend our expertise to assist home-buyers in making informed decisions and wise investments in purchasing residential properties.
+              <p>
+                We specialize in delivering actionable Marketing and Sales
+                Consulting Services exclusively for builders, guiding them
+                through every step from strategic planning to seamless
+                execution. Additionally, we extend our expertise to assist
+                home-buyers in making informed decisions and wise investments in
+                purchasing residential properties.
               </p>
-              <p>As dedicated consultants, our focus is on providing valuable insights and support across the entire spectrum of the real estate industry.</p>
+              <p>
+                As dedicated consultants, our focus is on providing valuable
+                insights and support across the entire spectrum of the real
+                estate industry.
+              </p>
             </div>
           </div>
         </div>
@@ -39,5 +58,5 @@ export default function Home() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }

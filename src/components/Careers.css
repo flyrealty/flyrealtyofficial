@@ -302,17 +302,18 @@
     text-align: center !important;
     margin-top: 0.1rem;
     font-weight: 400;
+    font-size: 1rem;
   }
   .sets-aprt-head {
     padding: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 0rem;
   }
 
   .jobs-open-head {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .job-card {
     width: 90%;
@@ -341,7 +342,7 @@
     margin-bottom: 2rem;
   }
   .sets-apart-wrapper {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
   .wrap-job-cards {
@@ -362,6 +363,7 @@
     font-weight: 600;
   }
   .job-requirements {
+    font-size: 16px;
     text-align: center !important;
   }
   .sets-aprt-content {
@@ -380,6 +382,7 @@
   }
   .point-wrapper {
     margin-top: 1rem;
+    gap: 0.5rem;
   }
   .img-text-head img {
     margin-top: 1.5rem;
