@@ -3523,11 +3523,11 @@ p {
   }
 
   .case-studies {
-    margin-top: 2.1rem;
+    margin-top: 1.1rem;
   }
 
   .art {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .rec-img {
@@ -3909,7 +3909,7 @@ p {
 
   .mobile-projects {
     display: block;
-    margin-top: -4rem;
+    margin-top: -5rem;
   }
   .tablet-projects {
     display: none;
@@ -4349,7 +4349,7 @@ p {
 
   .recommend {
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-bottom: 3rem;
   }
 
