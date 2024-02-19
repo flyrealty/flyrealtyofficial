@@ -114,7 +114,7 @@ export default function Connect() {
             </div>
             <a href="tel:+91984473355">
               <i class="fa-solid fa-phone"></i>
-              <h6>+91 98444 73355</h6>
+              <h6>+91 9844473355</h6>
             </a>
           </div>
           <div className="connect-form">
