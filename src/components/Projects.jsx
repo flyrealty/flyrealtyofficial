@@ -78,99 +78,6 @@ export default function Projects() {
             <img src={team} alt="" />
           </div>
         </div>
-        <div className="fly-choice">
-          <div className="choice-heading">
-            <h1>Why Choose Us</h1>
-          </div>
-          <div className="choice-content">
-            <div className="choice-points">
-              <div className="choice-point">
-                <div className="point-index">
-                  <h1>01</h1>
-                </div>
-                <div className="point-content">
-                  <h3>Because we only deal with RERA Approved Projects</h3>
-
-                  <div className="point-desc">
-                    <h6>
-                      <b>Because we only deal with RERA Approved Projects, </b>
-                      which holds the responsibility of protecting the interests
-                      of homebuyers and investors by promoting transparency and
-                      accountability. The RERA approval criteria are designed to
-                      ensure the utmost quality of the property by adhering to
-                      the predetermined standards.
-                    </h6>
-                  </div>
-                </div>
-              </div>
-              <div className="choice-point">
-                <div className="point-index">
-                  <h1>02</h1>
-                </div>
-                <div className="point-content">
-                  <h3>
-                    Because we perform the Due Dilligence on the Property.
-                  </h3>
-                  <div className="point-desc">
-                    <h6>
-                      <b>
-                        {" "}
-                        Because we perform the Due Dilligence on the Property,{" "}
-                      </b>
-                      We understand buying a property is a big decision, so we
-                      want to take the worry off your shoulders. That's why we
-                      offer comprehensive due diligence before you commit. We'll
-                      meticulously comb through legal documents to ensure clear
-                      ownership, check for any liens or encumbrances, and
-                      conduct thorough physical inspections to identify
-                      potential structural issues or hidden problems. We'll even
-                      research zoning regulations and delve into the
-                      neighborhood's history and future plans. Think of it as a
-                      detailed background check for your potential home, giving
-                      you the peace of mind to make an informed and confident
-                      decision based on all the facts.
-                    </h6>
-
-                    {/* Close button */}
-                  </div>
-                </div>
-              </div>
-              <div className="choice-point">
-                <div className="point-index">
-                  <h1>03</h1>
-                </div>
-                <div className="point-content">
-                  <h3>Because we perform the Due Dilligence on the Builder.</h3>
-                  <div className="point-desc">
-                    <h6>
-                      <b>
-                        Because we perform the Due Dilligence on the Builder,
-                      </b>{" "}
-                      By conducting thorough due diligence, we minimize the
-                      risks associated with choosing the wrong builder and give
-                      you peace of mind knowing you're entrusting your
-                      investment to a credible and reliable professional.
-                    </h6>
-                    {/* Close button */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="fly-personalised">
-          <h1>Personalized Home Buying Journey</h1>
-          <div className="fly-personalised-img">
-            <video src={projectVideo} autoPlay loop muted />
-          </div>
-        </div>
-        <div className="fly-benefits">
-          <h1>How are We different?</h1>
-          <div className="fly-benefits-img">
-            <img src={flyBenefits} alt="" />
-          </div>
-        </div>
-
         {/* Filter Section */}
 
         <div className="rec-projects">
@@ -373,6 +280,98 @@ export default function Projects() {
                 </SwiperSlide>
               ))}
             </Swiper>
+          </div>
+        </div>
+        <div className="fly-choice">
+          <div className="choice-heading">
+            <h1>Why Choose Us</h1>
+          </div>
+          <div className="choice-content">
+            <div className="choice-points">
+              <div className="choice-point">
+                <div className="point-index">
+                  <h1>01</h1>
+                </div>
+                <div className="point-content">
+                  <h3>Because we only deal with RERA Approved Projects</h3>
+
+                  <div className="point-desc">
+                    <h6>
+                      <b>Because we only deal with RERA Approved Projects, </b>
+                      which holds the responsibility of protecting the interests
+                      of homebuyers and investors by promoting transparency and
+                      accountability. The RERA approval criteria are designed to
+                      ensure the utmost quality of the property by adhering to
+                      the predetermined standards.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="choice-point">
+                <div className="point-index">
+                  <h1>02</h1>
+                </div>
+                <div className="point-content">
+                  <h3>
+                    Because we perform the Due Dilligence on the Property.
+                  </h3>
+                  <div className="point-desc">
+                    <h6>
+                      <b>
+                        {" "}
+                        Because we perform the Due Dilligence on the Property,{" "}
+                      </b>
+                      We understand buying a property is a big decision, so we
+                      want to take the worry off your shoulders. That's why we
+                      offer comprehensive due diligence before you commit. We'll
+                      meticulously comb through legal documents to ensure clear
+                      ownership, check for any liens or encumbrances, and
+                      conduct thorough physical inspections to identify
+                      potential structural issues or hidden problems. We'll even
+                      research zoning regulations and delve into the
+                      neighborhood's history and future plans. Think of it as a
+                      detailed background check for your potential home, giving
+                      you the peace of mind to make an informed and confident
+                      decision based on all the facts.
+                    </h6>
+
+                    {/* Close button */}
+                  </div>
+                </div>
+              </div>
+              <div className="choice-point">
+                <div className="point-index">
+                  <h1>03</h1>
+                </div>
+                <div className="point-content">
+                  <h3>Because we perform the Due Dilligence on the Builder.</h3>
+                  <div className="point-desc">
+                    <h6>
+                      <b>
+                        Because we perform the Due Dilligence on the Builder,
+                      </b>{" "}
+                      By conducting thorough due diligence, we minimize the
+                      risks associated with choosing the wrong builder and give
+                      you peace of mind knowing you're entrusting your
+                      investment to a credible and reliable professional.
+                    </h6>
+                    {/* Close button */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="fly-personalised">
+          <h1>Personalized Home Buying Journey</h1>
+          <div className="fly-personalised-img">
+            <video src={projectVideo} autoPlay loop muted />
+          </div>
+        </div>
+        <div className="fly-benefits">
+          <h1>How are We different?</h1>
+          <div className="fly-benefits-img">
+            <img src={flyBenefits} alt="" />
           </div>
         </div>
 

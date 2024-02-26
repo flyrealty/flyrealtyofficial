@@ -2896,8 +2896,8 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+
   gap: 3rem;
 }
 .rec-projects h1 {
@@ -2908,7 +2908,7 @@ p {
 .rec-projects-wrapper {
   width: 100%;
   height: auto;
-  padding: 1rem 1.1rem 0rem 0rem;
+  padding: 1rem 4.5rem 0rem 4.5rem;
 }
 .rec-project-item {
   display: flex;
@@ -3040,7 +3040,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 0rem 2rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 .projects > .cta a {
   background: var(--bgSecondary);
@@ -3055,7 +3055,6 @@ p {
 }
 .rec-projects-wrapper .swiper-button-prev,
 .rec-projects-wrapper .swiper-button-next {
-  background: var(--bgSecondary);
   color: var(--bgPrimary);
   padding: 1rem 0rem 1rem 0rem;
   border-radius: 10rem;
@@ -3575,7 +3574,7 @@ p {
   }
 
   .projects > .cta {
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
   .rec-projects-wrapper .swiper-button-prev {
     background: none;
@@ -3909,7 +3908,7 @@ p {
 
   .mobile-projects {
     display: block;
-    margin-top: -5rem;
+    margin-top: -3rem;
   }
   .tablet-projects {
     display: none;
@@ -4432,7 +4431,7 @@ p {
   .rec-projects h1,
   .performers-content h1 {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
   }
 
   .rec-projects-wrapper {
