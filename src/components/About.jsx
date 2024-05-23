@@ -70,11 +70,8 @@ export default function About() {
           </div>
           <div className="parent-sib">
             <div className="parent-heading">
-              <h1>The Parent And Siblings</h1>
-              <div className="parent-detail">
-                <h2>MODERN SPAACES</h2>
-                <h4>(Real Estate Developer)</h4>
-              </div>
+              <h1>Siblings</h1>
+              <div className="parent-detail"></div>
             </div>
             <div className="siblings">
               <div className="sib-item">

@@ -113,7 +113,7 @@ export default function Connect() {
               <h6>For a Seamless Real Estate Consulting Services</h6>
             </div>
             <a href="tel:+91984473355">
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
               <h6>+91 9844473355</h6>
             </a>
           </div>
@@ -187,16 +187,14 @@ export default function Connect() {
             <h1>Bengaluru</h1>
             <h6>Headquarters</h6>
             <div className="address">
-              <h6>3rd Floor, Sakti Statesman Building</h6>
-              <h6>Outer Ring Rd, Green Glen Layout,</h6>
-              <h6>Bellandur, Bengaluru, 560103</h6>
+              <h6>4th Floor, Urban Vault - 262</h6>
+              <h6> 16th Cross Rd, Sector 6,</h6>
+              <h6>HSR Layout, Bengaluru, 560102</h6>
               <h6>PRM/KA/RERA/1251/309/</h6>
               <h6>AG/220530/002939</h6>
-              <h6>+91 98444 73355</h6>
+              <h6>+91 9844473355</h6>
             </div>
-            <a href="https://www.google.com/maps/dir//3rd+Floor,+Sakti+Statesman,+Building+Iblur,+Outer+Ring+Rd,+Green+Glen+Layout,+Bellandur,+Bengaluru,+Karnataka+560103/@12.9239613,77.5851863,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae1394202080ff:0x138b8e3f3971dd15!2m2!1d77.6675882!2d12.9239742?entry=ttu">
-              View on Maps
-            </a>
+            <a href="https://maps.app.goo.gl/BP9DcCixNa7hTdRB9">View on Maps</a>
           </div>
           <div className="address-item">
             <h1>Pune</h1>
