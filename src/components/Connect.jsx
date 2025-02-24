@@ -184,31 +184,17 @@ export default function Connect() {
       <div className="wrap-connect-address">
         <div className="connect-addresses">
           <div className="address-item">
-            <h1>Bengaluru</h1>
-            <h6>Headquarters</h6>
+            <h1 className="w-full">Bengaluru</h1>
+            <h6 className="w-full">Headquarters</h6>
             <div className="address">
-              <h6>4th Floor, Urban Vault - 262</h6>
-              <h6> 16th Cross Rd, Sector 6,</h6>
-              <h6>HSR Layout, Bengaluru, 560102</h6>
-              <h6>PRM/KA/RERA/1251/309/</h6>
-              <h6>AG/220530/002939</h6>
-              <h6>+91 9844473355</h6>
+              <h6 className="w-full">Ground Floor, Urban Vault, 19, </h6>
+              <h6 className="w-full">18th Cross Rd, Sector 6, </h6>
+              <h6 className="w-full">HSR Layout, Bengaluru, 560102</h6>
+              <h6 className="w-full">PRM/KA/RERA/1251/309/</h6>
+              <h6 className="w-full">AG/220530/002939</h6>
+              <h6 className="w-full">+91 9844473355</h6>
             </div>
             <a href="https://maps.app.goo.gl/BP9DcCixNa7hTdRB9">View on Maps</a>
-          </div>
-          <div className="address-item">
-            <h1>Pune</h1>
-            <h6>Branch Office</h6>
-            <div className="address">
-              <h6>Office No. B-16, Floor No.6,</h6>
-              <h6>City Vista, Kharadi</h6>
-              <h6>Pune 411014</h6>
-              <h6>MahaRERA - A52100046472</h6>
-              <h6>+91 97655 50717</h6>
-            </div>
-            <a href="https://www.google.com/maps/dir/12.9140765,77.6650548/fly+realty+pune/@15.6837959,73.1549959,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2c1bb4e1c923b:0x949fed19272dee7c!2m2!1d73.9312748!2d18.5508936?entry=ttu">
-              View on Maps
-            </a>
           </div>
         </div>
       </div>

@@ -548,10 +548,12 @@ textarea {
   background: rgb(243, 243, 243);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-end;
 }
+
+
 .connect-addresses .address-item {
   display: flex;
   flex-direction: column;
@@ -559,6 +561,7 @@ textarea {
   justify-content: flex-start;
   min-width: 280px;
   line-height: 1.5rem;
+  margin-left: 2%;
 }
 .connect-addresses .address-item > h6 {
   font-size: 1rem;
@@ -3415,6 +3418,11 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+.w-full{
+  width: 100%;
+  text-align: center !important;
+}
+
   .tes-slider .splide__pagination {
     position: static;
   }
@@ -3609,6 +3617,12 @@ p {
 
   .connect-addresses .address-item {
     margin-top: 0rem;
+    margin-left:0;
+    align-items: center;
+  }
+
+  .address{
+    width: 100%
   }
 
   .accordion-wrapper {
@@ -4268,6 +4282,7 @@ p {
   .connect-addresses {
     padding-top: 3rem !important;
     padding-bottom: 4rem;
+    justify-content: center;
   }
   .explore h2 {
     font-size: 1.1rem;
