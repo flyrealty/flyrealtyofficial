@@ -76,7 +76,7 @@ export default function Connect() {
       try {
         // Form submission to Google Script link
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbzppvI4Se6Yvg_xPIjUCeH5GCWnO5ngtkrf3zJ13pvHoT9fWGYkmmYpPi3bl9LijpRM/exec",
+          "https://script.google.com/macros/s/AKfycbxt9cHPUpfG8_MnWde3VoREkT--4vHx7U0oIkeHHB0ajFbnU2V8JwHoOt3D7cGOoYjV/exec",
           {
             method: "POST",
             headers: {
